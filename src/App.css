@@ -15,7 +15,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +34,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.number {
+  text-align: right;
+  background-color: pink;
+}
+
+td, th {
+  border: 1px solid;
+}
+
+
+.party_name {
+  width: 100px;
+}
+
+.country_section {
+  width:min-content;
+  background-color: grey;
+}
+
+.name {
+  text-align: left;
+  width: 100px;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  
 }
