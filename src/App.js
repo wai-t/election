@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 import last_election_data from './scaled.json';
 import latest_forecast from "./latest.json";
@@ -38,9 +37,9 @@ function App() {
     "SDLP": 9,
   }
 
-  const [last_election, setLastElection] = useState(last_election_data);
+  const [last_election /*setLastElection*/] = useState(last_election_data);
   const [national_forecast, setNationalForecast] = useState(latest_forecast_plus_NI);
-  const [forecast_weights, setForecastWeights] = useState(weights);
+  const [forecast_weights/*, setForecastWeights*/] = useState(weights);
 
   const [total_seats, setTotalSeats] = useState({"England":{},"Northern Ireland":{},"Scotland":{}, "Wales":{}});
   const [total_change, setTotalChange] = useState({"England":{},"Northern Ireland":{},"Scotland":{}, "Wales":{}});
@@ -49,20 +48,14 @@ function App() {
 
   let totals_updater = function(country, seats, changes) {
     if (JSON.stringify(total_seats[country]) !== JSON.stringify(seats)) {
-      let new_total = {
-        ...total_seats,
-        [country]: seats
-      }
+
       setTotalSeats(total_seats => {return {
         ...total_seats,
         [country]: seats
       }});
     }
     if (JSON.stringify(total_change[country]) !== JSON.stringify(changes)) {
-      let new_change = {
-        ...total_change,
-        [country]: changes
-      }
+
       setTotalChange(total_change => {return {
         ...total_change,
         [country]: changes
@@ -246,7 +239,7 @@ function CountrySummary(props) {
       list.sort((a,b) => b[1] - a[1]);
       let winner = list[0][0];
       let announce;
-      if (winner!=item["First party"]) {
+      if (winner!==item["First party"]) {
         let loser = item["First party"];
         announce = winner + " win from " + loser;
         new_change[winner] = new_change[winner] + 1;
@@ -273,13 +266,13 @@ function CountrySummary(props) {
     let ret = [];
 
     for (let item of props.last_election.filter((item) =>  {
-      return item["Country name"] == props.country;
+      return item["Country name"] === props.country;
       })) {
         ret.push([item, compute_constituency_forecast(item)]);
       }
 
-    if (JSON.stringify(new_change) != JSON.stringify(change)
-        || JSON.stringify(new_seats) != JSON.stringify(seats) ) {
+    if (JSON.stringify(new_change) !== JSON.stringify(change)
+        || JSON.stringify(new_seats) !== JSON.stringify(seats) ) {
       props.totals_updater(props.country, new_seats, new_change);
       setSeats(new_seats);
       setChange(new_change);
