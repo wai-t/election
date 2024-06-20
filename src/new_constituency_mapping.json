@@ -1,0 +1,7038 @@
+{
+    "Aberafan Maesteg": [
+        {
+            "old": "Aberavon",
+            "weight": "61.20%"
+        },
+        {
+            "old": "Bridgend",
+            "weight": "15.94%"
+        },
+        {
+            "old": "Neath",
+            "weight": "1.25%"
+        },
+        {
+            "old": "Ogmore",
+            "weight": "21.61%"
+        }
+    ],
+    "Aberdeen North": [
+        {
+            "old": "Aberdeen North",
+            "weight": "69.21%"
+        },
+        {
+            "old": "Aberdeen South",
+            "weight": "2.26%"
+        },
+        {
+            "old": "Gordon",
+            "weight": "28.53%"
+        }
+    ],
+    "Aberdeen South": [
+        {
+            "old": "Aberdeen North",
+            "weight": "19.56%"
+        },
+        {
+            "old": "Aberdeen South",
+            "weight": "80.44%"
+        }
+    ],
+    "Aberdeenshire North and Moray East": [
+        {
+            "old": "Banff and Buchan",
+            "weight": "74.78%"
+        },
+        {
+            "old": "Moray",
+            "weight": "25.22%"
+        }
+    ],
+    "Airdrie and Shotts": [
+        {
+            "old": "Airdrie and Shotts",
+            "weight": "92.06%"
+        },
+        {
+            "old": "Coatbridge, Chryston and Bellshill",
+            "weight": "0"
+        },
+        {
+            "old": "Cumbernauld, Kilsyth and Kirkintilloch East",
+            "weight": "0"
+        },
+        {
+            "old": "Motherwell and Wishaw",
+            "weight": "7.94%"
+        }
+    ],
+    "Aldershot": [
+        {
+            "old": "Aldershot",
+            "weight": "94.75%"
+        },
+        {
+            "old": "North East Hampshire",
+            "weight": "5.25%"
+        }
+    ],
+    "Aldridge-Brownhills": [
+        {
+            "old": "Aldridge-Brownhills",
+            "weight": "82.96%"
+        },
+        {
+            "old": "Walsall South",
+            "weight": "17.04%"
+        }
+    ],
+    "Alloa and Grangemouth": [
+        {
+            "old": "Falkirk",
+            "weight": "32.35%"
+        },
+        {
+            "old": "Linlithgow and East Falkirk",
+            "weight": "16.95%"
+        },
+        {
+            "old": "Ochil and South Perthshire",
+            "weight": "50.70%"
+        }
+    ],
+    "Altrincham and Sale West": [
+        {
+            "old": "Altrincham and Sale West",
+            "weight": "100.00%"
+        }
+    ],
+    "Alyn and Deeside": [
+        {
+            "old": "Alyn and Deeside",
+            "weight": "82.66%"
+        },
+        {
+            "old": "Delyn",
+            "weight": "17.34%"
+        }
+    ],
+    "Amber Valley": [
+        {
+            "old": "Amber Valley",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Mid Derbyshire",
+            "weight": "0"
+        }
+    ],
+    "Angus and Perthshire Glens": [
+        {
+            "old": "Angus",
+            "weight": "53.14%"
+        },
+        {
+            "old": "Dundee East",
+            "weight": "0"
+        },
+        {
+            "old": "Dundee West",
+            "weight": "4.71%"
+        },
+        {
+            "old": "Ochil and South Perthshire",
+            "weight": "5.56%"
+        },
+        {
+            "old": "Perth and North Perthshire",
+            "weight": "36.60%"
+        }
+    ],
+    "Arbroath and Broughty Ferry": [
+        {
+            "old": "Angus",
+            "weight": "31.37%"
+        },
+        {
+            "old": "Dundee East",
+            "weight": "68.63%"
+        }
+    ],
+    "Argyll, Bute and South Lochaber": [
+        {
+            "old": "Argyll and Bute",
+            "weight": "93.43%"
+        },
+        {
+            "old": "Ross, Skye and Lochaber",
+            "weight": "6.57%"
+        }
+    ],
+    "Arundel and South Downs": [
+        {
+            "old": "Arundel and South Downs",
+            "weight": "72.13%"
+        },
+        {
+            "old": "Bognor Regis and Littlehampton",
+            "weight": "0.13%"
+        },
+        {
+            "old": "Chichester",
+            "weight": "27.74%"
+        }
+    ],
+    "Ashfield": [
+        {
+            "old": "Ashfield",
+            "weight": "94.57%"
+        },
+        {
+            "old": "Mansfield",
+            "weight": "5.43%"
+        }
+    ],
+    "Ashford": [
+        {
+            "old": "Ashford",
+            "weight": "80.62%"
+        },
+        {
+            "old": "Folkestone and Hythe",
+            "weight": "19.38%"
+        }
+    ],
+    "Ashton-under-Lyne": [
+        {
+            "old": "Ashton-under-Lyne",
+            "weight": "74.49%"
+        },
+        {
+            "old": "Denton and Reddish",
+            "weight": "25.51%"
+        }
+    ],
+    "Aylesbury": [
+        {
+            "old": "Aylesbury",
+            "weight": "76.77%"
+        },
+        {
+            "old": "Buckingham",
+            "weight": "23.23%"
+        }
+    ],
+    "Ayr, Carrick and Cumnock": [
+        {
+            "old": "Ayr, Carrick and Cumnock",
+            "weight": "100.00%"
+        }
+    ],
+    "Banbury": [
+        {
+            "old": "Banbury",
+            "weight": "81.03%"
+        },
+        {
+            "old": "Witney",
+            "weight": "18.97%"
+        }
+    ],
+    "Bangor Aberconwy": [
+        {
+            "old": "Aberconwy",
+            "weight": "60.56%"
+        },
+        {
+            "old": "Arfon",
+            "weight": "28.58%"
+        },
+        {
+            "old": "Clwyd West",
+            "weight": "10.86%"
+        }
+    ],
+    "Barking": [
+        {
+            "old": "Barking",
+            "weight": "100.00%"
+        }
+    ],
+    "Barnsley North": [
+        {
+            "old": "Barnsley Central",
+            "weight": "75.78%"
+        },
+        {
+            "old": "Barnsley East",
+            "weight": "24.22%"
+        }
+    ],
+    "Barnsley South": [
+        {
+            "old": "Barnsley Central",
+            "weight": "10.84%"
+        },
+        {
+            "old": "Barnsley East",
+            "weight": "65.85%"
+        },
+        {
+            "old": "Wentworth and Dearne",
+            "weight": "23.31%"
+        }
+    ],
+    "Barrow and Furness": [
+        {
+            "old": "Barrow and Furness",
+            "weight": "89.75%"
+        },
+        {
+            "old": "Copeland",
+            "weight": "10.25%"
+        }
+    ],
+    "Basildon and Billericay": [
+        {
+            "old": "Basildon and Billericay",
+            "weight": "90.38%"
+        },
+        {
+            "old": "South Basildon and East Thurrock",
+            "weight": "9.62%"
+        }
+    ],
+    "Basingstoke": [
+        {
+            "old": "Basingstoke",
+            "weight": "92.99%"
+        },
+        {
+            "old": "North West Hampshire",
+            "weight": "7.01%"
+        }
+    ],
+    "Bassetlaw": [
+        {
+            "old": "Bassetlaw",
+            "weight": "100.00%"
+        }
+    ],
+    "Bath": [
+        {
+            "old": "Bath",
+            "weight": "92.80%"
+        },
+        {
+            "old": "North East Somerset",
+            "weight": "7.20%"
+        }
+    ],
+    "Bathgate and Linlithgow": [
+        {
+            "old": "Linlithgow and East Falkirk",
+            "weight": "90.30%"
+        },
+        {
+            "old": "Livingston",
+            "weight": "9.70%"
+        }
+    ],
+    "Battersea": [
+        {
+            "old": "Battersea",
+            "weight": "100.00%"
+        }
+    ],
+    "Beaconsfield": [
+        {
+            "old": "Beaconsfield",
+            "weight": "100.00%"
+        }
+    ],
+    "Beckenham and Penge": [
+        {
+            "old": "Beckenham",
+            "weight": "54.94%"
+        },
+        {
+            "old": "Lewisham West and Penge",
+            "weight": "45.06%"
+        }
+    ],
+    "Bedford": [
+        {
+            "old": "Bedford",
+            "weight": "98.56%"
+        },
+        {
+            "old": "North East Bedfordshire",
+            "weight": "1.44%"
+        }
+    ],
+    "Belfast East": [
+        {
+            "old": "Belfast East",
+            "weight": "89.61%"
+        },
+        {
+            "old": "Belfast South",
+            "weight": "10.39%"
+        }
+    ],
+    "Belfast North": [
+        {
+            "old": "Belfast North",
+            "weight": "94.35%"
+        },
+        {
+            "old": "Belfast West",
+            "weight": "2.88%"
+        },
+        {
+            "old": "East Antrim",
+            "weight": "0.43%"
+        },
+        {
+            "old": "South Antrim",
+            "weight": "2.35%"
+        }
+    ],
+    "Belfast South and Mid Down": [
+        {
+            "old": "Belfast South",
+            "weight": "88.86%"
+        },
+        {
+            "old": "Belfast West",
+            "weight": "1.23%"
+        },
+        {
+            "old": "Lagan Valley",
+            "weight": "3.13%"
+        },
+        {
+            "old": "Strangford",
+            "weight": "6.77%"
+        }
+    ],
+    "Belfast West": [
+        {
+            "old": "Belfast North",
+            "weight": "7.01%"
+        },
+        {
+            "old": "Belfast South",
+            "weight": "0"
+        },
+        {
+            "old": "Belfast West",
+            "weight": "87.56%"
+        },
+        {
+            "old": "Lagan Valley",
+            "weight": "5.43%"
+        }
+    ],
+    "Bermondsey and Old Southwark": [
+        {
+            "old": "Bermondsey and Old Southwark",
+            "weight": "98.94%"
+        },
+        {
+            "old": "Camberwell and Peckham",
+            "weight": "1.06%"
+        }
+    ],
+    "Berwickshire, Roxburgh and Selkirk": [
+        {
+            "old": "Berwickshire, Roxburgh and Selkirk",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Dumfriesshire, Clydesdale and Tweeddale",
+            "weight": "0"
+        }
+    ],
+    "Bethnal Green and Stepney": [
+        {
+            "old": "Bethnal Green and Bow",
+            "weight": "86.61%"
+        },
+        {
+            "old": "Poplar and Limehouse",
+            "weight": "13.39%"
+        }
+    ],
+    "Beverley and Holderness": [
+        {
+            "old": "Beverley and Holderness",
+            "weight": "100.00%"
+        }
+    ],
+    "Bexhill and Battle": [
+        {
+            "old": "Bexhill and Battle",
+            "weight": "93.23%"
+        },
+        {
+            "old": "Hastings and Rye",
+            "weight": "6.77%"
+        }
+    ],
+    "Bexleyheath and Crayford": [
+        {
+            "old": "Bexleyheath and Crayford",
+            "weight": "82.20%"
+        },
+        {
+            "old": "Erith and Thamesmead",
+            "weight": "17.80%"
+        }
+    ],
+    "Bicester and Woodstock": [
+        {
+            "old": "Banbury",
+            "weight": "53.44%"
+        },
+        {
+            "old": "Henley",
+            "weight": "5.48%"
+        },
+        {
+            "old": "Oxford West and Abingdon",
+            "weight": "18.79%"
+        },
+        {
+            "old": "Witney",
+            "weight": "22.28%"
+        }
+    ],
+    "Birkenhead": [
+        {
+            "old": "Birkenhead",
+            "weight": "85.58%"
+        },
+        {
+            "old": "Wirral South",
+            "weight": "14.42%"
+        }
+    ],
+    "Birmingham Edgbaston": [
+        {
+            "old": "Birmingham, Edgbaston",
+            "weight": "88.87%"
+        },
+        {
+            "old": "Birmingham, Ladywood",
+            "weight": "11.13%"
+        }
+    ],
+    "Birmingham Erdington": [
+        {
+            "old": "Birmingham, Erdington",
+            "weight": "86.14%"
+        },
+        {
+            "old": "Birmingham, Perry Barr",
+            "weight": "13.86%"
+        }
+    ],
+    "Birmingham Hall Green and Moseley": [
+        {
+            "old": "Birmingham, Hall Green",
+            "weight": "93.04%"
+        },
+        {
+            "old": "Birmingham, Selly Oak",
+            "weight": "3.34%"
+        },
+        {
+            "old": "Birmingham, Yardley",
+            "weight": "3.62%"
+        }
+    ],
+    "Birmingham Hodge Hill and Solihull North": [
+        {
+            "old": "Birmingham, Hodge Hill",
+            "weight": "66.02%"
+        },
+        {
+            "old": "Birmingham, Yardley",
+            "weight": "13.99%"
+        },
+        {
+            "old": "Meriden",
+            "weight": "19.99%"
+        }
+    ],
+    "Birmingham Ladywood": [
+        {
+            "old": "Birmingham, Edgbaston",
+            "weight": "0.79%"
+        },
+        {
+            "old": "Birmingham, Hall Green",
+            "weight": "7.21%"
+        },
+        {
+            "old": "Birmingham, Hodge Hill",
+            "weight": "22.11%"
+        },
+        {
+            "old": "Birmingham, Ladywood",
+            "weight": "69.61%"
+        },
+        {
+            "old": "Birmingham, Perry Barr",
+            "weight": "0"
+        },
+        {
+            "old": "Birmingham, Yardley",
+            "weight": "0.28%"
+        }
+    ],
+    "Birmingham Northfield": [
+        {
+            "old": "Birmingham, Edgbaston",
+            "weight": "2.45%"
+        },
+        {
+            "old": "Birmingham, Northfield",
+            "weight": "97.55%"
+        },
+        {
+            "old": "Birmingham, Selly Oak",
+            "weight": "0"
+        }
+    ],
+    "Birmingham Perry Barr": [
+        {
+            "old": "Birmingham, Ladywood",
+            "weight": "21.57%"
+        },
+        {
+            "old": "Birmingham, Perry Barr",
+            "weight": "78.43%"
+        }
+    ],
+    "Birmingham Selly Oak": [
+        {
+            "old": "Birmingham, Hall Green",
+            "weight": "1.45%"
+        },
+        {
+            "old": "Birmingham, Northfield",
+            "weight": "0.68%"
+        },
+        {
+            "old": "Birmingham, Selly Oak",
+            "weight": "97.86%"
+        }
+    ],
+    "Birmingham Yardley": [
+        {
+            "old": "Birmingham, Hall Green",
+            "weight": "0.23%"
+        },
+        {
+            "old": "Birmingham, Hodge Hill",
+            "weight": "15.91%"
+        },
+        {
+            "old": "Birmingham, Yardley",
+            "weight": "83.86%"
+        }
+    ],
+    "Bishop Auckland": [
+        {
+            "old": "Bishop Auckland",
+            "weight": "73.13%"
+        },
+        {
+            "old": "North West Durham",
+            "weight": "26.87%"
+        }
+    ],
+    "Blackburn": [
+        {
+            "old": "Blackburn",
+            "weight": "99.45%"
+        },
+        {
+            "old": "Rossendale and Darwen",
+            "weight": "0.55%"
+        }
+    ],
+    "Blackley and Middleton South": [
+        {
+            "old": "Blackley and Broughton",
+            "weight": "66.93%"
+        },
+        {
+            "old": "Heywood and Middleton",
+            "weight": "18.69%"
+        },
+        {
+            "old": "Manchester Central",
+            "weight": "14.38%"
+        }
+    ],
+    "Blackpool North and Fleetwood": [
+        {
+            "old": "Blackpool North and Cleveleys",
+            "weight": "57.30%"
+        },
+        {
+            "old": "Lancaster and Fleetwood",
+            "weight": "27.61%"
+        },
+        {
+            "old": "Wyre and Preston North",
+            "weight": "15.09%"
+        }
+    ],
+    "Blackpool South": [
+        {
+            "old": "Blackpool North and Cleveleys",
+            "weight": "25.98%"
+        },
+        {
+            "old": "Blackpool South",
+            "weight": "74.02%"
+        }
+    ],
+    "Blaenau Gwent and Rhymney": [
+        {
+            "old": "Blaenau Gwent",
+            "weight": "70.89%"
+        },
+        {
+            "old": "Caerphilly",
+            "weight": "8.51%"
+        },
+        {
+            "old": "Islwyn",
+            "weight": "4.06%"
+        },
+        {
+            "old": "Merthyr Tydfil and Rhymney",
+            "weight": "16.55%"
+        }
+    ],
+    "Blaydon and Consett": [
+        {
+            "old": "Blaydon",
+            "weight": "49.27%"
+        },
+        {
+            "old": "Hexham",
+            "weight": "0"
+        },
+        {
+            "old": "North West Durham",
+            "weight": "50.73%"
+        }
+    ],
+    "Blyth and Ashington": [
+        {
+            "old": "Blyth Valley",
+            "weight": "39.13%"
+        },
+        {
+            "old": "Wansbeck",
+            "weight": "60.87%"
+        }
+    ],
+    "Bognor Regis and Littlehampton": [
+        {
+            "old": "Bognor Regis and Littlehampton",
+            "weight": "87.20%"
+        },
+        {
+            "old": "Worthing West",
+            "weight": "12.80%"
+        }
+    ],
+    "Bolsover": [
+        {
+            "old": "Bolsover",
+            "weight": "99.56%"
+        },
+        {
+            "old": "North East Derbyshire",
+            "weight": "0.44%"
+        }
+    ],
+    "Bolton North East": [
+        {
+            "old": "Bolton North East",
+            "weight": "88.73%"
+        },
+        {
+            "old": "Bolton South East",
+            "weight": "11.27%"
+        }
+    ],
+    "Bolton South and Walkden": [
+        {
+            "old": "Bolton South East",
+            "weight": "67.81%"
+        },
+        {
+            "old": "Worsley and Eccles South",
+            "weight": "32.19%"
+        }
+    ],
+    "Bolton West": [
+        {
+            "old": "Bolton South East",
+            "weight": "15.06%"
+        },
+        {
+            "old": "Bolton West",
+            "weight": "84.94%"
+        }
+    ],
+    "Bootle": [
+        {
+            "old": "Bootle",
+            "weight": "100.00%"
+        }
+    ],
+    "Boston and Skegness": [
+        {
+            "old": "Boston and Skegness",
+            "weight": "93.84%"
+        },
+        {
+            "old": "Louth and Horncastle",
+            "weight": "6.16%"
+        }
+    ],
+    "Bournemouth East": [
+        {
+            "old": "Bournemouth East",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Bournemouth West",
+            "weight": "0"
+        },
+        {
+            "old": "Christchurch",
+            "weight": "0"
+        }
+    ],
+    "Bournemouth West": [
+        {
+            "old": "Bournemouth West",
+            "weight": "96.74%"
+        },
+        {
+            "old": "Poole",
+            "weight": "3.26%"
+        }
+    ],
+    "Bracknell": [
+        {
+            "old": "Bracknell",
+            "weight": "92.14%"
+        },
+        {
+            "old": "Windsor",
+            "weight": "7.86%"
+        }
+    ],
+    "Bradford East": [
+        {
+            "old": "Bradford East",
+            "weight": "100.00%"
+        }
+    ],
+    "Bradford South": [
+        {
+            "old": "Bradford East",
+            "weight": "2.58%"
+        },
+        {
+            "old": "Bradford South",
+            "weight": "97.42%"
+        }
+    ],
+    "Bradford West": [
+        {
+            "old": "Bradford West",
+            "weight": "100.00%"
+        }
+    ],
+    "Braintree": [
+        {
+            "old": "Braintree",
+            "weight": "90.86%"
+        },
+        {
+            "old": "Saffron Walden",
+            "weight": "6.55%"
+        },
+        {
+            "old": "Witham",
+            "weight": "2.59%"
+        }
+    ],
+    "Brecon, Radnor and Cwm Tawe": [
+        {
+            "old": "Brecon and Radnorshire",
+            "weight": "75.41%"
+        },
+        {
+            "old": "Neath",
+            "weight": "24.59%"
+        }
+    ],
+    "Brent East": [
+        {
+            "old": "Brent Central",
+            "weight": "78.20%"
+        },
+        {
+            "old": "Brent North",
+            "weight": "11.82%"
+        },
+        {
+            "old": "Hampstead and Kilburn",
+            "weight": "9.99%"
+        }
+    ],
+    "Brent West": [
+        {
+            "old": "Brent Central",
+            "weight": "16.34%"
+        },
+        {
+            "old": "Brent North",
+            "weight": "83.66%"
+        }
+    ],
+    "Brentford and Isleworth": [
+        {
+            "old": "Brentford and Isleworth",
+            "weight": "83.23%"
+        },
+        {
+            "old": "Feltham and Heston",
+            "weight": "8.67%"
+        },
+        {
+            "old": "Twickenham",
+            "weight": "8.11%"
+        }
+    ],
+    "Brentwood and Ongar": [
+        {
+            "old": "Brentwood and Ongar",
+            "weight": "100.00%"
+        }
+    ],
+    "Bridgend": [
+        {
+            "old": "Bridgend",
+            "weight": "74.71%"
+        },
+        {
+            "old": "Ogmore",
+            "weight": "25.29%"
+        }
+    ],
+    "Bridgwater": [
+        {
+            "old": "Bridgwater and West Somerset",
+            "weight": "76.19%"
+        },
+        {
+            "old": "Wells",
+            "weight": "23.81%"
+        }
+    ],
+    "Bridlington and The Wolds": [
+        {
+            "old": "Beverley and Holderness",
+            "weight": "11.27%"
+        },
+        {
+            "old": "East Yorkshire",
+            "weight": "88.73%"
+        }
+    ],
+    "Brigg and Immingham": [
+        {
+            "old": "Brigg and Goole",
+            "weight": "19.86%"
+        },
+        {
+            "old": "Cleethorpes",
+            "weight": "67.67%"
+        },
+        {
+            "old": "Great Grimsby",
+            "weight": "12.47%"
+        }
+    ],
+    "Brighton Kemptown and Peacehaven": [
+        {
+            "old": "Brighton, Kemptown",
+            "weight": "98.20%"
+        },
+        {
+            "old": "Brighton, Pavilion",
+            "weight": "1.80%"
+        }
+    ],
+    "Brighton Pavilion": [
+        {
+            "old": "Brighton, Pavilion",
+            "weight": "100.00%"
+        }
+    ],
+    "Bristol Central": [
+        {
+            "old": "Bristol West",
+            "weight": "100.00%"
+        }
+    ],
+    "Bristol East": [
+        {
+            "old": "Bristol East",
+            "weight": "56.56%"
+        },
+        {
+            "old": "Bristol South",
+            "weight": "12.76%"
+        },
+        {
+            "old": "Bristol West",
+            "weight": "30.68%"
+        }
+    ],
+    "Bristol North East": [
+        {
+            "old": "Bristol East",
+            "weight": "42.60%"
+        },
+        {
+            "old": "Bristol North West",
+            "weight": "13.57%"
+        },
+        {
+            "old": "Filton and Bradley Stoke",
+            "weight": "9.97%"
+        },
+        {
+            "old": "Kingswood",
+            "weight": "33.86%"
+        }
+    ],
+    "Bristol North West": [
+        {
+            "old": "Bristol North West",
+            "weight": "88.50%"
+        },
+        {
+            "old": "Bristol West",
+            "weight": "11.50%"
+        }
+    ],
+    "Bristol South": [
+        {
+            "old": "Bristol South",
+            "weight": "100.00%"
+        }
+    ],
+    "Broadland and Fakenham": [
+        {
+            "old": "Broadland",
+            "weight": "100.00%"
+        }
+    ],
+    "Bromley and Biggin Hill": [
+        {
+            "old": "Beckenham",
+            "weight": "34.78%"
+        },
+        {
+            "old": "Bromley and Chislehurst",
+            "weight": "52.65%"
+        },
+        {
+            "old": "Orpington",
+            "weight": "12.57%"
+        }
+    ],
+    "Bromsgrove": [
+        {
+            "old": "Bromsgrove",
+            "weight": "100.00%"
+        }
+    ],
+    "Broxbourne": [
+        {
+            "old": "Broxbourne",
+            "weight": "91.34%"
+        },
+        {
+            "old": "Hertford and Stortford",
+            "weight": "8.66%"
+        }
+    ],
+    "Broxtowe": [
+        {
+            "old": "Ashfield",
+            "weight": "15.47%"
+        },
+        {
+            "old": "Broxtowe",
+            "weight": "84.53%"
+        }
+    ],
+    "Buckingham and Bletchley": [
+        {
+            "old": "Buckingham",
+            "weight": "41.65%"
+        },
+        {
+            "old": "Milton Keynes South",
+            "weight": "58.35%"
+        }
+    ],
+    "Burnley": [
+        {
+            "old": "Burnley",
+            "weight": "86.39%"
+        },
+        {
+            "old": "Pendle",
+            "weight": "13.61%"
+        }
+    ],
+    "Burton and Uttoxeter": [
+        {
+            "old": "Burton",
+            "weight": "100.00%"
+        }
+    ],
+    "Bury North": [
+        {
+            "old": "Bury North",
+            "weight": "89.04%"
+        },
+        {
+            "old": "Bury South",
+            "weight": "10.96%"
+        }
+    ],
+    "Bury South": [
+        {
+            "old": "Blackley and Broughton",
+            "weight": "15.03%"
+        },
+        {
+            "old": "Bury South",
+            "weight": "84.97%"
+        }
+    ],
+    "Bury St Edmunds and Stowmarket": [
+        {
+            "old": "Bury St Edmunds",
+            "weight": "89.62%"
+        },
+        {
+            "old": "West Suffolk",
+            "weight": "10.38%"
+        }
+    ],
+    "Caerfyrddin": [
+        {
+            "old": "Carmarthen East and Dinefwr",
+            "weight": "66.01%"
+        },
+        {
+            "old": "Carmarthen West and South Pembrokeshire",
+            "weight": "33.99%"
+        }
+    ],
+    "Caerphilly": [
+        {
+            "old": "Caerphilly",
+            "weight": "80.86%"
+        },
+        {
+            "old": "Islwyn",
+            "weight": "19.14%"
+        }
+    ],
+    "Caithness, Sutherland and Easter Ross": [
+        {
+            "old": "Caithness, Sutherland and Easter Ross",
+            "weight": "62.46%"
+        },
+        {
+            "old": "Inverness, Nairn, Badenoch and Strathspey",
+            "weight": "3.79%"
+        },
+        {
+            "old": "Ross, Skye and Lochaber",
+            "weight": "33.75%"
+        }
+    ],
+    "Calder Valley": [
+        {
+            "old": "Calder Valley",
+            "weight": "100.00%"
+        }
+    ],
+    "Camborne and Redruth": [
+        {
+            "old": "Camborne and Redruth",
+            "weight": "89.48%"
+        },
+        {
+            "old": "Truro and Falmouth",
+            "weight": "10.52%"
+        }
+    ],
+    "Cambridge": [
+        {
+            "old": "Cambridge",
+            "weight": "100.00%"
+        },
+        {
+            "old": "South Cambridgeshire",
+            "weight": "0"
+        }
+    ],
+    "Cannock Chase": [
+        {
+            "old": "Cannock Chase",
+            "weight": "100.00%"
+        }
+    ],
+    "Canterbury": [
+        {
+            "old": "Canterbury",
+            "weight": "100.00%"
+        },
+        {
+            "old": "North Thanet",
+            "weight": "0"
+        }
+    ],
+    "Cardiff East": [
+        {
+            "old": "Cardiff Central",
+            "weight": "65.17%"
+        },
+        {
+            "old": "Cardiff South and Penarth",
+            "weight": "34.83%"
+        }
+    ],
+    "Cardiff North": [
+        {
+            "old": "Cardiff North",
+            "weight": "96.22%"
+        },
+        {
+            "old": "Cardiff South and Penarth",
+            "weight": "0"
+        },
+        {
+            "old": "Pontypridd",
+            "weight": "3.78%"
+        }
+    ],
+    "Cardiff South and Penarth": [
+        {
+            "old": "Cardiff Central",
+            "weight": "20.50%"
+        },
+        {
+            "old": "Cardiff South and Penarth",
+            "weight": "71.78%"
+        },
+        {
+            "old": "Vale of Glamorgan",
+            "weight": "7.72%"
+        }
+    ],
+    "Cardiff West": [
+        {
+            "old": "Cardiff West",
+            "weight": "92.73%"
+        },
+        {
+            "old": "Ogmore",
+            "weight": "0.78%"
+        },
+        {
+            "old": "Pontypridd",
+            "weight": "6.49%"
+        }
+    ],
+    "Carlisle": [
+        {
+            "old": "Carlisle",
+            "weight": "78.76%"
+        },
+        {
+            "old": "Penrith and The Border",
+            "weight": "21.24%"
+        }
+    ],
+    "Carshalton and Wallington": [
+        {
+            "old": "Carshalton and Wallington",
+            "weight": "99.69%"
+        },
+        {
+            "old": "Sutton and Cheam",
+            "weight": "0.31%"
+        }
+    ],
+    "Castle Point": [
+        {
+            "old": "Castle Point",
+            "weight": "97.86%"
+        },
+        {
+            "old": "South Basildon and East Thurrock",
+            "weight": "2.14%"
+        }
+    ],
+    "Central Ayrshire": [
+        {
+            "old": "Central Ayrshire",
+            "weight": "100.00%"
+        }
+    ],
+    "Central Devon": [
+        {
+            "old": "Central Devon",
+            "weight": "99.82%"
+        },
+        {
+            "old": "Newton Abbot",
+            "weight": "0.18%"
+        }
+    ],
+    "Central Suffolk and North Ipswich": [
+        {
+            "old": "Bury St Edmunds",
+            "weight": "7.75%"
+        },
+        {
+            "old": "Central Suffolk and North Ipswich",
+            "weight": "90.19%"
+        },
+        {
+            "old": "Suffolk Coastal",
+            "weight": "2.06%"
+        }
+    ],
+    "Ceredigion Preseli": [
+        {
+            "old": "Ceredigion",
+            "weight": "76.18%"
+        },
+        {
+            "old": "Preseli Pembrokeshire",
+            "weight": "23.82%"
+        }
+    ],
+    "Chatham and Aylesford": [
+        {
+            "old": "Chatham and Aylesford",
+            "weight": "87.15%"
+        },
+        {
+            "old": "Rochester and Strood",
+            "weight": "12.85%"
+        }
+    ],
+    "Cheadle": [
+        {
+            "old": "Cheadle",
+            "weight": "100.00%"
+        }
+    ],
+    "Chelmsford": [
+        {
+            "old": "Chelmsford",
+            "weight": "100.00%"
+        }
+    ],
+    "Chelsea and Fulham": [
+        {
+            "old": "Chelsea and Fulham",
+            "weight": "81.80%"
+        },
+        {
+            "old": "Hammersmith",
+            "weight": "17.04%"
+        },
+        {
+            "old": "Kensington",
+            "weight": "1.17%"
+        }
+    ],
+    "Cheltenham": [
+        {
+            "old": "Cheltenham",
+            "weight": "100.00%"
+        }
+    ],
+    "Chesham and Amersham": [
+        {
+            "old": "Beaconsfield",
+            "weight": "8.63%"
+        },
+        {
+            "old": "Chesham and Amersham",
+            "weight": "81.74%"
+        },
+        {
+            "old": "Wycombe",
+            "weight": "9.63%"
+        }
+    ],
+    "Chester North and Neston": [
+        {
+            "old": "City of Chester",
+            "weight": "78.17%"
+        },
+        {
+            "old": "Ellesmere Port and Neston",
+            "weight": "21.83%"
+        }
+    ],
+    "Chester South and Eddisbury": [
+        {
+            "old": "City of Chester",
+            "weight": "26.82%"
+        },
+        {
+            "old": "Crewe and Nantwich",
+            "weight": "6.06%"
+        },
+        {
+            "old": "Eddisbury",
+            "weight": "57.62%"
+        },
+        {
+            "old": "Tatton",
+            "weight": "0"
+        },
+        {
+            "old": "Weaver Vale",
+            "weight": "9.51%"
+        }
+    ],
+    "Chesterfield": [
+        {
+            "old": "Chesterfield",
+            "weight": "100.00%"
+        }
+    ],
+    "Chichester": [
+        {
+            "old": "Bognor Regis and Littlehampton",
+            "weight": "15.99%"
+        },
+        {
+            "old": "Chichester",
+            "weight": "84.01%"
+        }
+    ],
+    "Chingford and Woodford Green": [
+        {
+            "old": "Chingford and Woodford Green",
+            "weight": "83.23%"
+        },
+        {
+            "old": "Ilford North",
+            "weight": "16.77%"
+        }
+    ],
+    "Chippenham": [
+        {
+            "old": "Chippenham",
+            "weight": "50.42%"
+        },
+        {
+            "old": "Devizes",
+            "weight": "0.80%"
+        },
+        {
+            "old": "North Wiltshire",
+            "weight": "48.79%"
+        }
+    ],
+    "Chipping Barnet": [
+        {
+            "old": "Chipping Barnet",
+            "weight": "86.56%"
+        },
+        {
+            "old": "Finchley and Golders Green",
+            "weight": "0.22%"
+        },
+        {
+            "old": "Hendon",
+            "weight": "13.22%"
+        }
+    ],
+    "Chorley": [
+        {
+            "old": "Chorley",
+            "weight": "100.00%"
+        }
+    ],
+    "Christchurch": [
+        {
+            "old": "Christchurch",
+            "weight": "98.34%"
+        },
+        {
+            "old": "North Dorset",
+            "weight": "1.66%"
+        }
+    ],
+    "Cities of London and Westminster": [
+        {
+            "old": "Cities of London and Westminster",
+            "weight": "82.27%"
+        },
+        {
+            "old": "Westminster North",
+            "weight": "17.73%"
+        }
+    ],
+    "City of Durham": [
+        {
+            "old": "City of Durham",
+            "weight": "85.09%"
+        },
+        {
+            "old": "North West Durham",
+            "weight": "14.91%"
+        }
+    ],
+    "Clacton": [
+        {
+            "old": "Clacton",
+            "weight": "92.64%"
+        },
+        {
+            "old": "Harwich and North Essex",
+            "weight": "7.36%"
+        }
+    ],
+    "Clapham and Brixton Hill": [
+        {
+            "old": "Streatham",
+            "weight": "54.55%"
+        },
+        {
+            "old": "Vauxhall",
+            "weight": "45.45%"
+        }
+    ],
+    "Clwyd East": [
+        {
+            "old": "Clwyd South",
+            "weight": "6.26%"
+        },
+        {
+            "old": "Clwyd West",
+            "weight": "12.38%"
+        },
+        {
+            "old": "Delyn",
+            "weight": "55.02%"
+        },
+        {
+            "old": "Vale of Clwyd",
+            "weight": "26.33%"
+        }
+    ],
+    "Clwyd North": [
+        {
+            "old": "Clwyd West",
+            "weight": "52.28%"
+        },
+        {
+            "old": "Vale of Clwyd",
+            "weight": "47.72%"
+        }
+    ],
+    "Coatbridge and Bellshill": [
+        {
+            "old": "Airdrie and Shotts",
+            "weight": "0.89%"
+        },
+        {
+            "old": "Coatbridge, Chryston and Bellshill",
+            "weight": "87.26%"
+        },
+        {
+            "old": "Motherwell and Wishaw",
+            "weight": "11.85%"
+        }
+    ],
+    "Colchester": [
+        {
+            "old": "Colchester",
+            "weight": "99.36%"
+        },
+        {
+            "old": "Harwich and North Essex",
+            "weight": "0.64%"
+        }
+    ],
+    "Colne Valley": [
+        {
+            "old": "Colne Valley",
+            "weight": "100.00%"
+        }
+    ],
+    "Congleton": [
+        {
+            "old": "Congleton",
+            "weight": "99.71%"
+        },
+        {
+            "old": "Eddisbury",
+            "weight": "0.29%"
+        }
+    ],
+    "Corby and East Northamptonshire": [
+        {
+            "old": "Corby",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Wellingborough",
+            "weight": "0"
+        }
+    ],
+    "Coventry East": [
+        {
+            "old": "Coventry North East",
+            "weight": "84.97%"
+        },
+        {
+            "old": "Coventry South",
+            "weight": "15.03%"
+        }
+    ],
+    "Coventry North West": [
+        {
+            "old": "Coventry North West",
+            "weight": "100.00%"
+        }
+    ],
+    "Coventry South": [
+        {
+            "old": "Coventry North East",
+            "weight": "19.96%"
+        },
+        {
+            "old": "Coventry South",
+            "weight": "80.04%"
+        }
+    ],
+    "Cowdenbeath and Kirkcaldy": [
+        {
+            "old": "Dunfermline and West Fife",
+            "weight": "12.98%"
+        },
+        {
+            "old": "Glenrothes",
+            "weight": "2.50%"
+        },
+        {
+            "old": "Kirkcaldy and Cowdenbeath",
+            "weight": "84.51%"
+        }
+    ],
+    "Cramlington and Killingworth": [
+        {
+            "old": "Blyth Valley",
+            "weight": "47.23%"
+        },
+        {
+            "old": "Newcastle upon Tyne North",
+            "weight": "5.00%"
+        },
+        {
+            "old": "North Tyneside",
+            "weight": "33.44%"
+        },
+        {
+            "old": "Tynemouth",
+            "weight": "14.33%"
+        }
+    ],
+    "Crawley": [
+        {
+            "old": "Crawley",
+            "weight": "100.00%"
+        }
+    ],
+    "Crewe and Nantwich": [
+        {
+            "old": "Crewe and Nantwich",
+            "weight": "99.06%"
+        },
+        {
+            "old": "Eddisbury",
+            "weight": "0.94%"
+        }
+    ],
+    "Croydon East": [
+        {
+            "old": "Croydon Central",
+            "weight": "91.05%"
+        },
+        {
+            "old": "Croydon South",
+            "weight": "8.95%"
+        }
+    ],
+    "Croydon South": [
+        {
+            "old": "Croydon Central",
+            "weight": "7.84%"
+        },
+        {
+            "old": "Croydon South",
+            "weight": "92.16%"
+        }
+    ],
+    "Croydon West": [
+        {
+            "old": "Croydon Central",
+            "weight": "13.83%"
+        },
+        {
+            "old": "Croydon North",
+            "weight": "72.91%"
+        },
+        {
+            "old": "Croydon South",
+            "weight": "13.26%"
+        }
+    ],
+    "Cumbernauld and Kirkintilloch": [
+        {
+            "old": "Airdrie and Shotts",
+            "weight": "0"
+        },
+        {
+            "old": "Coatbridge, Chryston and Bellshill",
+            "weight": "13.00%"
+        },
+        {
+            "old": "Cumbernauld, Kilsyth and Kirkintilloch East",
+            "weight": "85.76%"
+        },
+        {
+            "old": "East Dunbartonshire",
+            "weight": "0"
+        },
+        {
+            "old": "Glasgow East",
+            "weight": "1.24%"
+        }
+    ],
+    "Dagenham and Rainham": [
+        {
+            "old": "Barking",
+            "weight": "10.13%"
+        },
+        {
+            "old": "Dagenham and Rainham",
+            "weight": "86.97%"
+        },
+        {
+            "old": "Hornchurch and Upminster",
+            "weight": "2.90%"
+        }
+    ],
+    "Darlington": [
+        {
+            "old": "Darlington",
+            "weight": "94.71%"
+        },
+        {
+            "old": "Sedgefield",
+            "weight": "5.29%"
+        }
+    ],
+    "Dartford": [
+        {
+            "old": "Dartford",
+            "weight": "100.00%"
+        }
+    ],
+    "Daventry": [
+        {
+            "old": "Daventry",
+            "weight": "93.19%"
+        },
+        {
+            "old": "South Northamptonshire",
+            "weight": "1.91%"
+        },
+        {
+            "old": "Wellingborough",
+            "weight": "4.90%"
+        }
+    ],
+    "Derby North": [
+        {
+            "old": "Derby North",
+            "weight": "100.00%"
+        }
+    ],
+    "Derby South": [
+        {
+            "old": "Derby South",
+            "weight": "100.00%"
+        }
+    ],
+    "Derbyshire Dales": [
+        {
+            "old": "Derbyshire Dales",
+            "weight": "85.94%"
+        },
+        {
+            "old": "South Derbyshire",
+            "weight": "14.06%"
+        }
+    ],
+    "Dewsbury and Batley": [
+        {
+            "old": "Batley and Spen",
+            "weight": "37.59%"
+        },
+        {
+            "old": "Dewsbury",
+            "weight": "62.41%"
+        },
+        {
+            "old": "Huddersfield",
+            "weight": "0"
+        }
+    ],
+    "Didcot and Wantage": [
+        {
+            "old": "Henley",
+            "weight": "2.79%"
+        },
+        {
+            "old": "Wantage",
+            "weight": "97.21%"
+        }
+    ],
+    "Doncaster Central": [
+        {
+            "old": "Don Valley",
+            "weight": "7.00%"
+        },
+        {
+            "old": "Doncaster Central",
+            "weight": "93.00%"
+        }
+    ],
+    "Doncaster East and the Isle of Axholme": [
+        {
+            "old": "Brigg and Goole",
+            "weight": "24.36%"
+        },
+        {
+            "old": "Don Valley",
+            "weight": "69.89%"
+        },
+        {
+            "old": "Doncaster North",
+            "weight": "5.75%"
+        }
+    ],
+    "Doncaster North": [
+        {
+            "old": "Doncaster Central",
+            "weight": "3.38%"
+        },
+        {
+            "old": "Doncaster North",
+            "weight": "96.62%"
+        }
+    ],
+    "Dorking and Horley": [
+        {
+            "old": "East Surrey",
+            "weight": "29.24%"
+        },
+        {
+            "old": "Guildford",
+            "weight": "2.51%"
+        },
+        {
+            "old": "Mole Valley",
+            "weight": "64.45%"
+        },
+        {
+            "old": "Reigate",
+            "weight": "3.79%"
+        }
+    ],
+    "Dover and Deal": [
+        {
+            "old": "Dover",
+            "weight": "99.02%"
+        },
+        {
+            "old": "South Thanet",
+            "weight": "0.98%"
+        }
+    ],
+    "Droitwich and Evesham": [
+        {
+            "old": "Mid Worcestershire",
+            "weight": "100.00%"
+        }
+    ],
+    "Dudley": [
+        {
+            "old": "Dudley North",
+            "weight": "85.42%"
+        },
+        {
+            "old": "Dudley South",
+            "weight": "14.58%"
+        }
+    ],
+    "Dulwich and West Norwood": [
+        {
+            "old": "Camberwell and Peckham",
+            "weight": "8.91%"
+        },
+        {
+            "old": "Dulwich and West Norwood",
+            "weight": "91.09%"
+        }
+    ],
+    "Dumfries and Galloway": [
+        {
+            "old": "Dumfries and Galloway",
+            "weight": "96.74%"
+        },
+        {
+            "old": "Dumfriesshire, Clydesdale and Tweeddale",
+            "weight": "3.26%"
+        }
+    ],
+    "Dumfriesshire, Clydesdale and Tweeddale": [
+        {
+            "old": "Berwickshire, Roxburgh and Selkirk",
+            "weight": "0"
+        },
+        {
+            "old": "Dumfries and Galloway",
+            "weight": "0.71%"
+        },
+        {
+            "old": "Dumfriesshire, Clydesdale and Tweeddale",
+            "weight": "93.84%"
+        },
+        {
+            "old": "East Kilbride, Strathaven and Lesmahagow",
+            "weight": "0"
+        },
+        {
+            "old": "Lanark and Hamilton East",
+            "weight": "5.45%"
+        }
+    ],
+    "Dundee Central": [
+        {
+            "old": "Dundee East",
+            "weight": "19.69%"
+        },
+        {
+            "old": "Dundee West",
+            "weight": "80.31%"
+        }
+    ],
+    "Dunfermline and Dollar": [
+        {
+            "old": "Dunfermline and West Fife",
+            "weight": "96.11%"
+        },
+        {
+            "old": "Kirkcaldy and Cowdenbeath",
+            "weight": "0"
+        },
+        {
+            "old": "Ochil and South Perthshire",
+            "weight": "3.89%"
+        }
+    ],
+    "Dunstable and Leighton Buzzard": [
+        {
+            "old": "Luton South",
+            "weight": "0.33%"
+        },
+        {
+            "old": "South West Bedfordshire",
+            "weight": "99.67%"
+        }
+    ],
+    "Dwyfor Meirionnydd": [
+        {
+            "old": "Arfon",
+            "weight": "35.44%"
+        },
+        {
+            "old": "Clwyd South",
+            "weight": "3.66%"
+        },
+        {
+            "old": "Dwyfor Meirionnydd",
+            "weight": "60.90%"
+        }
+    ],
+    "Ealing Central and Acton": [
+        {
+            "old": "Ealing Central and Acton",
+            "weight": "86.43%"
+        },
+        {
+            "old": "Ealing North",
+            "weight": "0"
+        },
+        {
+            "old": "Hammersmith",
+            "weight": "13.57%"
+        }
+    ],
+    "Ealing North": [
+        {
+            "old": "Ealing North",
+            "weight": "100.00%"
+        }
+    ],
+    "Ealing Southall": [
+        {
+            "old": "Ealing Central and Acton",
+            "weight": "11.82%"
+        },
+        {
+            "old": "Ealing North",
+            "weight": "1.72%"
+        },
+        {
+            "old": "Ealing, Southall",
+            "weight": "86.47%"
+        }
+    ],
+    "Earley and Woodley": [
+        {
+            "old": "Maidenhead",
+            "weight": "8.35%"
+        },
+        {
+            "old": "Reading East",
+            "weight": "35.65%"
+        },
+        {
+            "old": "Reading West",
+            "weight": "13.97%"
+        },
+        {
+            "old": "Wokingham",
+            "weight": "42.03%"
+        }
+    ],
+    "Easington": [
+        {
+            "old": "City of Durham",
+            "weight": "0.69%"
+        },
+        {
+            "old": "Easington",
+            "weight": "87.48%"
+        },
+        {
+            "old": "Sedgefield",
+            "weight": "11.83%"
+        }
+    ],
+    "East Antrim": [
+        {
+            "old": "East Antrim",
+            "weight": "88.60%"
+        },
+        {
+            "old": "North Antrim",
+            "weight": "10.95%"
+        },
+        {
+            "old": "South Antrim",
+            "weight": "0.45%"
+        }
+    ],
+    "East Grinstead and Uckfield": [
+        {
+            "old": "Horsham",
+            "weight": "20.48%"
+        },
+        {
+            "old": "Lewes",
+            "weight": "11.09%"
+        },
+        {
+            "old": "Mid Sussex",
+            "weight": "36.20%"
+        },
+        {
+            "old": "Wealden",
+            "weight": "32.23%"
+        }
+    ],
+    "East Ham": [
+        {
+            "old": "East Ham",
+            "weight": "100.00%"
+        }
+    ],
+    "East Hampshire": [
+        {
+            "old": "East Hampshire",
+            "weight": "73.17%"
+        },
+        {
+            "old": "Meon Valley",
+            "weight": "24.98%"
+        },
+        {
+            "old": "North East Hampshire",
+            "weight": "1.34%"
+        },
+        {
+            "old": "North West Hampshire",
+            "weight": "0.51%"
+        }
+    ],
+    "East Kilbride and Strathaven": [
+        {
+            "old": "East Kilbride, Strathaven and Lesmahagow",
+            "weight": "99.27%"
+        },
+        {
+            "old": "Lanark and Hamilton East",
+            "weight": "0.73%"
+        },
+        {
+            "old": "Rutherglen and Hamilton West",
+            "weight": "0"
+        }
+    ],
+    "East Londonderry": [
+        {
+            "old": "East Londonderry",
+            "weight": "96.06%"
+        },
+        {
+            "old": "Foyle",
+            "weight": "3.42%"
+        }
+    ],
+    "East Renfrewshire": [
+        {
+            "old": "East Renfrewshire",
+            "weight": "100.00%"
+        }
+    ],
+    "East Surrey": [
+        {
+            "old": "East Surrey",
+            "weight": "88.61%"
+        },
+        {
+            "old": "Reigate",
+            "weight": "11.39%"
+        }
+    ],
+    "East Thanet": [
+        {
+            "old": "North Thanet",
+            "weight": "18.84%"
+        },
+        {
+            "old": "South Thanet",
+            "weight": "81.16%"
+        }
+    ],
+    "East Wiltshire": [
+        {
+            "old": "Devizes",
+            "weight": "68.18%"
+        },
+        {
+            "old": "Salisbury",
+            "weight": "17.97%"
+        },
+        {
+            "old": "South Swindon",
+            "weight": "13.85%"
+        }
+    ],
+    "East Worthing and Shoreham": [
+        {
+            "old": "East Worthing and Shoreham",
+            "weight": "100.00%"
+        }
+    ],
+    "Eastbourne": [
+        {
+            "old": "Eastbourne",
+            "weight": "100.00%"
+        }
+    ],
+    "Eastleigh": [
+        {
+            "old": "Eastleigh",
+            "weight": "70.78%"
+        },
+        {
+            "old": "Romsey and Southampton North",
+            "weight": "6.64%"
+        },
+        {
+            "old": "Winchester",
+            "weight": "22.58%"
+        }
+    ],
+    "Edinburgh East and Musselburgh": [
+        {
+            "old": "East Lothian",
+            "weight": "10.90%"
+        },
+        {
+            "old": "Edinburgh East",
+            "weight": "89.10%"
+        },
+        {
+            "old": "Edinburgh South",
+            "weight": "0"
+        }
+    ],
+    "Edinburgh North and Leith": [
+        {
+            "old": "Edinburgh North and Leith",
+            "weight": "93.68%"
+        },
+        {
+            "old": "Edinburgh West",
+            "weight": "6.32%"
+        }
+    ],
+    "Edinburgh South": [
+        {
+            "old": "Edinburgh East",
+            "weight": "5.56%"
+        },
+        {
+            "old": "Edinburgh South",
+            "weight": "94.44%"
+        }
+    ],
+    "Edinburgh South West": [
+        {
+            "old": "Edinburgh South",
+            "weight": "0"
+        },
+        {
+            "old": "Edinburgh South West",
+            "weight": "100.00%"
+        }
+    ],
+    "Edinburgh West": [
+        {
+            "old": "Edinburgh North and Leith",
+            "weight": "9.89%"
+        },
+        {
+            "old": "Edinburgh West",
+            "weight": "90.11%"
+        }
+    ],
+    "Edmonton and Winchmore Hill": [
+        {
+            "old": "Edmonton",
+            "weight": "76.47%"
+        },
+        {
+            "old": "Enfield North",
+            "weight": "0"
+        },
+        {
+            "old": "Enfield, Southgate",
+            "weight": "23.53%"
+        }
+    ],
+    "Ellesmere Port and Bromborough": [
+        {
+            "old": "Ellesmere Port and Neston",
+            "weight": "68.05%"
+        },
+        {
+            "old": "Wirral South",
+            "weight": "31.95%"
+        }
+    ],
+    "Eltham and Chislehurst": [
+        {
+            "old": "Bromley and Chislehurst",
+            "weight": "24.50%"
+        },
+        {
+            "old": "Eltham",
+            "weight": "75.50%"
+        }
+    ],
+    "Ely and East Cambridgeshire": [
+        {
+            "old": "North East Cambridgeshire",
+            "weight": "17.43%"
+        },
+        {
+            "old": "South Cambridgeshire",
+            "weight": "6.42%"
+        },
+        {
+            "old": "South East Cambridgeshire",
+            "weight": "76.14%"
+        }
+    ],
+    "Enfield North": [
+        {
+            "old": "Edmonton",
+            "weight": "14.62%"
+        },
+        {
+            "old": "Enfield North",
+            "weight": "83.31%"
+        },
+        {
+            "old": "Enfield, Southgate",
+            "weight": "2.07%"
+        }
+    ],
+    "Epping Forest": [
+        {
+            "old": "Epping Forest",
+            "weight": "100.00%"
+        }
+    ],
+    "Epsom and Ewell": [
+        {
+            "old": "Epsom and Ewell",
+            "weight": "88.79%"
+        },
+        {
+            "old": "Mole Valley",
+            "weight": "11.21%"
+        }
+    ],
+    "Erewash": [
+        {
+            "old": "Erewash",
+            "weight": "100.00%"
+        }
+    ],
+    "Erith and Thamesmead": [
+        {
+            "old": "Bexleyheath and Crayford",
+            "weight": "1.56%"
+        },
+        {
+            "old": "Eltham",
+            "weight": "10.21%"
+        },
+        {
+            "old": "Erith and Thamesmead",
+            "weight": "74.65%"
+        },
+        {
+            "old": "Greenwich and Woolwich",
+            "weight": "13.59%"
+        }
+    ],
+    "Esher and Walton": [
+        {
+            "old": "Esher and Walton",
+            "weight": "93.80%"
+        },
+        {
+            "old": "Runnymede and Weybridge",
+            "weight": "6.20%"
+        }
+    ],
+    "Exeter": [
+        {
+            "old": "East Devon",
+            "weight": "0.75%"
+        },
+        {
+            "old": "Exeter",
+            "weight": "99.25%"
+        }
+    ],
+    "Exmouth and Exeter East": [
+        {
+            "old": "Central Devon",
+            "weight": "2.15%"
+        },
+        {
+            "old": "East Devon",
+            "weight": "83.54%"
+        },
+        {
+            "old": "Exeter",
+            "weight": "14.30%"
+        }
+    ],
+    "Falkirk": [
+        {
+            "old": "Falkirk",
+            "weight": "82.83%"
+        },
+        {
+            "old": "Linlithgow and East Falkirk",
+            "weight": "17.17%"
+        }
+    ],
+    "Fareham and Waterlooville": [
+        {
+            "old": "Fareham",
+            "weight": "54.28%"
+        },
+        {
+            "old": "Meon Valley",
+            "weight": "45.72%"
+        }
+    ],
+    "Farnham and Bordon": [
+        {
+            "old": "East Hampshire",
+            "weight": "36.49%"
+        },
+        {
+            "old": "South West Surrey",
+            "weight": "63.51%"
+        }
+    ],
+    "Faversham and Mid Kent": [
+        {
+            "old": "Faversham and Mid Kent",
+            "weight": "90.24%"
+        },
+        {
+            "old": "Sittingbourne and Sheppey",
+            "weight": "9.76%"
+        }
+    ],
+    "Feltham and Heston": [
+        {
+            "old": "Feltham and Heston",
+            "weight": "100.00%"
+        }
+    ],
+    "Fermanagh and South Tyrone": [
+        {
+            "old": "Fermanagh and South Tyrone",
+            "weight": "93.66%"
+        },
+        {
+            "old": "Mid Ulster",
+            "weight": "1.44%"
+        },
+        {
+            "old": "Newry and Armagh",
+            "weight": "4.90%"
+        }
+    ],
+    "Filton and Bradley Stoke": [
+        {
+            "old": "Filton and Bradley Stoke",
+            "weight": "82.53%"
+        },
+        {
+            "old": "Kingswood",
+            "weight": "14.91%"
+        },
+        {
+            "old": "Thornbury and Yate",
+            "weight": "2.56%"
+        }
+    ],
+    "Finchley and Golders Green": [
+        {
+            "old": "Chipping Barnet",
+            "weight": "0.26%"
+        },
+        {
+            "old": "Finchley and Golders Green",
+            "weight": "99.74%"
+        }
+    ],
+    "Folkestone and Hythe": [
+        {
+            "old": "Folkestone and Hythe",
+            "weight": "100.00%"
+        }
+    ],
+    "Forest of Dean": [
+        {
+            "old": "Forest of Dean",
+            "weight": "100.00%"
+        }
+    ],
+    "Foyle": [
+        {
+            "old": "Foyle",
+            "weight": "100.00%"
+        }
+    ],
+    "Frome and East Somerset": [
+        {
+            "old": "North East Somerset",
+            "weight": "40.27%"
+        },
+        {
+            "old": "Somerton and Frome",
+            "weight": "54.33%"
+        },
+        {
+            "old": "Wells",
+            "weight": "5.40%"
+        }
+    ],
+    "Fylde": [
+        {
+            "old": "Fylde",
+            "weight": "84.53%"
+        },
+        {
+            "old": "Wyre and Preston North",
+            "weight": "15.47%"
+        }
+    ],
+    "Gainsborough": [
+        {
+            "old": "Gainsborough",
+            "weight": "100.00%"
+        }
+    ],
+    "Gateshead Central and Whickham": [
+        {
+            "old": "Blaydon",
+            "weight": "25.20%"
+        },
+        {
+            "old": "Gateshead",
+            "weight": "74.80%"
+        }
+    ],
+    "Gedling": [
+        {
+            "old": "Gedling",
+            "weight": "93.67%"
+        },
+        {
+            "old": "Sherwood",
+            "weight": "6.33%"
+        }
+    ],
+    "Gillingham and Rainham": [
+        {
+            "old": "Gillingham and Rainham",
+            "weight": "100.00%"
+        }
+    ],
+    "Glasgow East": [
+        {
+            "old": "Glasgow Central",
+            "weight": "45.04%"
+        },
+        {
+            "old": "Glasgow East",
+            "weight": "53.36%"
+        },
+        {
+            "old": "Glasgow South",
+            "weight": "1.61%"
+        }
+    ],
+    "Glasgow North": [
+        {
+            "old": "Glasgow Central",
+            "weight": "24.63%"
+        },
+        {
+            "old": "Glasgow North",
+            "weight": "55.31%"
+        },
+        {
+            "old": "Glasgow North East",
+            "weight": "19.22%"
+        },
+        {
+            "old": "Glasgow North West",
+            "weight": "0.84%"
+        }
+    ],
+    "Glasgow North East": [
+        {
+            "old": "East Dunbartonshire",
+            "weight": "0"
+        },
+        {
+            "old": "Glasgow Central",
+            "weight": "3.68%"
+        },
+        {
+            "old": "Glasgow East",
+            "weight": "35.20%"
+        },
+        {
+            "old": "Glasgow North East",
+            "weight": "61.12%"
+        }
+    ],
+    "Glasgow South": [
+        {
+            "old": "Glasgow Central",
+            "weight": "10.94%"
+        },
+        {
+            "old": "Glasgow South",
+            "weight": "89.06%"
+        },
+        {
+            "old": "Glasgow South West",
+            "weight": "0"
+        }
+    ],
+    "Glasgow South West": [
+        {
+            "old": "Glasgow Central",
+            "weight": "19.14%"
+        },
+        {
+            "old": "Glasgow South",
+            "weight": "6.37%"
+        },
+        {
+            "old": "Glasgow South West",
+            "weight": "74.49%"
+        }
+    ],
+    "Glasgow West": [
+        {
+            "old": "Glasgow North",
+            "weight": "20.65%"
+        },
+        {
+            "old": "Glasgow North West",
+            "weight": "79.35%"
+        }
+    ],
+    "Glastonbury and Somerton": [
+        {
+            "old": "Somerton and Frome",
+            "weight": "66.54%"
+        },
+        {
+            "old": "Wells",
+            "weight": "23.58%"
+        },
+        {
+            "old": "Yeovil",
+            "weight": "9.88%"
+        }
+    ],
+    "Glenrothes and Mid Fife": [
+        {
+            "old": "Glenrothes",
+            "weight": "79.46%"
+        },
+        {
+            "old": "Kirkcaldy and Cowdenbeath",
+            "weight": "20.54%"
+        },
+        {
+            "old": "North East Fife",
+            "weight": "0"
+        }
+    ],
+    "Gloucester": [
+        {
+            "old": "Gloucester",
+            "weight": "100.00%"
+        }
+    ],
+    "Godalming and Ash": [
+        {
+            "old": "Guildford",
+            "weight": "26.63%"
+        },
+        {
+            "old": "Mole Valley",
+            "weight": "5.87%"
+        },
+        {
+            "old": "South West Surrey",
+            "weight": "46.30%"
+        },
+        {
+            "old": "Surrey Heath",
+            "weight": "21.20%"
+        }
+    ],
+    "Goole and Pocklington": [
+        {
+            "old": "Brigg and Goole",
+            "weight": "30.90%"
+        },
+        {
+            "old": "East Yorkshire",
+            "weight": "21.47%"
+        },
+        {
+            "old": "Haltemprice and Howden",
+            "weight": "47.63%"
+        }
+    ],
+    "Gordon and Buchan": [
+        {
+            "old": "Banff and Buchan",
+            "weight": "20.86%"
+        },
+        {
+            "old": "Gordon",
+            "weight": "79.14%"
+        }
+    ],
+    "Gorton and Denton": [
+        {
+            "old": "Denton and Reddish",
+            "weight": "29.62%"
+        },
+        {
+            "old": "Manchester, Gorton",
+            "weight": "58.41%"
+        },
+        {
+            "old": "Manchester, Withington",
+            "weight": "11.98%"
+        }
+    ],
+    "Gosport": [
+        {
+            "old": "Gosport",
+            "weight": "100.00%"
+        }
+    ],
+    "Gower": [
+        {
+            "old": "Gower",
+            "weight": "73.50%"
+        },
+        {
+            "old": "Swansea East",
+            "weight": "0.64%"
+        },
+        {
+            "old": "Swansea West",
+            "weight": "25.86%"
+        }
+    ],
+    "Grantham and Bourne": [
+        {
+            "old": "Grantham and Stamford",
+            "weight": "75.28%"
+        },
+        {
+            "old": "Sleaford and North Hykeham",
+            "weight": "24.72%"
+        }
+    ],
+    "Gravesham": [
+        {
+            "old": "Gravesham",
+            "weight": "100.00%"
+        }
+    ],
+    "Great Grimsby and Cleethorpes": [
+        {
+            "old": "Cleethorpes",
+            "weight": "30.37%"
+        },
+        {
+            "old": "Great Grimsby",
+            "weight": "69.63%"
+        }
+    ],
+    "Great Yarmouth": [
+        {
+            "old": "Great Yarmouth",
+            "weight": "100.00%"
+        }
+    ],
+    "Greenwich and Woolwich": [
+        {
+            "old": "Greenwich and Woolwich",
+            "weight": "100.00%"
+        }
+    ],
+    "Guildford": [
+        {
+            "old": "Guildford",
+            "weight": "81.87%"
+        },
+        {
+            "old": "Mole Valley",
+            "weight": "18.13%"
+        }
+    ],
+    "Hackney North and Stoke Newington": [
+        {
+            "old": "Hackney North and Stoke Newington",
+            "weight": "88.48%"
+        },
+        {
+            "old": "Hackney South and Shoreditch",
+            "weight": "11.52%"
+        }
+    ],
+    "Hackney South and Shoreditch": [
+        {
+            "old": "Hackney North and Stoke Newington",
+            "weight": "9.08%"
+        },
+        {
+            "old": "Hackney South and Shoreditch",
+            "weight": "90.92%"
+        }
+    ],
+    "Halesowen": [
+        {
+            "old": "Halesowen and Rowley Regis",
+            "weight": "71.08%"
+        },
+        {
+            "old": "Stourbridge",
+            "weight": "28.92%"
+        }
+    ],
+    "Halifax": [
+        {
+            "old": "Calder Valley",
+            "weight": "3.28%"
+        },
+        {
+            "old": "Halifax",
+            "weight": "96.72%"
+        }
+    ],
+    "Hamble Valley": [
+        {
+            "old": "Eastleigh",
+            "weight": "47.96%"
+        },
+        {
+            "old": "Fareham",
+            "weight": "45.49%"
+        },
+        {
+            "old": "Meon Valley",
+            "weight": "6.54%"
+        }
+    ],
+    "Hamilton and Clyde Valley": [
+        {
+            "old": "East Kilbride, Strathaven and Lesmahagow",
+            "weight": "9.99%"
+        },
+        {
+            "old": "Lanark and Hamilton East",
+            "weight": "59.66%"
+        },
+        {
+            "old": "Rutherglen and Hamilton West",
+            "weight": "30.35%"
+        }
+    ],
+    "Hammersmith and Chiswick": [
+        {
+            "old": "Brentford and Isleworth",
+            "weight": "31.61%"
+        },
+        {
+            "old": "Hammersmith",
+            "weight": "68.39%"
+        }
+    ],
+    "Hampstead and Highgate": [
+        {
+            "old": "Hampstead and Kilburn",
+            "weight": "71.31%"
+        },
+        {
+            "old": "Holborn and St Pancras",
+            "weight": "17.77%"
+        },
+        {
+            "old": "Hornsey and Wood Green",
+            "weight": "10.92%"
+        }
+    ],
+    "Harborough, Oadby and Wigston": [
+        {
+            "old": "Harborough",
+            "weight": "99.59%"
+        },
+        {
+            "old": "Rutland and Melton",
+            "weight": "0.41%"
+        }
+    ],
+    "Harlow": [
+        {
+            "old": "Brentwood and Ongar",
+            "weight": "0.22%"
+        },
+        {
+            "old": "Harlow",
+            "weight": "93.93%"
+        },
+        {
+            "old": "Saffron Walden",
+            "weight": "5.85%"
+        }
+    ],
+    "Harpenden and Berkhamsted": [
+        {
+            "old": "Hemel Hempstead",
+            "weight": "8.93%"
+        },
+        {
+            "old": "Hitchin and Harpenden",
+            "weight": "51.12%"
+        },
+        {
+            "old": "South West Hertfordshire",
+            "weight": "39.94%"
+        }
+    ],
+    "Harrogate and Knaresborough": [
+        {
+            "old": "Harrogate and Knaresborough",
+            "weight": "98.55%"
+        },
+        {
+            "old": "Selby and Ainsty",
+            "weight": "0.76%"
+        },
+        {
+            "old": "Skipton and Ripon",
+            "weight": "0.69%"
+        }
+    ],
+    "Harrow East": [
+        {
+            "old": "Brent North",
+            "weight": "14.53%"
+        },
+        {
+            "old": "Harrow East",
+            "weight": "84.60%"
+        },
+        {
+            "old": "Harrow West",
+            "weight": "0.23%"
+        },
+        {
+            "old": "Ruislip, Northwood and Pinner",
+            "weight": "0.63%"
+        }
+    ],
+    "Harrow West": [
+        {
+            "old": "Harrow East",
+            "weight": "9.14%"
+        },
+        {
+            "old": "Harrow West",
+            "weight": "90.86%"
+        }
+    ],
+    "Hartlepool": [
+        {
+            "old": "Hartlepool",
+            "weight": "100.00%"
+        }
+    ],
+    "Harwich and North Essex": [
+        {
+            "old": "Colchester",
+            "weight": "10.47%"
+        },
+        {
+            "old": "Harwich and North Essex",
+            "weight": "89.53%"
+        }
+    ],
+    "Hastings and Rye": [
+        {
+            "old": "Bexhill and Battle",
+            "weight": "1.48%"
+        },
+        {
+            "old": "Hastings and Rye",
+            "weight": "98.52%"
+        }
+    ],
+    "Havant": [
+        {
+            "old": "Havant",
+            "weight": "100.00%"
+        }
+    ],
+    "Hayes and Harlington": [
+        {
+            "old": "Hayes and Harlington",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Uxbridge and South Ruislip",
+            "weight": "0"
+        }
+    ],
+    "Hazel Grove": [
+        {
+            "old": "Hazel Grove",
+            "weight": "85.10%"
+        },
+        {
+            "old": "Stockport",
+            "weight": "14.90%"
+        }
+    ],
+    "Hemel Hempstead": [
+        {
+            "old": "Hemel Hempstead",
+            "weight": "90.80%"
+        },
+        {
+            "old": "South West Hertfordshire",
+            "weight": "9.20%"
+        }
+    ],
+    "Hendon": [
+        {
+            "old": "Hendon",
+            "weight": "100.00%"
+        }
+    ],
+    "Henley and Thame": [
+        {
+            "old": "Henley",
+            "weight": "100.00%"
+        }
+    ],
+    "Hereford and South Herefordshire": [
+        {
+            "old": "Hereford and South Herefordshire",
+            "weight": "99.61%"
+        },
+        {
+            "old": "North Herefordshire",
+            "weight": "0.39%"
+        }
+    ],
+    "Herne Bay and Sandwich": [
+        {
+            "old": "Canterbury",
+            "weight": "6.18%"
+        },
+        {
+            "old": "North Thanet",
+            "weight": "80.35%"
+        },
+        {
+            "old": "South Thanet",
+            "weight": "13.47%"
+        }
+    ],
+    "Hertford and Stortford": [
+        {
+            "old": "Hertford and Stortford",
+            "weight": "100.00%"
+        }
+    ],
+    "Hertsmere": [
+        {
+            "old": "Broxbourne",
+            "weight": "5.33%"
+        },
+        {
+            "old": "Hertsmere",
+            "weight": "94.25%"
+        },
+        {
+            "old": "Welwyn Hatfield",
+            "weight": "0.42%"
+        }
+    ],
+    "Hexham": [
+        {
+            "old": "Berwick-upon-Tweed",
+            "weight": "3.75%"
+        },
+        {
+            "old": "Blaydon",
+            "weight": "0"
+        },
+        {
+            "old": "Hexham",
+            "weight": "82.98%"
+        },
+        {
+            "old": "Newcastle upon Tyne North",
+            "weight": "11.42%"
+        },
+        {
+            "old": "Wansbeck",
+            "weight": "1.85%"
+        }
+    ],
+    "Heywood and Middleton North": [
+        {
+            "old": "Heywood and Middleton",
+            "weight": "88.54%"
+        },
+        {
+            "old": "Rochdale",
+            "weight": "11.46%"
+        }
+    ],
+    "High Peak": [
+        {
+            "old": "High Peak",
+            "weight": "100.00%"
+        }
+    ],
+    "Hinckley and Bosworth": [
+        {
+            "old": "Bosworth",
+            "weight": "94.57%"
+        },
+        {
+            "old": "North West Leicestershire",
+            "weight": "5.43%"
+        }
+    ],
+    "Hitchin": [
+        {
+            "old": "Hitchin and Harpenden",
+            "weight": "55.74%"
+        },
+        {
+            "old": "Mid Bedfordshire",
+            "weight": "19.35%"
+        },
+        {
+            "old": "North East Bedfordshire",
+            "weight": "24.92%"
+        }
+    ],
+    "Holborn and St Pancras": [
+        {
+            "old": "Hampstead and Kilburn",
+            "weight": "0.16%"
+        },
+        {
+            "old": "Holborn and St Pancras",
+            "weight": "99.84%"
+        }
+    ],
+    "Honiton and Sidmouth": [
+        {
+            "old": "East Devon",
+            "weight": "30.19%"
+        },
+        {
+            "old": "Tiverton and Honiton",
+            "weight": "69.81%"
+        }
+    ],
+    "Hornchurch and Upminster": [
+        {
+            "old": "Hornchurch and Upminster",
+            "weight": "100.00%"
+        }
+    ],
+    "Hornsey and Friern Barnet": [
+        {
+            "old": "Chipping Barnet",
+            "weight": "18.86%"
+        },
+        {
+            "old": "Finchley and Golders Green",
+            "weight": "0"
+        },
+        {
+            "old": "Hornsey and Wood Green",
+            "weight": "67.00%"
+        },
+        {
+            "old": "Tottenham",
+            "weight": "14.13%"
+        }
+    ],
+    "Horsham": [
+        {
+            "old": "Arundel and South Downs",
+            "weight": "5.25%"
+        },
+        {
+            "old": "Horsham",
+            "weight": "94.75%"
+        }
+    ],
+    "Houghton and Sunderland South": [
+        {
+            "old": "Houghton and Sunderland South",
+            "weight": "89.33%"
+        },
+        {
+            "old": "Washington and Sunderland West",
+            "weight": "10.67%"
+        }
+    ],
+    "Hove and Portslade": [
+        {
+            "old": "Hove",
+            "weight": "100.00%"
+        }
+    ],
+    "Huddersfield": [
+        {
+            "old": "Colne Valley",
+            "weight": "17.66%"
+        },
+        {
+            "old": "Huddersfield",
+            "weight": "82.34%"
+        }
+    ],
+    "Huntingdon": [
+        {
+            "old": "Huntingdon",
+            "weight": "72.15%"
+        },
+        {
+            "old": "North West Cambridgeshire",
+            "weight": "27.85%"
+        }
+    ],
+    "Hyndburn": [
+        {
+            "old": "Hyndburn",
+            "weight": "100.00%"
+        }
+    ],
+    "Ilford North": [
+        {
+            "old": "Ilford North",
+            "weight": "76.18%"
+        },
+        {
+            "old": "Ilford South",
+            "weight": "23.82%"
+        },
+        {
+            "old": "Leyton and Wanstead",
+            "weight": "0"
+        }
+    ],
+    "Ilford South": [
+        {
+            "old": "Dagenham and Rainham",
+            "weight": "9.29%"
+        },
+        {
+            "old": "Ilford South",
+            "weight": "90.71%"
+        }
+    ],
+    "Inverclyde and Renfrewshire West": [
+        {
+            "old": "Inverclyde",
+            "weight": "82.87%"
+        },
+        {
+            "old": "Paisley and Renfrewshire North",
+            "weight": "17.13%"
+        },
+        {
+            "old": "Paisley and Renfrewshire South",
+            "weight": "0"
+        }
+    ],
+    "Inverness, Skye and West Ross-shire": [
+        {
+            "old": "Inverness, Nairn, Badenoch and Strathspey",
+            "weight": "69.48%"
+        },
+        {
+            "old": "Ross, Skye and Lochaber",
+            "weight": "30.52%"
+        }
+    ],
+    "Ipswich": [
+        {
+            "old": "Ipswich",
+            "weight": "100.00%"
+        }
+    ],
+    "Isle of Wight East": [
+        {
+            "old": "Isle of Wight",
+            "weight": "100.00%"
+        }
+    ],
+    "Isle of Wight West": [
+        {
+            "old": "Isle of Wight",
+            "weight": "100.00%"
+        }
+    ],
+    "Islington North": [
+        {
+            "old": "Islington North",
+            "weight": "100.00%"
+        }
+    ],
+    "Islington South and Finsbury": [
+        {
+            "old": "Hackney South and Shoreditch",
+            "weight": "7.93%"
+        },
+        {
+            "old": "Islington South and Finsbury",
+            "weight": "92.07%"
+        }
+    ],
+    "Jarrow and Gateshead East": [
+        {
+            "old": "Gateshead",
+            "weight": "19.60%"
+        },
+        {
+            "old": "Jarrow",
+            "weight": "80.40%"
+        }
+    ],
+    "Keighley and Ilkley": [
+        {
+            "old": "Keighley",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Shipley",
+            "weight": "0"
+        }
+    ],
+    "Kenilworth and Southam": [
+        {
+            "old": "Kenilworth and Southam",
+            "weight": "90.26%"
+        },
+        {
+            "old": "Rugby",
+            "weight": "0.59%"
+        },
+        {
+            "old": "Stratford-on-Avon",
+            "weight": "2.28%"
+        },
+        {
+            "old": "Warwick and Leamington",
+            "weight": "6.88%"
+        }
+    ],
+    "Kensington and Bayswater": [
+        {
+            "old": "Chelsea and Fulham",
+            "weight": "3.01%"
+        },
+        {
+            "old": "Cities of London and Westminster",
+            "weight": "1.75%"
+        },
+        {
+            "old": "Kensington",
+            "weight": "79.44%"
+        },
+        {
+            "old": "Westminster North",
+            "weight": "15.81%"
+        }
+    ],
+    "Kettering": [
+        {
+            "old": "Corby",
+            "weight": "4.32%"
+        },
+        {
+            "old": "Kettering",
+            "weight": "95.68%"
+        }
+    ],
+    "Kilmarnock and Loudoun": [
+        {
+            "old": "Kilmarnock and Loudoun",
+            "weight": "100.00%"
+        }
+    ],
+    "Kingston and Surbiton": [
+        {
+            "old": "Kingston and Surbiton",
+            "weight": "91.38%"
+        },
+        {
+            "old": "Richmond Park",
+            "weight": "8.62%"
+        }
+    ],
+    "Kingston upon Hull East": [
+        {
+            "old": "Kingston upon Hull East",
+            "weight": "85.40%"
+        },
+        {
+            "old": "Kingston upon Hull North",
+            "weight": "14.60%"
+        }
+    ],
+    "Kingston upon Hull North and Cottingham": [
+        {
+            "old": "Haltemprice and Howden",
+            "weight": "15.16%"
+        },
+        {
+            "old": "Kingston upon Hull East",
+            "weight": "2.71%"
+        },
+        {
+            "old": "Kingston upon Hull North",
+            "weight": "74.37%"
+        },
+        {
+            "old": "Kingston upon Hull West and Hessle",
+            "weight": "7.76%"
+        }
+    ],
+    "Kingston upon Hull West and Haltemprice": [
+        {
+            "old": "Haltemprice and Howden",
+            "weight": "22.59%"
+        },
+        {
+            "old": "Kingston upon Hull West and Hessle",
+            "weight": "77.41%"
+        }
+    ],
+    "Kingswinford and South Staffordshire": [
+        {
+            "old": "Dudley South",
+            "weight": "41.72%"
+        },
+        {
+            "old": "South Staffordshire",
+            "weight": "58.28%"
+        }
+    ],
+    "Knowsley": [
+        {
+            "old": "Knowsley",
+            "weight": "96.63%"
+        },
+        {
+            "old": "St Helens South and Whiston",
+            "weight": "3.37%"
+        }
+    ],
+    "Lagan Valley": [
+        {
+            "old": "Lagan Valley",
+            "weight": "89.91%"
+        },
+        {
+            "old": "South Down",
+            "weight": "0"
+        },
+        {
+            "old": "Upper Bann",
+            "weight": "10.09%"
+        }
+    ],
+    "Lancaster and Wyre": [
+        {
+            "old": "Lancaster and Fleetwood",
+            "weight": "61.67%"
+        },
+        {
+            "old": "Morecambe and Lunesdale",
+            "weight": "14.55%"
+        },
+        {
+            "old": "Wyre and Preston North",
+            "weight": "23.78%"
+        }
+    ],
+    "Leeds Central and Headingley": [
+        {
+            "old": "Leeds Central",
+            "weight": "38.15%"
+        },
+        {
+            "old": "Leeds North East",
+            "weight": "0"
+        },
+        {
+            "old": "Leeds North West",
+            "weight": "40.95%"
+        },
+        {
+            "old": "Leeds West",
+            "weight": "20.90%"
+        }
+    ],
+    "Leeds East": [
+        {
+            "old": "Elmet and Rothwell",
+            "weight": "18.54%"
+        },
+        {
+            "old": "Leeds East",
+            "weight": "81.46%"
+        }
+    ],
+    "Leeds North East": [
+        {
+            "old": "Leeds North East",
+            "weight": "100.00%"
+        }
+    ],
+    "Leeds North West": [
+        {
+            "old": "Leeds North East",
+            "weight": "0"
+        },
+        {
+            "old": "Leeds North West",
+            "weight": "47.23%"
+        },
+        {
+            "old": "Pudsey",
+            "weight": "52.77%"
+        }
+    ],
+    "Leeds South": [
+        {
+            "old": "Leeds Central",
+            "weight": "89.15%"
+        },
+        {
+            "old": "Leeds East",
+            "weight": "10.60%"
+        },
+        {
+            "old": "Morley and Outwood",
+            "weight": "0.25%"
+        }
+    ],
+    "Leeds South West and Morley": [
+        {
+            "old": "Leeds Central",
+            "weight": "0.45%"
+        },
+        {
+            "old": "Leeds West",
+            "weight": "26.13%"
+        },
+        {
+            "old": "Morley and Outwood",
+            "weight": "73.42%"
+        }
+    ],
+    "Leeds West and Pudsey": [
+        {
+            "old": "Leeds Central",
+            "weight": "0"
+        },
+        {
+            "old": "Leeds West",
+            "weight": "51.43%"
+        },
+        {
+            "old": "Pudsey",
+            "weight": "48.57%"
+        }
+    ],
+    "Leicester East": [
+        {
+            "old": "Leicester East",
+            "weight": "100.00%"
+        }
+    ],
+    "Leicester South": [
+        {
+            "old": "Leicester East",
+            "weight": "2.09%"
+        },
+        {
+            "old": "Leicester South",
+            "weight": "97.91%"
+        }
+    ],
+    "Leicester West": [
+        {
+            "old": "Leicester South",
+            "weight": "9.54%"
+        },
+        {
+            "old": "Leicester West",
+            "weight": "90.46%"
+        }
+    ],
+    "Leigh and Atherton": [
+        {
+            "old": "Bolton West",
+            "weight": "14.45%"
+        },
+        {
+            "old": "Leigh",
+            "weight": "85.55%"
+        }
+    ],
+    "Lewes": [
+        {
+            "old": "Bexhill and Battle",
+            "weight": "6.10%"
+        },
+        {
+            "old": "Eastbourne",
+            "weight": "7.95%"
+        },
+        {
+            "old": "Lewes",
+            "weight": "84.46%"
+        },
+        {
+            "old": "Wealden",
+            "weight": "1.50%"
+        }
+    ],
+    "Lewisham East": [
+        {
+            "old": "Lewisham East",
+            "weight": "80.71%"
+        },
+        {
+            "old": "Lewisham West and Penge",
+            "weight": "10.86%"
+        },
+        {
+            "old": "Lewisham, Deptford",
+            "weight": "8.43%"
+        }
+    ],
+    "Lewisham North": [
+        {
+            "old": "Lewisham East",
+            "weight": "12.43%"
+        },
+        {
+            "old": "Lewisham, Deptford",
+            "weight": "87.57%"
+        }
+    ],
+    "Lewisham West and East Dulwich": [
+        {
+            "old": "Camberwell and Peckham",
+            "weight": "17.12%"
+        },
+        {
+            "old": "Dulwich and West Norwood",
+            "weight": "16.38%"
+        },
+        {
+            "old": "Lewisham West and Penge",
+            "weight": "51.02%"
+        },
+        {
+            "old": "Lewisham, Deptford",
+            "weight": "15.49%"
+        }
+    ],
+    "Leyton and Wanstead": [
+        {
+            "old": "Chingford and Woodford Green",
+            "weight": "3.05%"
+        },
+        {
+            "old": "Ilford North",
+            "weight": "4.80%"
+        },
+        {
+            "old": "Ilford South",
+            "weight": "0.31%"
+        },
+        {
+            "old": "Leyton and Wanstead",
+            "weight": "91.84%"
+        }
+    ],
+    "Lichfield": [
+        {
+            "old": "Lichfield",
+            "weight": "99.51%"
+        },
+        {
+            "old": "Tamworth",
+            "weight": "0.49%"
+        }
+    ],
+    "Lincoln": [
+        {
+            "old": "Lincoln",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Sleaford and North Hykeham",
+            "weight": "0"
+        }
+    ],
+    "Liverpool Garston": [
+        {
+            "old": "Garston and Halewood",
+            "weight": "85.58%"
+        },
+        {
+            "old": "Liverpool, Wavertree",
+            "weight": "14.42%"
+        }
+    ],
+    "Liverpool Riverside": [
+        {
+            "old": "Liverpool, Riverside",
+            "weight": "72.66%"
+        },
+        {
+            "old": "Liverpool, Walton",
+            "weight": "27.34%"
+        }
+    ],
+    "Liverpool Walton": [
+        {
+            "old": "Liverpool, Walton",
+            "weight": "60.01%"
+        },
+        {
+            "old": "Liverpool, West Derby",
+            "weight": "33.43%"
+        },
+        {
+            "old": "Sefton Central",
+            "weight": "6.56%"
+        }
+    ],
+    "Liverpool Wavertree": [
+        {
+            "old": "Liverpool, Riverside",
+            "weight": "38.72%"
+        },
+        {
+            "old": "Liverpool, Wavertree",
+            "weight": "61.28%"
+        }
+    ],
+    "Liverpool West Derby": [
+        {
+            "old": "Knowsley",
+            "weight": "21.55%"
+        },
+        {
+            "old": "Liverpool, Wavertree",
+            "weight": "16.03%"
+        },
+        {
+            "old": "Liverpool, West Derby",
+            "weight": "62.42%"
+        }
+    ],
+    "Livingston": [
+        {
+            "old": "Linlithgow and East Falkirk",
+            "weight": "0"
+        },
+        {
+            "old": "Livingston",
+            "weight": "100.00%"
+        }
+    ],
+    "Llanelli": [
+        {
+            "old": "Carmarthen East and Dinefwr",
+            "weight": "12.42%"
+        },
+        {
+            "old": "Llanelli",
+            "weight": "87.58%"
+        }
+    ],
+    "Lothian East": [
+        {
+            "old": "East Lothian",
+            "weight": "100.00%"
+        }
+    ],
+    "Loughborough": [
+        {
+            "old": "Loughborough",
+            "weight": "100.00%"
+        }
+    ],
+    "Louth and Horncastle": [
+        {
+            "old": "Boston and Skegness",
+            "weight": "0.47%"
+        },
+        {
+            "old": "Gainsborough",
+            "weight": "2.68%"
+        },
+        {
+            "old": "Louth and Horncastle",
+            "weight": "96.85%"
+        }
+    ],
+    "Lowestoft": [
+        {
+            "old": "Waveney",
+            "weight": "100.00%"
+        }
+    ],
+    "Luton North": [
+        {
+            "old": "Luton North",
+            "weight": "93.95%"
+        },
+        {
+            "old": "Luton South",
+            "weight": "6.05%"
+        }
+    ],
+    "Luton South and South Bedfordshire": [
+        {
+            "old": "Luton South",
+            "weight": "94.05%"
+        },
+        {
+            "old": "South West Bedfordshire",
+            "weight": "5.95%"
+        }
+    ],
+    "Macclesfield": [
+        {
+            "old": "Macclesfield",
+            "weight": "100.00%"
+        }
+    ],
+    "Maidenhead": [
+        {
+            "old": "Maidenhead",
+            "weight": "78.10%"
+        },
+        {
+            "old": "Windsor",
+            "weight": "21.90%"
+        }
+    ],
+    "Maidstone and Malling": [
+        {
+            "old": "Chatham and Aylesford",
+            "weight": "9.48%"
+        },
+        {
+            "old": "Maidstone and The Weald",
+            "weight": "70.13%"
+        },
+        {
+            "old": "Tonbridge and Malling",
+            "weight": "20.39%"
+        }
+    ],
+    "Makerfield": [
+        {
+            "old": "Leigh",
+            "weight": "3.36%"
+        },
+        {
+            "old": "Makerfield",
+            "weight": "96.64%"
+        }
+    ],
+    "Maldon": [
+        {
+            "old": "Chelmsford",
+            "weight": "5.67%"
+        },
+        {
+            "old": "Maldon",
+            "weight": "94.33%"
+        }
+    ],
+    "Manchester Central": [
+        {
+            "old": "Ashton-under-Lyne",
+            "weight": "17.53%"
+        },
+        {
+            "old": "Blackley and Broughton",
+            "weight": "17.80%"
+        },
+        {
+            "old": "Manchester Central",
+            "weight": "64.67%"
+        }
+    ],
+    "Manchester Rusholme": [
+        {
+            "old": "Manchester Central",
+            "weight": "55.32%"
+        },
+        {
+            "old": "Manchester, Gorton",
+            "weight": "44.68%"
+        }
+    ],
+    "Manchester Withington": [
+        {
+            "old": "Manchester, Gorton",
+            "weight": "4.81%"
+        },
+        {
+            "old": "Manchester, Withington",
+            "weight": "95.19%"
+        }
+    ],
+    "Mansfield": [
+        {
+            "old": "Mansfield",
+            "weight": "100.00%"
+        }
+    ],
+    "Melksham and Devizes": [
+        {
+            "old": "Chippenham",
+            "weight": "50.47%"
+        },
+        {
+            "old": "Devizes",
+            "weight": "36.53%"
+        },
+        {
+            "old": "North Wiltshire",
+            "weight": "10.22%"
+        },
+        {
+            "old": "South West Wiltshire",
+            "weight": "2.78%"
+        }
+    ],
+    "Melton and Syston": [
+        {
+            "old": "Charnwood",
+            "weight": "36.23%"
+        },
+        {
+            "old": "Loughborough",
+            "weight": "8.92%"
+        },
+        {
+            "old": "Rutland and Melton",
+            "weight": "54.85%"
+        }
+    ],
+    "Meriden and Solihull East": [
+        {
+            "old": "Meriden",
+            "weight": "74.96%"
+        },
+        {
+            "old": "Solihull",
+            "weight": "25.04%"
+        }
+    ],
+    "Merthyr Tydfil and Aberdare": [
+        {
+            "old": "Brecon and Radnorshire",
+            "weight": "0"
+        },
+        {
+            "old": "Cynon Valley",
+            "weight": "40.97%"
+        },
+        {
+            "old": "Merthyr Tydfil and Rhymney",
+            "weight": "59.03%"
+        }
+    ],
+    "Mid and South Pembrokeshire": [
+        {
+            "old": "Carmarthen West and South Pembrokeshire",
+            "weight": "45.28%"
+        },
+        {
+            "old": "Preseli Pembrokeshire",
+            "weight": "54.72%"
+        }
+    ],
+    "Mid Bedfordshire": [
+        {
+            "old": "Bedford",
+            "weight": "0"
+        },
+        {
+            "old": "Mid Bedfordshire",
+            "weight": "100.00%"
+        }
+    ],
+    "Mid Buckinghamshire": [
+        {
+            "old": "Aylesbury",
+            "weight": "41.16%"
+        },
+        {
+            "old": "Buckingham",
+            "weight": "42.77%"
+        },
+        {
+            "old": "Chesham and Amersham",
+            "weight": "16.07%"
+        }
+    ],
+    "Mid Cheshire": [
+        {
+            "old": "Congleton",
+            "weight": "15.32%"
+        },
+        {
+            "old": "Eddisbury",
+            "weight": "42.74%"
+        },
+        {
+            "old": "Tatton",
+            "weight": "5.39%"
+        },
+        {
+            "old": "Weaver Vale",
+            "weight": "36.55%"
+        }
+    ],
+    "Mid Derbyshire": [
+        {
+            "old": "Derbyshire Dales",
+            "weight": "4.61%"
+        },
+        {
+            "old": "Mid Derbyshire",
+            "weight": "95.39%"
+        }
+    ],
+    "Mid Dorset and North Poole": [
+        {
+            "old": "Bournemouth West",
+            "weight": "3.39%"
+        },
+        {
+            "old": "Christchurch",
+            "weight": "1.27%"
+        },
+        {
+            "old": "Mid Dorset and North Poole",
+            "weight": "88.70%"
+        },
+        {
+            "old": "North Dorset",
+            "weight": "5.21%"
+        },
+        {
+            "old": "Poole",
+            "weight": "0"
+        },
+        {
+            "old": "South Dorset",
+            "weight": "1.43%"
+        }
+    ],
+    "Mid Dunbartonshire": [
+        {
+            "old": "Cumbernauld, Kilsyth and Kirkintilloch East",
+            "weight": "9.33%"
+        },
+        {
+            "old": "East Dunbartonshire",
+            "weight": "90.67%"
+        },
+        {
+            "old": "Glasgow North East",
+            "weight": "0"
+        }
+    ],
+    "Mid Leicestershire": [
+        {
+            "old": "Bosworth",
+            "weight": "13.43%"
+        },
+        {
+            "old": "Charnwood",
+            "weight": "69.59%"
+        },
+        {
+            "old": "South Leicestershire",
+            "weight": "16.98%"
+        }
+    ],
+    "Mid Norfolk": [
+        {
+            "old": "Mid Norfolk",
+            "weight": "94.66%"
+        },
+        {
+            "old": "South Norfolk",
+            "weight": "0.65%"
+        },
+        {
+            "old": "South West Norfolk",
+            "weight": "4.69%"
+        }
+    ],
+    "Mid Sussex": [
+        {
+            "old": "Arundel and South Downs",
+            "weight": "17.62%"
+        },
+        {
+            "old": "Mid Sussex",
+            "weight": "82.38%"
+        }
+    ],
+    "Mid Ulster": [
+        {
+            "old": "Fermanagh and South Tyrone",
+            "weight": "4.47%"
+        },
+        {
+            "old": "Mid Ulster",
+            "weight": "95.53%"
+        }
+    ],
+    "Middlesbrough and Thornaby East": [
+        {
+            "old": "Middlesbrough",
+            "weight": "82.61%"
+        },
+        {
+            "old": "Middlesbrough South and East Cleveland",
+            "weight": "2.50%"
+        },
+        {
+            "old": "Stockton South",
+            "weight": "14.89%"
+        }
+    ],
+    "Middlesbrough South and East Cleveland": [
+        {
+            "old": "Middlesbrough",
+            "weight": "5.52%"
+        },
+        {
+            "old": "Middlesbrough South and East Cleveland",
+            "weight": "94.48%"
+        }
+    ],
+    "Midlothian": [
+        {
+            "old": "Midlothian",
+            "weight": "100.00%"
+        }
+    ],
+    "Milton Keynes Central": [
+        {
+            "old": "Milton Keynes North",
+            "weight": "48.49%"
+        },
+        {
+            "old": "Milton Keynes South",
+            "weight": "51.51%"
+        }
+    ],
+    "Milton Keynes North": [
+        {
+            "old": "Milton Keynes North",
+            "weight": "79.27%"
+        },
+        {
+            "old": "Milton Keynes South",
+            "weight": "20.73%"
+        }
+    ],
+    "Mitcham and Morden": [
+        {
+            "old": "Mitcham and Morden",
+            "weight": "92.09%"
+        },
+        {
+            "old": "Wimbledon",
+            "weight": "7.91%"
+        }
+    ],
+    "Monmouthshire": [
+        {
+            "old": "Monmouth",
+            "weight": "81.12%"
+        },
+        {
+            "old": "Newport East",
+            "weight": "18.88%"
+        }
+    ],
+    "Montgomeryshire and Glyndwr": [
+        {
+            "old": "Clwyd South",
+            "weight": "34.81%"
+        },
+        {
+            "old": "Montgomeryshire",
+            "weight": "65.19%"
+        }
+    ],
+    "Moray West, Nairn and Strathspey": [
+        {
+            "old": "Inverness, Nairn, Badenoch and Strathspey",
+            "weight": "30.34%"
+        },
+        {
+            "old": "Moray",
+            "weight": "69.66%"
+        },
+        {
+            "old": "Ross, Skye and Lochaber",
+            "weight": "0"
+        }
+    ],
+    "Morecambe and Lunesdale": [
+        {
+            "old": "Lancaster and Fleetwood",
+            "weight": "4.61%"
+        },
+        {
+            "old": "Morecambe and Lunesdale",
+            "weight": "76.51%"
+        },
+        {
+            "old": "Westmorland and Lonsdale",
+            "weight": "18.88%"
+        }
+    ],
+    "Motherwell, Wishaw and Carluke": [
+        {
+            "old": "Airdrie and Shotts",
+            "weight": "0"
+        },
+        {
+            "old": "Lanark and Hamilton East",
+            "weight": "22.88%"
+        },
+        {
+            "old": "Motherwell and Wishaw",
+            "weight": "77.12%"
+        }
+    ],
+    "Na h-Eileanan an Iar": [
+        {
+            "old": "Na h-Eileanan an Iar",
+            "weight": "100.00%"
+        }
+    ],
+    "Neath and Swansea East": [
+        {
+            "old": "Aberavon",
+            "weight": "12.77%"
+        },
+        {
+            "old": "Gower",
+            "weight": "7.35%"
+        },
+        {
+            "old": "Neath",
+            "weight": "49.36%"
+        },
+        {
+            "old": "Swansea East",
+            "weight": "30.52%"
+        }
+    ],
+    "New Forest East": [
+        {
+            "old": "New Forest East",
+            "weight": "100.00%"
+        }
+    ],
+    "New Forest West": [
+        {
+            "old": "New Forest West",
+            "weight": "100.00%"
+        }
+    ],
+    "Newark": [
+        {
+            "old": "Bassetlaw",
+            "weight": "4.00%"
+        },
+        {
+            "old": "Newark",
+            "weight": "93.50%"
+        },
+        {
+            "old": "Rushcliffe",
+            "weight": "1.38%"
+        },
+        {
+            "old": "Sherwood",
+            "weight": "1.12%"
+        }
+    ],
+    "Newbury": [
+        {
+            "old": "Newbury",
+            "weight": "100.00%"
+        }
+    ],
+    "Newcastle upon Tyne Central and West": [
+        {
+            "old": "Newcastle upon Tyne Central",
+            "weight": "65.95%"
+        },
+        {
+            "old": "Newcastle upon Tyne East",
+            "weight": "2.92%"
+        },
+        {
+            "old": "Newcastle upon Tyne North",
+            "weight": "31.14%"
+        }
+    ],
+    "Newcastle upon Tyne East and Wallsend": [
+        {
+            "old": "Newcastle upon Tyne East",
+            "weight": "60.01%"
+        },
+        {
+            "old": "North Tyneside",
+            "weight": "39.99%"
+        }
+    ],
+    "Newcastle upon Tyne North": [
+        {
+            "old": "Newcastle upon Tyne Central",
+            "weight": "16.42%"
+        },
+        {
+            "old": "Newcastle upon Tyne East",
+            "weight": "24.38%"
+        },
+        {
+            "old": "Newcastle upon Tyne North",
+            "weight": "38.92%"
+        },
+        {
+            "old": "North Tyneside",
+            "weight": "20.27%"
+        }
+    ],
+    "Newcastle-under-Lyme": [
+        {
+            "old": "Newcastle-under-Lyme",
+            "weight": "95.47%"
+        },
+        {
+            "old": "Stone",
+            "weight": "4.53%"
+        }
+    ],
+    "Newport East": [
+        {
+            "old": "Newport East",
+            "weight": "60.27%"
+        },
+        {
+            "old": "Newport West",
+            "weight": "39.73%"
+        }
+    ],
+    "Newport West and Islwyn": [
+        {
+            "old": "Islwyn",
+            "weight": "51.26%"
+        },
+        {
+            "old": "Newport West",
+            "weight": "48.74%"
+        }
+    ],
+    "Newry and Armagh": [
+        {
+            "old": "Newry and Armagh",
+            "weight": "98.04%"
+        },
+        {
+            "old": "South Down",
+            "weight": "1.96%"
+        }
+    ],
+    "Newton Abbot": [
+        {
+            "old": "Newton Abbot",
+            "weight": "100.00%"
+        }
+    ],
+    "Newton Aycliffe and Spennymoor": [
+        {
+            "old": "Bishop Auckland",
+            "weight": "23.74%"
+        },
+        {
+            "old": "City of Durham",
+            "weight": "13.81%"
+        },
+        {
+            "old": "Sedgefield",
+            "weight": "62.46%"
+        }
+    ],
+    "Normanton and Hemsworth": [
+        {
+            "old": "Hemsworth",
+            "weight": "83.15%"
+        },
+        {
+            "old": "Normanton, Pontefract and Castleford",
+            "weight": "16.85%"
+        }
+    ],
+    "North Antrim": [
+        {
+            "old": "East Antrim",
+            "weight": "1.56%"
+        },
+        {
+            "old": "North Antrim",
+            "weight": "98.44%"
+        }
+    ],
+    "North Ayrshire and Arran": [
+        {
+            "old": "North Ayrshire and Arran",
+            "weight": "100.00%"
+        }
+    ],
+    "North Bedfordshire": [
+        {
+            "old": "Bedford",
+            "weight": "2.13%"
+        },
+        {
+            "old": "Mid Bedfordshire",
+            "weight": "4.12%"
+        },
+        {
+            "old": "North East Bedfordshire",
+            "weight": "93.75%"
+        }
+    ],
+    "North Cornwall": [
+        {
+            "old": "North Cornwall",
+            "weight": "93.82%"
+        },
+        {
+            "old": "St Austell and Newquay",
+            "weight": "6.18%"
+        }
+    ],
+    "North Cotswolds": [
+        {
+            "old": "Stroud",
+            "weight": "19.87%"
+        },
+        {
+            "old": "Tewkesbury",
+            "weight": "30.71%"
+        },
+        {
+            "old": "The Cotswolds",
+            "weight": "49.42%"
+        }
+    ],
+    "North Devon": [
+        {
+            "old": "North Devon",
+            "weight": "100.00%"
+        }
+    ],
+    "North Dorset": [
+        {
+            "old": "North Dorset",
+            "weight": "97.82%"
+        },
+        {
+            "old": "West Dorset",
+            "weight": "2.18%"
+        }
+    ],
+    "North Down": [
+        {
+            "old": "Belfast East",
+            "weight": "4.84%"
+        },
+        {
+            "old": "North Down",
+            "weight": "95.16%"
+        },
+        {
+            "old": "Strangford",
+            "weight": "0"
+        }
+    ],
+    "North Durham": [
+        {
+            "old": "North Durham",
+            "weight": "91.96%"
+        },
+        {
+            "old": "North West Durham",
+            "weight": "8.04%"
+        }
+    ],
+    "North East Cambridgeshire": [
+        {
+            "old": "North East Cambridgeshire",
+            "weight": "100.00%"
+        }
+    ],
+    "North East Derbyshire": [
+        {
+            "old": "Bolsover",
+            "weight": "0.28%"
+        },
+        {
+            "old": "North East Derbyshire",
+            "weight": "99.72%"
+        }
+    ],
+    "North East Fife": [
+        {
+            "old": "Glenrothes",
+            "weight": "12.01%"
+        },
+        {
+            "old": "North East Fife",
+            "weight": "87.99%"
+        }
+    ],
+    "North East Hampshire": [
+        {
+            "old": "Basingstoke",
+            "weight": "8.27%"
+        },
+        {
+            "old": "North East Hampshire",
+            "weight": "91.73%"
+        }
+    ],
+    "North East Hertfordshire": [
+        {
+            "old": "North East Hertfordshire",
+            "weight": "100.00%"
+        }
+    ],
+    "North East Somerset and Hanham": [
+        {
+            "old": "Kingswood",
+            "weight": "43.58%"
+        },
+        {
+            "old": "North East Somerset",
+            "weight": "56.42%"
+        }
+    ],
+    "North Herefordshire": [
+        {
+            "old": "Hereford and South Herefordshire",
+            "weight": "1.59%"
+        },
+        {
+            "old": "North Herefordshire",
+            "weight": "98.41%"
+        }
+    ],
+    "North Norfolk": [
+        {
+            "old": "Broadland",
+            "weight": "1.55%"
+        },
+        {
+            "old": "North Norfolk",
+            "weight": "98.45%"
+        }
+    ],
+    "North Northumberland": [
+        {
+            "old": "Berwick-upon-Tweed",
+            "weight": "78.46%"
+        },
+        {
+            "old": "Wansbeck",
+            "weight": "21.54%"
+        }
+    ],
+    "North Shropshire": [
+        {
+            "old": "North Shropshire",
+            "weight": "100.00%"
+        }
+    ],
+    "North Somerset": [
+        {
+            "old": "North Somerset",
+            "weight": "100.00%"
+        }
+    ],
+    "North Warwickshire and Bedworth": [
+        {
+            "old": "North Warwickshire",
+            "weight": "100.00%"
+        }
+    ],
+    "North West Cambridgeshire": [
+        {
+            "old": "North West Cambridgeshire",
+            "weight": "98.70%"
+        },
+        {
+            "old": "Peterborough",
+            "weight": "1.30%"
+        }
+    ],
+    "North West Essex": [
+        {
+            "old": "Saffron Walden",
+            "weight": "100.00%"
+        }
+    ],
+    "North West Hampshire": [
+        {
+            "old": "Basingstoke",
+            "weight": "8.16%"
+        },
+        {
+            "old": "North East Hampshire",
+            "weight": "5.48%"
+        },
+        {
+            "old": "North West Hampshire",
+            "weight": "86.36%"
+        }
+    ],
+    "North West Leicestershire": [
+        {
+            "old": "North West Leicestershire",
+            "weight": "100.00%"
+        }
+    ],
+    "North West Norfolk": [
+        {
+            "old": "North West Norfolk",
+            "weight": "95.10%"
+        },
+        {
+            "old": "South West Norfolk",
+            "weight": "4.90%"
+        }
+    ],
+    "Northampton North": [
+        {
+            "old": "Northampton North",
+            "weight": "69.96%"
+        },
+        {
+            "old": "Northampton South",
+            "weight": "30.04%"
+        }
+    ],
+    "Northampton South": [
+        {
+            "old": "Northampton North",
+            "weight": "3.14%"
+        },
+        {
+            "old": "Northampton South",
+            "weight": "61.86%"
+        },
+        {
+            "old": "South Northamptonshire",
+            "weight": "35.00%"
+        }
+    ],
+    "Norwich North": [
+        {
+            "old": "Broadland",
+            "weight": "5.44%"
+        },
+        {
+            "old": "Norwich North",
+            "weight": "92.89%"
+        },
+        {
+            "old": "Norwich South",
+            "weight": "1.67%"
+        }
+    ],
+    "Norwich South": [
+        {
+            "old": "Norwich South",
+            "weight": "99.08%"
+        },
+        {
+            "old": "South Norfolk",
+            "weight": "0.92%"
+        }
+    ],
+    "Nottingham East": [
+        {
+            "old": "Nottingham East",
+            "weight": "88.23%"
+        },
+        {
+            "old": "Nottingham North",
+            "weight": "0"
+        },
+        {
+            "old": "Nottingham South",
+            "weight": "11.77%"
+        }
+    ],
+    "Nottingham North and Kimberley": [
+        {
+            "old": "Broxtowe",
+            "weight": "15.07%"
+        },
+        {
+            "old": "Nottingham North",
+            "weight": "75.82%"
+        },
+        {
+            "old": "Nottingham South",
+            "weight": "9.11%"
+        }
+    ],
+    "Nottingham South": [
+        {
+            "old": "Nottingham North",
+            "weight": "15.47%"
+        },
+        {
+            "old": "Nottingham South",
+            "weight": "84.53%"
+        }
+    ],
+    "Nuneaton": [
+        {
+            "old": "Nuneaton",
+            "weight": "100.00%"
+        }
+    ],
+    "Old Bexley and Sidcup": [
+        {
+            "old": "Bexleyheath and Crayford",
+            "weight": "11.29%"
+        },
+        {
+            "old": "Old Bexley and Sidcup",
+            "weight": "88.71%"
+        }
+    ],
+    "Oldham East and Saddleworth": [
+        {
+            "old": "Oldham East and Saddleworth",
+            "weight": "100.00%"
+        }
+    ],
+    "Oldham West, Chadderton and Royton": [
+        {
+            "old": "Oldham West and Royton",
+            "weight": "100.00%"
+        }
+    ],
+    "Orkney and Shetland": [
+        {
+            "old": "Orkney and Shetland",
+            "weight": "100.00%"
+        }
+    ],
+    "Orpington": [
+        {
+            "old": "Bromley and Chislehurst",
+            "weight": "17.99%"
+        },
+        {
+            "old": "Orpington",
+            "weight": "82.01%"
+        }
+    ],
+    "Ossett and Denby Dale": [
+        {
+            "old": "Colne Valley",
+            "weight": "0.12%"
+        },
+        {
+            "old": "Dewsbury",
+            "weight": "31.22%"
+        },
+        {
+            "old": "Hemsworth",
+            "weight": "15.65%"
+        },
+        {
+            "old": "Wakefield",
+            "weight": "53.01%"
+        }
+    ],
+    "Oxford East": [
+        {
+            "old": "Oxford East",
+            "weight": "100.00%"
+        }
+    ],
+    "Oxford West and Abingdon": [
+        {
+            "old": "Oxford East",
+            "weight": "13.17%"
+        },
+        {
+            "old": "Oxford West and Abingdon",
+            "weight": "82.72%"
+        },
+        {
+            "old": "Wantage",
+            "weight": "4.11%"
+        }
+    ],
+    "Paisley and Renfrewshire North": [
+        {
+            "old": "Glasgow South West",
+            "weight": "16.57%"
+        },
+        {
+            "old": "Paisley and Renfrewshire North",
+            "weight": "76.79%"
+        },
+        {
+            "old": "Paisley and Renfrewshire South",
+            "weight": "6.64%"
+        }
+    ],
+    "Paisley and Renfrewshire South": [
+        {
+            "old": "Paisley and Renfrewshire North",
+            "weight": "11.56%"
+        },
+        {
+            "old": "Paisley and Renfrewshire South",
+            "weight": "88.44%"
+        }
+    ],
+    "Peckham": [
+        {
+            "old": "Bermondsey and Old Southwark",
+            "weight": "22.30%"
+        },
+        {
+            "old": "Camberwell and Peckham",
+            "weight": "77.70%"
+        }
+    ],
+    "Pendle and Clitheroe": [
+        {
+            "old": "Pendle",
+            "weight": "74.30%"
+        },
+        {
+            "old": "Ribble Valley",
+            "weight": "25.70%"
+        }
+    ],
+    "Penistone and Stocksbridge": [
+        {
+            "old": "Penistone and Stocksbridge",
+            "weight": "100.00%"
+        }
+    ],
+    "Penrith and Solway": [
+        {
+            "old": "Carlisle",
+            "weight": "7.57%"
+        },
+        {
+            "old": "Copeland",
+            "weight": "7.91%"
+        },
+        {
+            "old": "Penrith and The Border",
+            "weight": "38.62%"
+        },
+        {
+            "old": "Workington",
+            "weight": "45.90%"
+        }
+    ],
+    "Perth and Kinross-shire": [
+        {
+            "old": "Ochil and South Perthshire",
+            "weight": "39.51%"
+        },
+        {
+            "old": "Perth and North Perthshire",
+            "weight": "60.49%"
+        }
+    ],
+    "Peterborough": [
+        {
+            "old": "North West Cambridgeshire",
+            "weight": "0"
+        },
+        {
+            "old": "Peterborough",
+            "weight": "100.00%"
+        }
+    ],
+    "Plymouth Moor View": [
+        {
+            "old": "Plymouth, Moor View",
+            "weight": "94.77%"
+        },
+        {
+            "old": "Plymouth, Sutton and Devonport",
+            "weight": "5.23%"
+        }
+    ],
+    "Plymouth Sutton and Devonport": [
+        {
+            "old": "Plymouth, Sutton and Devonport",
+            "weight": "100.00%"
+        }
+    ],
+    "Pontefract, Castleford and Knottingley": [
+        {
+            "old": "Normanton, Pontefract and Castleford",
+            "weight": "100.00%"
+        }
+    ],
+    "Pontypridd": [
+        {
+            "old": "Cynon Valley",
+            "weight": "29.39%"
+        },
+        {
+            "old": "Ogmore",
+            "weight": "13.02%"
+        },
+        {
+            "old": "Pontypridd",
+            "weight": "57.59%"
+        }
+    ],
+    "Poole": [
+        {
+            "old": "Bournemouth West",
+            "weight": "0.70%"
+        },
+        {
+            "old": "Poole",
+            "weight": "99.30%"
+        }
+    ],
+    "Poplar and Limehouse": [
+        {
+            "old": "Poplar and Limehouse",
+            "weight": "100.00%"
+        }
+    ],
+    "Portsmouth North": [
+        {
+            "old": "Portsmouth North",
+            "weight": "100.00%"
+        }
+    ],
+    "Portsmouth South": [
+        {
+            "old": "Portsmouth South",
+            "weight": "100.00%"
+        }
+    ],
+    "Preston": [
+        {
+            "old": "Fylde",
+            "weight": "6.19%"
+        },
+        {
+            "old": "Preston",
+            "weight": "82.82%"
+        },
+        {
+            "old": "Wyre and Preston North",
+            "weight": "10.99%"
+        }
+    ],
+    "Putney": [
+        {
+            "old": "Battersea",
+            "weight": "9.46%"
+        },
+        {
+            "old": "Putney",
+            "weight": "90.54%"
+        }
+    ],
+    "Queen's Park and Maida Vale": [
+        {
+            "old": "Brent Central",
+            "weight": "18.32%"
+        },
+        {
+            "old": "Hampstead and Kilburn",
+            "weight": "25.60%"
+        },
+        {
+            "old": "Westminster North",
+            "weight": "56.08%"
+        }
+    ],
+    "Rawmarsh and Conisbrough": [
+        {
+            "old": "Don Valley",
+            "weight": "30.12%"
+        },
+        {
+            "old": "Rother Valley",
+            "weight": "2.76%"
+        },
+        {
+            "old": "Wentworth and Dearne",
+            "weight": "67.12%"
+        }
+    ],
+    "Rayleigh and Wickford": [
+        {
+            "old": "Rayleigh and Wickford",
+            "weight": "100.00%"
+        }
+    ],
+    "Reading Central": [
+        {
+            "old": "Reading East",
+            "weight": "71.25%"
+        },
+        {
+            "old": "Reading West",
+            "weight": "28.75%"
+        }
+    ],
+    "Reading West and Mid Berkshire": [
+        {
+            "old": "Newbury",
+            "weight": "16.58%"
+        },
+        {
+            "old": "Reading West",
+            "weight": "67.37%"
+        },
+        {
+            "old": "Wokingham",
+            "weight": "16.05%"
+        }
+    ],
+    "Redcar": [
+        {
+            "old": "Middlesbrough South and East Cleveland",
+            "weight": "6.30%"
+        },
+        {
+            "old": "Redcar",
+            "weight": "93.70%"
+        }
+    ],
+    "Redditch": [
+        {
+            "old": "Mid Worcestershire",
+            "weight": "5.82%"
+        },
+        {
+            "old": "Redditch",
+            "weight": "94.18%"
+        }
+    ],
+    "Reigate": [
+        {
+            "old": "Epsom and Ewell",
+            "weight": "14.69%"
+        },
+        {
+            "old": "Reigate",
+            "weight": "85.31%"
+        }
+    ],
+    "Rhondda and Ogmore": [
+        {
+            "old": "Ogmore",
+            "weight": "18.99%"
+        },
+        {
+            "old": "Pontypridd",
+            "weight": "12.88%"
+        },
+        {
+            "old": "Rhondda",
+            "weight": "68.13%"
+        }
+    ],
+    "Ribble Valley": [
+        {
+            "old": "Preston",
+            "weight": "0.32%"
+        },
+        {
+            "old": "Ribble Valley",
+            "weight": "67.35%"
+        },
+        {
+            "old": "Wyre and Preston North",
+            "weight": "32.33%"
+        }
+    ],
+    "Richmond and Northallerton": [
+        {
+            "old": "Richmond (Yorks)",
+            "weight": "99.30%"
+        },
+        {
+            "old": "Thirsk and Malton",
+            "weight": "0.70%"
+        }
+    ],
+    "Richmond Park": [
+        {
+            "old": "Richmond Park",
+            "weight": "100.00%"
+        }
+    ],
+    "Rochdale": [
+        {
+            "old": "Rochdale",
+            "weight": "100.00%"
+        }
+    ],
+    "Rochester and Strood": [
+        {
+            "old": "Rochester and Strood",
+            "weight": "100.00%"
+        }
+    ],
+    "Romford": [
+        {
+            "old": "Hornchurch and Upminster",
+            "weight": "1.53%"
+        },
+        {
+            "old": "Romford",
+            "weight": "98.47%"
+        }
+    ],
+    "Romsey and Southampton North": [
+        {
+            "old": "North West Hampshire",
+            "weight": "13.09%"
+        },
+        {
+            "old": "Romsey and Southampton North",
+            "weight": "86.91%"
+        }
+    ],
+    "Rossendale and Darwen": [
+        {
+            "old": "Blackburn",
+            "weight": "2.57%"
+        },
+        {
+            "old": "Rossendale and Darwen",
+            "weight": "97.43%"
+        }
+    ],
+    "Rother Valley": [
+        {
+            "old": "Rother Valley",
+            "weight": "99.04%"
+        },
+        {
+            "old": "Rotherham",
+            "weight": "0.96%"
+        }
+    ],
+    "Rotherham": [
+        {
+            "old": "Rother Valley",
+            "weight": "5.17%"
+        },
+        {
+            "old": "Rotherham",
+            "weight": "82.91%"
+        },
+        {
+            "old": "Wentworth and Dearne",
+            "weight": "11.92%"
+        }
+    ],
+    "Rugby": [
+        {
+            "old": "Kenilworth and Southam",
+            "weight": "1.38%"
+        },
+        {
+            "old": "Rugby",
+            "weight": "98.62%"
+        }
+    ],
+    "Ruislip, Northwood and Pinner": [
+        {
+            "old": "Harrow West",
+            "weight": "6.38%"
+        },
+        {
+            "old": "Ruislip, Northwood and Pinner",
+            "weight": "84.01%"
+        },
+        {
+            "old": "Uxbridge and South Ruislip",
+            "weight": "9.61%"
+        }
+    ],
+    "Runcorn and Helsby": [
+        {
+            "old": "City of Chester",
+            "weight": "1.57%"
+        },
+        {
+            "old": "Eddisbury",
+            "weight": "3.19%"
+        },
+        {
+            "old": "Ellesmere Port and Neston",
+            "weight": "7.37%"
+        },
+        {
+            "old": "Halton",
+            "weight": "35.79%"
+        },
+        {
+            "old": "Weaver Vale",
+            "weight": "52.09%"
+        }
+    ],
+    "Runnymede and Weybridge": [
+        {
+            "old": "Esher and Walton",
+            "weight": "18.14%"
+        },
+        {
+            "old": "Runnymede and Weybridge",
+            "weight": "81.86%"
+        }
+    ],
+    "Rushcliffe": [
+        {
+            "old": "Rushcliffe",
+            "weight": "100.00%"
+        }
+    ],
+    "Rutherglen": [
+        {
+            "old": "East Kilbride, Strathaven and Lesmahagow",
+            "weight": "0"
+        },
+        {
+            "old": "Lanark and Hamilton East",
+            "weight": "14.69%"
+        },
+        {
+            "old": "Rutherglen and Hamilton West",
+            "weight": "85.31%"
+        }
+    ],
+    "Rutland and Stamford": [
+        {
+            "old": "Grantham and Stamford",
+            "weight": "40.70%"
+        },
+        {
+            "old": "Rutland and Melton",
+            "weight": "59.30%"
+        }
+    ],
+    "Salford": [
+        {
+            "old": "Blackley and Broughton",
+            "weight": "14.06%"
+        },
+        {
+            "old": "Salford and Eccles",
+            "weight": "85.94%"
+        }
+    ],
+    "Salisbury": [
+        {
+            "old": "Salisbury",
+            "weight": "88.73%"
+        },
+        {
+            "old": "South West Wiltshire",
+            "weight": "11.27%"
+        }
+    ],
+    "Scarborough and Whitby": [
+        {
+            "old": "Scarborough and Whitby",
+            "weight": "100.00%"
+        }
+    ],
+    "Scunthorpe": [
+        {
+            "old": "Brigg and Goole",
+            "weight": "14.06%"
+        },
+        {
+            "old": "Scunthorpe",
+            "weight": "85.94%"
+        }
+    ],
+    "Sefton Central": [
+        {
+            "old": "Sefton Central",
+            "weight": "86.12%"
+        },
+        {
+            "old": "Southport",
+            "weight": "13.88%"
+        }
+    ],
+    "Selby": [
+        {
+            "old": "Elmet and Rothwell",
+            "weight": "22.36%"
+        },
+        {
+            "old": "Selby and Ainsty",
+            "weight": "77.64%"
+        }
+    ],
+    "Sevenoaks": [
+        {
+            "old": "Dartford",
+            "weight": "7.95%"
+        },
+        {
+            "old": "Sevenoaks",
+            "weight": "92.05%"
+        }
+    ],
+    "Sheffield Brightside and Hillsborough": [
+        {
+            "old": "Penistone and Stocksbridge",
+            "weight": "0"
+        },
+        {
+            "old": "Sheffield Central",
+            "weight": "0.88%"
+        },
+        {
+            "old": "Sheffield, Brightside and Hillsborough",
+            "weight": "99.12%"
+        }
+    ],
+    "Sheffield Central": [
+        {
+            "old": "Sheffield Central",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Sheffield, Hallam",
+            "weight": "0"
+        }
+    ],
+    "Sheffield Hallam": [
+        {
+            "old": "Sheffield Central",
+            "weight": "4.51%"
+        },
+        {
+            "old": "Sheffield, Hallam",
+            "weight": "94.94%"
+        },
+        {
+            "old": "Sheffield, Heeley",
+            "weight": "0.54%"
+        }
+    ],
+    "Sheffield Heeley": [
+        {
+            "old": "Sheffield Central",
+            "weight": "21.49%"
+        },
+        {
+            "old": "Sheffield, Hallam",
+            "weight": "0.45%"
+        },
+        {
+            "old": "Sheffield, Heeley",
+            "weight": "78.06%"
+        }
+    ],
+    "Sheffield South East": [
+        {
+            "old": "Sheffield South East",
+            "weight": "90.34%"
+        },
+        {
+            "old": "Sheffield, Heeley",
+            "weight": "9.66%"
+        }
+    ],
+    "Sherwood Forest": [
+        {
+            "old": "Newark",
+            "weight": "6.16%"
+        },
+        {
+            "old": "Sherwood",
+            "weight": "93.84%"
+        }
+    ],
+    "Shipley": [
+        {
+            "old": "Shipley",
+            "weight": "100.00%"
+        }
+    ],
+    "Shrewsbury": [
+        {
+            "old": "Shrewsbury and Atcham",
+            "weight": "100.00%"
+        }
+    ],
+    "Sittingbourne and Sheppey": [
+        {
+            "old": "Sittingbourne and Sheppey",
+            "weight": "100.00%"
+        }
+    ],
+    "Skipton and Ripon": [
+        {
+            "old": "Harrogate and Knaresborough",
+            "weight": "0.37%"
+        },
+        {
+            "old": "Selby and Ainsty",
+            "weight": "1.02%"
+        },
+        {
+            "old": "Skipton and Ripon",
+            "weight": "98.61%"
+        }
+    ],
+    "Sleaford and North Hykeham": [
+        {
+            "old": "Sleaford and North Hykeham",
+            "weight": "100.00%"
+        }
+    ],
+    "Slough": [
+        {
+            "old": "Slough",
+            "weight": "100.00%"
+        }
+    ],
+    "Smethwick": [
+        {
+            "old": "Halesowen and Rowley Regis",
+            "weight": "10.06%"
+        },
+        {
+            "old": "Warley",
+            "weight": "89.94%"
+        }
+    ],
+    "Solihull West and Shirley": [
+        {
+            "old": "Meriden",
+            "weight": "16.89%"
+        },
+        {
+            "old": "Solihull",
+            "weight": "83.11%"
+        }
+    ],
+    "South Antrim": [
+        {
+            "old": "Belfast North",
+            "weight": "0.72%"
+        },
+        {
+            "old": "Belfast West",
+            "weight": "0"
+        },
+        {
+            "old": "East Antrim",
+            "weight": "0.89%"
+        },
+        {
+            "old": "Lagan Valley",
+            "weight": "1.58%"
+        },
+        {
+            "old": "South Antrim",
+            "weight": "96.80%"
+        }
+    ],
+    "South Basildon and East Thurrock": [
+        {
+            "old": "South Basildon and East Thurrock",
+            "weight": "89.53%"
+        },
+        {
+            "old": "Thurrock",
+            "weight": "10.47%"
+        }
+    ],
+    "South Cambridgeshire": [
+        {
+            "old": "Cambridge",
+            "weight": "9.20%"
+        },
+        {
+            "old": "South Cambridgeshire",
+            "weight": "71.78%"
+        },
+        {
+            "old": "South East Cambridgeshire",
+            "weight": "19.02%"
+        }
+    ],
+    "South Cotswolds": [
+        {
+            "old": "Chippenham",
+            "weight": "0"
+        },
+        {
+            "old": "North Wiltshire",
+            "weight": "45.04%"
+        },
+        {
+            "old": "The Cotswolds",
+            "weight": "54.96%"
+        }
+    ],
+    "South Derbyshire": [
+        {
+            "old": "South Derbyshire",
+            "weight": "100.00%"
+        }
+    ],
+    "South Devon": [
+        {
+            "old": "South West Devon",
+            "weight": "4.51%"
+        },
+        {
+            "old": "Torbay",
+            "weight": "0"
+        },
+        {
+            "old": "Totnes",
+            "weight": "95.49%"
+        }
+    ],
+    "South Dorset": [
+        {
+            "old": "Mid Dorset and North Poole",
+            "weight": "0"
+        },
+        {
+            "old": "South Dorset",
+            "weight": "93.61%"
+        },
+        {
+            "old": "West Dorset",
+            "weight": "6.39%"
+        }
+    ],
+    "South Down": [
+        {
+            "old": "Lagan Valley",
+            "weight": "0.46%"
+        },
+        {
+            "old": "Newry and Armagh",
+            "weight": "1.73%"
+        },
+        {
+            "old": "South Down",
+            "weight": "95.21%"
+        },
+        {
+            "old": "Strangford",
+            "weight": "0"
+        },
+        {
+            "old": "Upper Bann",
+            "weight": "2.60%"
+        }
+    ],
+    "South East Cornwall": [
+        {
+            "old": "South East Cornwall",
+            "weight": "100.00%"
+        }
+    ],
+    "South Holland and The Deepings": [
+        {
+            "old": "South Holland and The Deepings",
+            "weight": "100.00%"
+        }
+    ],
+    "South Leicestershire": [
+        {
+            "old": "Harborough",
+            "weight": "8.29%"
+        },
+        {
+            "old": "South Leicestershire",
+            "weight": "91.71%"
+        }
+    ],
+    "South Norfolk": [
+        {
+            "old": "Mid Norfolk",
+            "weight": "19.76%"
+        },
+        {
+            "old": "South Norfolk",
+            "weight": "80.24%"
+        }
+    ],
+    "South Northamptonshire": [
+        {
+            "old": "Daventry",
+            "weight": "9.23%"
+        },
+        {
+            "old": "South Northamptonshire",
+            "weight": "84.58%"
+        },
+        {
+            "old": "Wellingborough",
+            "weight": "6.19%"
+        }
+    ],
+    "South Ribble": [
+        {
+            "old": "Chorley",
+            "weight": "4.31%"
+        },
+        {
+            "old": "Ribble Valley",
+            "weight": "8.84%"
+        },
+        {
+            "old": "South Ribble",
+            "weight": "86.85%"
+        }
+    ],
+    "South Shields": [
+        {
+            "old": "Jarrow",
+            "weight": "9.44%"
+        },
+        {
+            "old": "South Shields",
+            "weight": "90.56%"
+        }
+    ],
+    "South Shropshire": [
+        {
+            "old": "Ludlow",
+            "weight": "89.92%"
+        },
+        {
+            "old": "Shrewsbury and Atcham",
+            "weight": "10.08%"
+        }
+    ],
+    "South Suffolk": [
+        {
+            "old": "South Suffolk",
+            "weight": "100.00%"
+        }
+    ],
+    "South West Devon": [
+        {
+            "old": "South West Devon",
+            "weight": "92.34%"
+        },
+        {
+            "old": "Torridge and West Devon",
+            "weight": "7.66%"
+        }
+    ],
+    "South West Hertfordshire": [
+        {
+            "old": "Hemel Hempstead",
+            "weight": "5.34%"
+        },
+        {
+            "old": "South West Hertfordshire",
+            "weight": "63.76%"
+        },
+        {
+            "old": "St Albans",
+            "weight": "4.34%"
+        },
+        {
+            "old": "Watford",
+            "weight": "26.56%"
+        }
+    ],
+    "South West Norfolk": [
+        {
+            "old": "Mid Norfolk",
+            "weight": "1.97%"
+        },
+        {
+            "old": "North West Norfolk",
+            "weight": "0.61%"
+        },
+        {
+            "old": "South West Norfolk",
+            "weight": "97.42%"
+        }
+    ],
+    "South West Wiltshire": [
+        {
+            "old": "Chippenham",
+            "weight": "5.40%"
+        },
+        {
+            "old": "South West Wiltshire",
+            "weight": "94.60%"
+        }
+    ],
+    "Southampton Itchen": [
+        {
+            "old": "Southampton, Itchen",
+            "weight": "100.00%"
+        }
+    ],
+    "Southampton Test": [
+        {
+            "old": "Southampton, Test",
+            "weight": "100.00%"
+        }
+    ],
+    "Southend East and Rochford": [
+        {
+            "old": "Rayleigh and Wickford",
+            "weight": "3.65%"
+        },
+        {
+            "old": "Rochford and Southend East",
+            "weight": "96.35%"
+        }
+    ],
+    "Southend West and Leigh": [
+        {
+            "old": "Rochford and Southend East",
+            "weight": "10.90%"
+        },
+        {
+            "old": "Southend West",
+            "weight": "89.10%"
+        }
+    ],
+    "Southgate and Wood Green": [
+        {
+            "old": "Edmonton",
+            "weight": "1.89%"
+        },
+        {
+            "old": "Enfield North",
+            "weight": "2.24%"
+        },
+        {
+            "old": "Enfield, Southgate",
+            "weight": "54.86%"
+        },
+        {
+            "old": "Hornsey and Wood Green",
+            "weight": "33.01%"
+        },
+        {
+            "old": "Tottenham",
+            "weight": "7.99%"
+        }
+    ],
+    "Southport": [
+        {
+            "old": "South Ribble",
+            "weight": "17.45%"
+        },
+        {
+            "old": "Southport",
+            "weight": "82.55%"
+        }
+    ],
+    "Spelthorne": [
+        {
+            "old": "Spelthorne",
+            "weight": "100.00%"
+        }
+    ],
+    "Spen Valley": [
+        {
+            "old": "Batley and Spen",
+            "weight": "75.34%"
+        },
+        {
+            "old": "Dewsbury",
+            "weight": "20.78%"
+        },
+        {
+            "old": "Huddersfield",
+            "weight": "3.88%"
+        }
+    ],
+    "St Albans": [
+        {
+            "old": "St Albans",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Welwyn Hatfield",
+            "weight": "0"
+        }
+    ],
+    "St Austell and Newquay": [
+        {
+            "old": "South East Cornwall",
+            "weight": "0.40%"
+        },
+        {
+            "old": "St Austell and Newquay",
+            "weight": "99.60%"
+        }
+    ],
+    "St Helens North": [
+        {
+            "old": "St Helens North",
+            "weight": "100.00%"
+        }
+    ],
+    "St Helens South and Whiston": [
+        {
+            "old": "St Helens South and Whiston",
+            "weight": "100.00%"
+        }
+    ],
+    "St Ives": [
+        {
+            "old": "Camborne and Redruth",
+            "weight": "3.62%"
+        },
+        {
+            "old": "St Ives",
+            "weight": "96.38%"
+        }
+    ],
+    "St Neots and Mid Cambridgeshire": [
+        {
+            "old": "Huntingdon",
+            "weight": "42.21%"
+        },
+        {
+            "old": "South Cambridgeshire",
+            "weight": "40.13%"
+        },
+        {
+            "old": "South East Cambridgeshire",
+            "weight": "17.66%"
+        }
+    ],
+    "Stafford": [
+        {
+            "old": "Stafford",
+            "weight": "75.48%"
+        },
+        {
+            "old": "Stone",
+            "weight": "24.52%"
+        }
+    ],
+    "Staffordshire Moorlands": [
+        {
+            "old": "Staffordshire Moorlands",
+            "weight": "85.88%"
+        },
+        {
+            "old": "Stone",
+            "weight": "14.12%"
+        }
+    ],
+    "Stalybridge and Hyde": [
+        {
+            "old": "Stalybridge and Hyde",
+            "weight": "100.00%"
+        }
+    ],
+    "Stevenage": [
+        {
+            "old": "North East Hertfordshire",
+            "weight": "0"
+        },
+        {
+            "old": "Stevenage",
+            "weight": "100.00%"
+        }
+    ],
+    "Stirling and Strathallan": [
+        {
+            "old": "Ochil and South Perthshire",
+            "weight": "9.50%"
+        },
+        {
+            "old": "Stirling",
+            "weight": "90.50%"
+        }
+    ],
+    "Stockport": [
+        {
+            "old": "Denton and Reddish",
+            "weight": "27.31%"
+        },
+        {
+            "old": "Stockport",
+            "weight": "72.69%"
+        }
+    ],
+    "Stockton North": [
+        {
+            "old": "Stockton North",
+            "weight": "90.19%"
+        },
+        {
+            "old": "Stockton South",
+            "weight": "9.81%"
+        }
+    ],
+    "Stockton West": [
+        {
+            "old": "Sedgefield",
+            "weight": "11.44%"
+        },
+        {
+            "old": "Stockton North",
+            "weight": "3.98%"
+        },
+        {
+            "old": "Stockton South",
+            "weight": "84.58%"
+        }
+    ],
+    "Stoke-on-Trent Central": [
+        {
+            "old": "Stoke-on-Trent Central",
+            "weight": "74.07%"
+        },
+        {
+            "old": "Stoke-on-Trent North",
+            "weight": "6.30%"
+        },
+        {
+            "old": "Stoke-on-Trent South",
+            "weight": "19.62%"
+        }
+    ],
+    "Stoke-on-Trent North": [
+        {
+            "old": "Staffordshire Moorlands",
+            "weight": "3.39%"
+        },
+        {
+            "old": "Stoke-on-Trent Central",
+            "weight": "4.50%"
+        },
+        {
+            "old": "Stoke-on-Trent North",
+            "weight": "92.10%"
+        }
+    ],
+    "Stoke-on-Trent South": [
+        {
+            "old": "Stoke-on-Trent Central",
+            "weight": "0"
+        },
+        {
+            "old": "Stoke-on-Trent South",
+            "weight": "72.59%"
+        },
+        {
+            "old": "Stone",
+            "weight": "27.41%"
+        }
+    ],
+    "Stone, Great Wyrley and Penkridge": [
+        {
+            "old": "South Staffordshire",
+            "weight": "47.15%"
+        },
+        {
+            "old": "Stafford",
+            "weight": "30.05%"
+        },
+        {
+            "old": "Stone",
+            "weight": "22.80%"
+        }
+    ],
+    "Stourbridge": [
+        {
+            "old": "Dudley South",
+            "weight": "32.22%"
+        },
+        {
+            "old": "Stourbridge",
+            "weight": "67.78%"
+        }
+    ],
+    "Strangford": [
+        {
+            "old": "South Down",
+            "weight": "14.47%"
+        },
+        {
+            "old": "Strangford",
+            "weight": "85.53%"
+        }
+    ],
+    "Stratford and Bow": [
+        {
+            "old": "Bethnal Green and Bow",
+            "weight": "26.03%"
+        },
+        {
+            "old": "Poplar and Limehouse",
+            "weight": "9.16%"
+        },
+        {
+            "old": "West Ham",
+            "weight": "64.81%"
+        }
+    ],
+    "Stratford-on-Avon": [
+        {
+            "old": "Kenilworth and Southam",
+            "weight": "0"
+        },
+        {
+            "old": "Stratford-on-Avon",
+            "weight": "100.00%"
+        }
+    ],
+    "Streatham and Croydon North": [
+        {
+            "old": "Croydon North",
+            "weight": "48.34%"
+        },
+        {
+            "old": "Streatham",
+            "weight": "51.66%"
+        }
+    ],
+    "Stretford and Urmston": [
+        {
+            "old": "Stretford and Urmston",
+            "weight": "100.00%"
+        }
+    ],
+    "Stroud": [
+        {
+            "old": "Stroud",
+            "weight": "93.26%"
+        },
+        {
+            "old": "The Cotswolds",
+            "weight": "6.74%"
+        }
+    ],
+    "Suffolk Coastal": [
+        {
+            "old": "Suffolk Coastal",
+            "weight": "100.00%"
+        }
+    ],
+    "Sunderland Central": [
+        {
+            "old": "Sunderland Central",
+            "weight": "100.00%"
+        }
+    ],
+    "Surrey Heath": [
+        {
+            "old": "Surrey Heath",
+            "weight": "92.18%"
+        },
+        {
+            "old": "Woking",
+            "weight": "7.82%"
+        }
+    ],
+    "Sussex Weald": [
+        {
+            "old": "Bexhill and Battle",
+            "weight": "15.68%"
+        },
+        {
+            "old": "Wealden",
+            "weight": "84.32%"
+        }
+    ],
+    "Sutton and Cheam": [
+        {
+            "old": "Carshalton and Wallington",
+            "weight": "0"
+        },
+        {
+            "old": "Sutton and Cheam",
+            "weight": "100.00%"
+        }
+    ],
+    "Sutton Coldfield": [
+        {
+            "old": "Birmingham, Erdington",
+            "weight": "0"
+        },
+        {
+            "old": "Sutton Coldfield",
+            "weight": "100.00%"
+        }
+    ],
+    "Swansea West": [
+        {
+            "old": "Swansea East",
+            "weight": "48.82%"
+        },
+        {
+            "old": "Swansea West",
+            "weight": "51.18%"
+        }
+    ],
+    "Swindon North": [
+        {
+            "old": "North Swindon",
+            "weight": "100.00%"
+        }
+    ],
+    "Swindon South": [
+        {
+            "old": "North Swindon",
+            "weight": "13.11%"
+        },
+        {
+            "old": "South Swindon",
+            "weight": "86.89%"
+        }
+    ],
+    "Tamworth": [
+        {
+            "old": "Lichfield",
+            "weight": "2.89%"
+        },
+        {
+            "old": "Tamworth",
+            "weight": "97.11%"
+        }
+    ],
+    "Tatton": [
+        {
+            "old": "Tatton",
+            "weight": "86.01%"
+        },
+        {
+            "old": "Warrington South",
+            "weight": "12.94%"
+        },
+        {
+            "old": "Weaver Vale",
+            "weight": "1.05%"
+        }
+    ],
+    "Taunton and Wellington": [
+        {
+            "old": "Taunton Deane",
+            "weight": "100.00%"
+        }
+    ],
+    "Telford": [
+        {
+            "old": "Telford",
+            "weight": "97.24%"
+        },
+        {
+            "old": "The Wrekin",
+            "weight": "2.76%"
+        }
+    ],
+    "Tewkesbury": [
+        {
+            "old": "Cheltenham",
+            "weight": "7.18%"
+        },
+        {
+            "old": "Gloucester",
+            "weight": "6.69%"
+        },
+        {
+            "old": "Tewkesbury",
+            "weight": "86.12%"
+        }
+    ],
+    "The Wrekin": [
+        {
+            "old": "North Shropshire",
+            "weight": "8.51%"
+        },
+        {
+            "old": "The Wrekin",
+            "weight": "91.49%"
+        }
+    ],
+    "Thirsk and Malton": [
+        {
+            "old": "Richmond (Yorks)",
+            "weight": "13.03%"
+        },
+        {
+            "old": "Thirsk and Malton",
+            "weight": "86.97%"
+        }
+    ],
+    "Thornbury and Yate": [
+        {
+            "old": "Filton and Bradley Stoke",
+            "weight": "7.93%"
+        },
+        {
+            "old": "Kingswood",
+            "weight": "0.31%"
+        },
+        {
+            "old": "Thornbury and Yate",
+            "weight": "91.76%"
+        }
+    ],
+    "Thurrock": [
+        {
+            "old": "Thurrock",
+            "weight": "100.00%"
+        }
+    ],
+    "Tipton and Wednesbury": [
+        {
+            "old": "West Bromwich East",
+            "weight": "24.49%"
+        },
+        {
+            "old": "West Bromwich West",
+            "weight": "63.75%"
+        },
+        {
+            "old": "Wolverhampton South East",
+            "weight": "11.77%"
+        }
+    ],
+    "Tiverton and Minehead": [
+        {
+            "old": "Bridgwater and West Somerset",
+            "weight": "38.28%"
+        },
+        {
+            "old": "Taunton Deane",
+            "weight": "16.00%"
+        },
+        {
+            "old": "Tiverton and Honiton",
+            "weight": "45.72%"
+        }
+    ],
+    "Tonbridge": [
+        {
+            "old": "Dartford",
+            "weight": "6.10%"
+        },
+        {
+            "old": "Sevenoaks",
+            "weight": "6.24%"
+        },
+        {
+            "old": "Tonbridge and Malling",
+            "weight": "87.65%"
+        }
+    ],
+    "Tooting": [
+        {
+            "old": "Tooting",
+            "weight": "100.00%"
+        }
+    ],
+    "Torbay": [
+        {
+            "old": "Torbay",
+            "weight": "98.60%"
+        },
+        {
+            "old": "Totnes",
+            "weight": "1.40%"
+        }
+    ],
+    "Torfaen": [
+        {
+            "old": "Monmouth",
+            "weight": "10.45%"
+        },
+        {
+            "old": "Torfaen",
+            "weight": "89.55%"
+        }
+    ],
+    "Torridge and Tavistock": [
+        {
+            "old": "Central Devon",
+            "weight": "0.32%"
+        },
+        {
+            "old": "Torridge and West Devon",
+            "weight": "99.68%"
+        }
+    ],
+    "Tottenham": [
+        {
+            "old": "Hackney North and Stoke Newington",
+            "weight": "15.50%"
+        },
+        {
+            "old": "Hornsey and Wood Green",
+            "weight": "0.25%"
+        },
+        {
+            "old": "Tottenham",
+            "weight": "84.25%"
+        }
+    ],
+    "Truro and Falmouth": [
+        {
+            "old": "Camborne and Redruth",
+            "weight": "3.77%"
+        },
+        {
+            "old": "St Austell and Newquay",
+            "weight": "2.36%"
+        },
+        {
+            "old": "Truro and Falmouth",
+            "weight": "93.87%"
+        }
+    ],
+    "Tunbridge Wells": [
+        {
+            "old": "Tunbridge Wells",
+            "weight": "100.00%"
+        }
+    ],
+    "Twickenham": [
+        {
+            "old": "Twickenham",
+            "weight": "100.00%"
+        }
+    ],
+    "Tynemouth": [
+        {
+            "old": "North Tyneside",
+            "weight": "8.15%"
+        },
+        {
+            "old": "Tynemouth",
+            "weight": "91.85%"
+        }
+    ],
+    "Upper Bann": [
+        {
+            "old": "Newry and Armagh",
+            "weight": "3.37%"
+        },
+        {
+            "old": "Upper Bann",
+            "weight": "96.63%"
+        }
+    ],
+    "Uxbridge and South Ruislip": [
+        {
+            "old": "Hayes and Harlington",
+            "weight": "0"
+        },
+        {
+            "old": "Ruislip, Northwood and Pinner",
+            "weight": "13.23%"
+        },
+        {
+            "old": "Uxbridge and South Ruislip",
+            "weight": "86.77%"
+        }
+    ],
+    "Vale of Glamorgan": [
+        {
+            "old": "Vale of Glamorgan",
+            "weight": "100.00%"
+        }
+    ],
+    "Vauxhall and Camberwell Green": [
+        {
+            "old": "Bermondsey and Old Southwark",
+            "weight": "12.22%"
+        },
+        {
+            "old": "Camberwell and Peckham",
+            "weight": "15.79%"
+        },
+        {
+            "old": "Vauxhall",
+            "weight": "71.99%"
+        }
+    ],
+    "Wakefield and Rothwell": [
+        {
+            "old": "Elmet and Rothwell",
+            "weight": "19.41%"
+        },
+        {
+            "old": "Morley and Outwood",
+            "weight": "32.08%"
+        },
+        {
+            "old": "Wakefield",
+            "weight": "48.52%"
+        }
+    ],
+    "Wallasey": [
+        {
+            "old": "Wallasey",
+            "weight": "91.71%"
+        },
+        {
+            "old": "Wirral West",
+            "weight": "8.29%"
+        }
+    ],
+    "Walsall and Bloxwich": [
+        {
+            "old": "Walsall North",
+            "weight": "50.13%"
+        },
+        {
+            "old": "Walsall South",
+            "weight": "49.87%"
+        }
+    ],
+    "Walthamstow": [
+        {
+            "old": "Walthamstow",
+            "weight": "100.00%"
+        }
+    ],
+    "Warrington North": [
+        {
+            "old": "Warrington North",
+            "weight": "100.00%"
+        },
+        {
+            "old": "Warrington South",
+            "weight": "0"
+        }
+    ],
+    "Warrington South": [
+        {
+            "old": "Warrington North",
+            "weight": "0.31%"
+        },
+        {
+            "old": "Warrington South",
+            "weight": "99.69%"
+        }
+    ],
+    "Warwick and Leamington": [
+        {
+            "old": "Kenilworth and Southam",
+            "weight": "5.58%"
+        },
+        {
+            "old": "Warwick and Leamington",
+            "weight": "94.42%"
+        }
+    ],
+    "Washington and Gateshead South": [
+        {
+            "old": "Blaydon",
+            "weight": "19.30%"
+        },
+        {
+            "old": "Washington and Sunderland West",
+            "weight": "80.70%"
+        }
+    ],
+    "Watford": [
+        {
+            "old": "Hertsmere",
+            "weight": "7.26%"
+        },
+        {
+            "old": "Watford",
+            "weight": "92.74%"
+        }
+    ],
+    "Waveney Valley": [
+        {
+            "old": "Bury St Edmunds",
+            "weight": "19.18%"
+        },
+        {
+            "old": "Central Suffolk and North Ipswich",
+            "weight": "20.65%"
+        },
+        {
+            "old": "South Norfolk",
+            "weight": "41.20%"
+        },
+        {
+            "old": "Suffolk Coastal",
+            "weight": "8.88%"
+        },
+        {
+            "old": "Waveney",
+            "weight": "10.09%"
+        }
+    ],
+    "Weald of Kent": [
+        {
+            "old": "Ashford",
+            "weight": "44.38%"
+        },
+        {
+            "old": "Faversham and Mid Kent",
+            "weight": "13.04%"
+        },
+        {
+            "old": "Folkestone and Hythe",
+            "weight": "2.85%"
+        },
+        {
+            "old": "Maidstone and The Weald",
+            "weight": "39.74%"
+        }
+    ],
+    "Wellingborough and Rushden": [
+        {
+            "old": "Corby",
+            "weight": "7.21%"
+        },
+        {
+            "old": "Wellingborough",
+            "weight": "92.79%"
+        }
+    ],
+    "Wells and Mendip Hills": [
+        {
+            "old": "Bridgwater and West Somerset",
+            "weight": "6.52%"
+        },
+        {
+            "old": "North Somerset",
+            "weight": "10.10%"
+        },
+        {
+            "old": "Wells",
+            "weight": "64.60%"
+        },
+        {
+            "old": "Weston-Super-Mare",
+            "weight": "18.78%"
+        }
+    ],
+    "Welwyn Hatfield": [
+        {
+            "old": "Welwyn Hatfield",
+            "weight": "100.00%"
+        }
+    ],
+    "West Aberdeenshire and Kincardine": [
+        {
+            "old": "West Aberdeenshire and Kincardine",
+            "weight": "100.00%"
+        }
+    ],
+    "West Bromwich": [
+        {
+            "old": "Halesowen and Rowley Regis",
+            "weight": "12.33%"
+        },
+        {
+            "old": "West Bromwich East",
+            "weight": "61.79%"
+        },
+        {
+            "old": "West Bromwich West",
+            "weight": "25.89%"
+        }
+    ],
+    "West Dorset": [
+        {
+            "old": "North Dorset",
+            "weight": "0.72%"
+        },
+        {
+            "old": "South Dorset",
+            "weight": "0.24%"
+        },
+        {
+            "old": "West Dorset",
+            "weight": "99.03%"
+        }
+    ],
+    "West Dunbartonshire": [
+        {
+            "old": "Glasgow North West",
+            "weight": "3.84%"
+        },
+        {
+            "old": "West Dunbartonshire",
+            "weight": "96.16%"
+        }
+    ],
+    "West Ham and Beckton": [
+        {
+            "old": "East Ham",
+            "weight": "26.17%"
+        },
+        {
+            "old": "West Ham",
+            "weight": "73.83%"
+        }
+    ],
+    "West Lancashire": [
+        {
+            "old": "West Lancashire",
+            "weight": "100.00%"
+        }
+    ],
+    "West Suffolk": [
+        {
+            "old": "Bury St Edmunds",
+            "weight": "1.87%"
+        },
+        {
+            "old": "South Suffolk",
+            "weight": "3.58%"
+        },
+        {
+            "old": "West Suffolk",
+            "weight": "94.54%"
+        }
+    ],
+    "West Tyrone": [
+        {
+            "old": "Foyle",
+            "weight": "2.33%"
+        },
+        {
+            "old": "Mid Ulster",
+            "weight": "4.82%"
+        },
+        {
+            "old": "West Tyrone",
+            "weight": "92.85%"
+        }
+    ],
+    "West Worcestershire": [
+        {
+            "old": "West Worcestershire",
+            "weight": "100.00%"
+        }
+    ],
+    "Westmorland and Lonsdale": [
+        {
+            "old": "Penrith and The Border",
+            "weight": "27.56%"
+        },
+        {
+            "old": "Westmorland and Lonsdale",
+            "weight": "72.44%"
+        }
+    ],
+    "Weston-super-Mare": [
+        {
+            "old": "Weston-Super-Mare",
+            "weight": "100.00%"
+        }
+    ],
+    "Wetherby and Easingwold": [
+        {
+            "old": "Elmet and Rothwell",
+            "weight": "43.86%"
+        },
+        {
+            "old": "Harrogate and Knaresborough",
+            "weight": "5.10%"
+        },
+        {
+            "old": "Leeds East",
+            "weight": "0"
+        },
+        {
+            "old": "Selby and Ainsty",
+            "weight": "28.08%"
+        },
+        {
+            "old": "Skipton and Ripon",
+            "weight": "4.50%"
+        },
+        {
+            "old": "Thirsk and Malton",
+            "weight": "18.46%"
+        }
+    ],
+    "Whitehaven and Workington": [
+        {
+            "old": "Copeland",
+            "weight": "63.23%"
+        },
+        {
+            "old": "Workington",
+            "weight": "36.77%"
+        }
+    ],
+    "Widnes and Halewood": [
+        {
+            "old": "Garston and Halewood",
+            "weight": "22.47%"
+        },
+        {
+            "old": "Halton",
+            "weight": "69.49%"
+        },
+        {
+            "old": "Knowsley",
+            "weight": "0"
+        },
+        {
+            "old": "St Helens South and Whiston",
+            "weight": "8.05%"
+        }
+    ],
+    "Wigan": [
+        {
+            "old": "Wigan",
+            "weight": "100.00%"
+        }
+    ],
+    "Wimbledon": [
+        {
+            "old": "Kingston and Surbiton",
+            "weight": "17.18%"
+        },
+        {
+            "old": "Wimbledon",
+            "weight": "82.82%"
+        }
+    ],
+    "Winchester": [
+        {
+            "old": "Meon Valley",
+            "weight": "22.55%"
+        },
+        {
+            "old": "Winchester",
+            "weight": "77.45%"
+        }
+    ],
+    "Windsor": [
+        {
+            "old": "Runnymede and Weybridge",
+            "weight": "16.05%"
+        },
+        {
+            "old": "Slough",
+            "weight": "13.11%"
+        },
+        {
+            "old": "Windsor",
+            "weight": "70.84%"
+        }
+    ],
+    "Wirral West": [
+        {
+            "old": "Wirral South",
+            "weight": "30.66%"
+        },
+        {
+            "old": "Wirral West",
+            "weight": "69.34%"
+        }
+    ],
+    "Witham": [
+        {
+            "old": "Braintree",
+            "weight": "8.45%"
+        },
+        {
+            "old": "Witham",
+            "weight": "91.55%"
+        }
+    ],
+    "Witney": [
+        {
+            "old": "Oxford West and Abingdon",
+            "weight": "1.16%"
+        },
+        {
+            "old": "Wantage",
+            "weight": "24.39%"
+        },
+        {
+            "old": "Witney",
+            "weight": "74.45%"
+        }
+    ],
+    "Woking": [
+        {
+            "old": "Woking",
+            "weight": "100.00%"
+        }
+    ],
+    "Wokingham": [
+        {
+            "old": "Bracknell",
+            "weight": "20.54%"
+        },
+        {
+            "old": "Maidenhead",
+            "weight": "18.06%"
+        },
+        {
+            "old": "Wokingham",
+            "weight": "61.40%"
+        }
+    ],
+    "Wolverhampton North East": [
+        {
+            "old": "Walsall North",
+            "weight": "23.32%"
+        },
+        {
+            "old": "Wolverhampton North East",
+            "weight": "76.68%"
+        }
+    ],
+    "Wolverhampton South East": [
+        {
+            "old": "Walsall North",
+            "weight": "14.40%"
+        },
+        {
+            "old": "Walsall South",
+            "weight": "26.39%"
+        },
+        {
+            "old": "Wolverhampton South East",
+            "weight": "59.22%"
+        }
+    ],
+    "Wolverhampton West": [
+        {
+            "old": "Wolverhampton North East",
+            "weight": "11.08%"
+        },
+        {
+            "old": "Wolverhampton South East",
+            "weight": "11.20%"
+        },
+        {
+            "old": "Wolverhampton South West",
+            "weight": "77.72%"
+        }
+    ],
+    "Worcester": [
+        {
+            "old": "Worcester",
+            "weight": "100.00%"
+        }
+    ],
+    "Worsley and Eccles": [
+        {
+            "old": "Leigh",
+            "weight": "12.28%"
+        },
+        {
+            "old": "Salford and Eccles",
+            "weight": "23.95%"
+        },
+        {
+            "old": "Worsley and Eccles South",
+            "weight": "63.77%"
+        }
+    ],
+    "Worthing West": [
+        {
+            "old": "Arundel and South Downs",
+            "weight": "11.42%"
+        },
+        {
+            "old": "Worthing West",
+            "weight": "88.58%"
+        }
+    ],
+    "Wrexham": [
+        {
+            "old": "Clwyd South",
+            "weight": "27.51%"
+        },
+        {
+            "old": "Wrexham",
+            "weight": "72.49%"
+        }
+    ],
+    "Wycombe": [
+        {
+            "old": "Aylesbury",
+            "weight": "0.75%"
+        },
+        {
+            "old": "Wycombe",
+            "weight": "99.25%"
+        }
+    ],
+    "Wyre Forest": [
+        {
+            "old": "Wyre Forest",
+            "weight": "100.00%"
+        }
+    ],
+    "Wythenshawe and Sale East": [
+        {
+            "old": "Wythenshawe and Sale East",
+            "weight": "100.00%"
+        }
+    ],
+    "Yeovil": [
+        {
+            "old": "Somerton and Frome",
+            "weight": "0.12%"
+        },
+        {
+            "old": "Yeovil",
+            "weight": "99.88%"
+        }
+    ],
+    "Ynys M\u00f4n": [
+        {
+            "old": "Ynys M\u00f4n",
+            "weight": "100.00%"
+        }
+    ],
+    "York Central": [
+        {
+            "old": "York Central",
+            "weight": "94.64%"
+        },
+        {
+            "old": "York Outer",
+            "weight": "5.36%"
+        }
+    ],
+    "York Outer": [
+        {
+            "old": "York Central",
+            "weight": "1.37%"
+        },
+        {
+            "old": "York Outer",
+            "weight": "98.63%"
+        }
+    ]
+}

@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import last_election_data from './scaled.json';
 import latest_forecast from "./latest.json";
 import pca from "./polls_pca.json";
+import new_constituency_mapping from "./new_constituency_mapping.json";
 
 const party_lists = 
 {
@@ -15,36 +16,43 @@ const party_lists =
 
 const all_parties = ["CON","LAB","LD","REF","GRN","SNP","PC","DUP","SF","SDLP","UUP","APNI"];
 
+const old_constituencies = last_election_data.map((row)=>{return row["Constituency name"]});
+const new_constituencies = new_constituency_mapping.keys;
+
+
+const latest_forecast_plus_NI = {
+  ...latest_forecast,
+  "SF": 31,
+  "DUP": 25,
+  "APNI": 15,
+  "UUP": 11,
+  "SDLP": 9,
+}
+
+let country_weighting = {};
+let total = 0;
+for (let row of last_election_data) {
+  total = total + 1;
+  for (let party of party_lists[row["Country name"]]) {
+    if (!country_weighting.hasOwnProperty(party)) country_weighting[party] = 0;
+    country_weighting[party] += 1;
+  }
+}
+Object.keys(country_weighting).forEach((party) => {country_weighting[party] = total/country_weighting[party]})
+
+
+
 function App() {
 
-  let weights = {};
-  let total = 0;
-  for (let row of last_election_data) {
-    total = total + 1;
-    for (let party of party_lists[row["Country name"]]) {
-      if (!weights.hasOwnProperty(party)) weights[party] = 0;
-      weights[party] += 1;
-    }
-  }
-  Object.keys(weights).forEach((party) => {weights[party] = total/weights[party]})
-
-  const latest_forecast_plus_NI = {
-    ...latest_forecast,
-    "SF": 31,
-    "DUP": 25,
-    "APNI": 15,
-    "UUP": 11,
-    "SDLP": 9,
-  }
-
-  const [last_election /*setLastElection*/] = useState(last_election_data);
+  const [last_election /*, setLastElection*/] = useState(last_election_data);
   const [national_forecast, setNationalForecast] = useState(latest_forecast_plus_NI);
-  const [forecast_weights/*, setForecastWeights*/] = useState(weights);
 
   const [total_seats, setTotalSeats] = useState({"England":{},"Northern Ireland":{},"Scotland":{}, "Wales":{}});
   const [total_change, setTotalChange] = useState({"England":{},"Northern Ireland":{},"Scotland":{}, "Wales":{}});
 
   const [factors, setFactors] = useState([0,0,0]);
+
+  let forecast = compute_forecast(national_forecast);
 
   let totals_updater = function(country, seats, changes) {
     if (JSON.stringify(total_seats[country]) !== JSON.stringify(seats)) {
@@ -109,10 +117,10 @@ function App() {
           </tbody>
         </table>
       </div>
-      <CountrySummary key="England" country="England" forecast={national_forecast} last_election={last_election} weights={forecast_weights} totals_updater={totals_updater} />
-      <CountrySummary key="Scotland" country="Scotland" forecast={national_forecast} last_election={last_election} weights={forecast_weights} totals_updater={totals_updater} />
-      <CountrySummary key="Wales" country="Wales" forecast={national_forecast} last_election={last_election} weights={forecast_weights} totals_updater={totals_updater} />
-      <CountrySummary key="Northern Ireland" country="Northern Ireland" forecast={national_forecast} last_election={last_election} weights={forecast_weights} totals_updater={totals_updater} />
+      <CountrySummary key="England" country="England" forecast={national_forecast} last_election={last_election} totals_updater={totals_updater} />
+      <CountrySummary key="Scotland" country="Scotland" forecast={national_forecast} last_election={last_election} totals_updater={totals_updater} />
+      <CountrySummary key="Wales" country="Wales" forecast={national_forecast} last_election={last_election} totals_updater={totals_updater} />
+      <CountrySummary key="Northern Ireland" country="Northern Ireland" forecast={national_forecast} last_election={last_election}  totals_updater={totals_updater} />
 
     </div>
   );
@@ -222,7 +230,7 @@ function CountrySummary(props) {
     function compute_constituency_forecast(item) {
 
       function party_forecast( party, item) {
-        let pct = item[party+"_pct_scaled"] * props.weights[party];
+        let pct = item[party+"_pct_scaled"] * country_weighting[party];
         if (pct<=0) pct = 1.0;
         return pct * props.forecast[party];
       }
@@ -367,6 +375,50 @@ function ConstituencyDetail(props) {
     </tr>
 
   )  
+}
+
+
+// const [seats, setSeats] = useState({});
+// const [change, setChange] = useState({});
+
+// const party_list = party_lists[props.country];
+
+function compute_forecast(national_forecast) {
+  
+  function party_forecast( party, item) {
+    let pct = item[party+"_pct_scaled"] * country_weighting[party];
+    if (pct<=0) pct = 1.0;
+    return pct * national_forecast[party];
+  }
+
+  function compute_constituency_forecast(item) {
+
+    const party_list = party_lists[item["Country name"]];
+
+    let total_pct = party_list
+                    .map(party=> {
+                                  return party_forecast(party, item);
+                                })
+                                    .reduce((acc, party) => {
+                                      return acc += party;
+                                    }, 0);
+    let forecast_result_list = party_list.map(party=>{return [party, 100* party_forecast(party, item) / total_pct]});
+    
+    forecast_result_list.sort((a,b) => b[1] - a[1]);
+    let winner = forecast_result_list[0][0];
+    let predecessor = item["First party"];
+
+    let constituency_forecast = Object.fromEntries(forecast_result_list);
+    return [constituency_forecast, winner, predecessor];
+  }
+
+  let ret = [];
+
+  for (let item of last_election_data) {
+      ret.push([item, compute_constituency_forecast(item)]);
+    }
+
+  return ret;
 }
 
 export default App;
