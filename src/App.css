@@ -44,7 +44,13 @@
 
 td, th {
   border: 1px solid;
+  padding: 2px;;
 }
+
+div {
+  padding: 2px;
+}
+
 
 
 .party_name {
@@ -65,4 +71,9 @@ table {
   border: 1px solid;
   border-collapse: collapse;
   
+}
+
+.hover {
+  background-color: gray;
+  position: absolute;
 }

@@ -1,5 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 import last_election_data from './scaled.json';
 import latest_forecast from "./latest.json";
@@ -16,8 +18,8 @@ const party_lists =
 
 const all_parties = ["CON", "LAB", "LD", "REF", "GRN", "SNP", "PC", "DUP", "SF", "SDLP", "UUP", "APNI"];
 
-const old_constituencies = last_election_data.map((row) => { return row["Constituency name"] });
-const new_constituencies = new_constituency_mapping.keys;
+const old_constituencies = Object.fromEntries(last_election_data.map((row) => { return [row["Constituency name"], row]; }));
+const new_constituencies = Object.keys(new_constituency_mapping);
 
 
 const latest_forecast_plus_NI = {
@@ -41,16 +43,18 @@ for (let row of last_election_data) {
 Object.keys(country_weighting).forEach((party) => { country_weighting[party] = total / country_weighting[party] })
 
 
-
 function App() {
 
   const [national_forecast, setNationalForecast] = useState(latest_forecast_plus_NI);
   const [factors, setFactors] = useState([0, 0, 0]);
-  const [constituency_forecasts, setConstituencyForecasts] = useState(compute_forecast(national_forecast));
+  const [stdDeviations, setStdDeviations] = useState([10, 1, 0.5]);
+  // const [constituency_forecasts, setConstituencyForecasts] = useState(compute_old_constituency_forecasts(national_forecast));
+  const [constituency_forecasts, setConstituencyForecasts] = useState(compute_new_constituency_forecasts(national_forecast, factors, stdDeviations));
   const [seats, setSeats] = useState(compute_seats(constituency_forecasts));
 
+
   let adjuster = function (index, amount) {
-    setFactors(factors => { factors[index] += amount; return factors.map(i => i); })
+    setFactors((factors) => { factors[index] += amount; return factors.map(i => i); })
     let new_forecast = {}
     all_parties.forEach((party) => {
       if (pca[index][party]) {
@@ -61,7 +65,20 @@ function App() {
       }
     })
     setNationalForecast(forecast => new_forecast);
-    let new_constituency_forecasts = compute_forecast(new_forecast);
+    // let new_constituency_forecasts = compute_old_constituency_forecasts(new_forecast);
+    let new_constituency_forecasts = compute_new_constituency_forecasts(new_forecast, factors, stdDeviations);
+    setConstituencyForecasts(new_constituency_forecasts);
+    setSeats(compute_seats(new_constituency_forecasts));
+  }
+
+  let stdDevAdjuster = function (index, amount) {
+    console.log("stdDevAdjuster");
+
+    stdDeviations[index] += amount;
+    if (stdDeviations[index]<0) {stdDeviations[index]=0};
+
+    let new_constituency_forecasts = compute_new_constituency_forecasts(national_forecast, factors, stdDeviations);
+    setStdDeviations((dev) => { return stdDeviations })
     setConstituencyForecasts(new_constituency_forecasts);
     setSeats(compute_seats(new_constituency_forecasts));
   }
@@ -80,7 +97,9 @@ function App() {
               <th key={id}>{party}</th>
             ))
 
-          }<th colSpan="2">adjust</th><th>factor</th></tr></thead>
+          }
+          <th colSpan="3">adjust factor</th>
+          <th colSpan="3">adjust deviation</th></tr></thead>
           <tbody>
             {
               pca.map((vector, index) => {
@@ -93,6 +112,9 @@ function App() {
                     <td><button onClick={() => adjuster(index, 1)}>+</button></td>
                     <td><button onClick={() => adjuster(index, -1)}>-</button></td>
                     <td>{factors[index]}</td>
+                    <td><button onClick={() => stdDevAdjuster(index, 1)}>+</button></td>
+                    <td><button onClick={() => stdDevAdjuster(index, -1)}>-</button></td>
+                    <td>{stdDeviations[index]}</td>
                   </tr>
                 )
               })
@@ -185,6 +207,9 @@ function NationalForecast({ seats, national_forecast }) {
 }
 
 function CountryDetail({ country, constituency_forecasts, seats }) {
+  console.log("CountryDetail");
+
+  const [popup, setPopup] = useState({});
 
   let party_list = party_lists[country];
 
@@ -200,6 +225,8 @@ function CountryDetail({ country, constituency_forecasts, seats }) {
         </tr></thead>
         <thead><tr>
           <th>Constituency</th>
+          <th>Previous name</th>
+          <th>Carried over</th>
           <th>Member</th>
           <th>Party</th>
           {
@@ -213,6 +240,7 @@ function CountryDetail({ country, constituency_forecasts, seats }) {
             ))
           }
           <th>Winner</th>
+          <th>Probability</th>
         </tr></thead>
         <tbody>
           {
@@ -227,18 +255,65 @@ function CountryDetail({ country, constituency_forecasts, seats }) {
 
 function ConstituencyDetail({ record, index }) {
 
+
   let party_list = party_lists[record[0]["Country name"]];
   let announce;
-  if (record[1][1] === record[1][2]) {
-    announce = <td className="name">{record[1][1]} hold</td>;
+  if (record[2] === record[3]) {
+    announce = <td className="name">{record[2]} hold</td>;
   }
   else {
-    announce = <td className="name">{record[1][1]} win from {record[1][2]}</td>;
+    announce = <td className="name">{record[2]} win from {record[3]}</td>;
+  }
+
+  let constituency_name = record[0]["Constituency name"];
+  let previous_name = record[0]["Previous name"];
+  let name_changed = constituency_name.toUpperCase() !== previous_name.toUpperCase();
+
+  let contributors = record[4];
+
+  let prob;
+  if (record[5]) {
+    prob = <td>{Math.round(record[5]*100)}%</td>;
+  }
+  else {
+    prob = <td></td>;
   }
 
   return (
     <tr key={index}>
       <td className="name">{record[0]["Constituency name"]}</td>
+      <td className="name">{name_changed ? record[0]["Previous name"] : ""}</td>
+      <td className="name">
+        <Popup trigger={<button>{record[0]["weight"]}%</button>}>
+        <div class="hover">
+          <p>The Constituency of {record[0]["Constituency name"]} is formed from the following constituencies of the 2019 election</p>
+          <table>
+            <thead><tr>
+              <th>Weight</th>
+              <th>Constituency</th>
+              <th>Member</th>
+              <th>Party</th>
+              {party_list.map((party, index)=>(<th key={index}>{party}</th>))}
+            </tr></thead>
+            <tbody>
+              {contributors.map((c,r) => (
+                <tr key={r}>
+                  <td>{c[0]}</td>
+                  <td>{c[1]["Constituency name"]}</td>
+                  <td>{c[1]["Member first name"]} {c[1]["Member surname"]}</td>
+                  <td>{c[1]["First party"]}</td>
+                  {
+                    party_list.map((party) => (
+                      <td>{c[1][party]}</td>
+                    ))
+                  }
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          </div>
+        </Popup> 
+      </td>
       <td className="name">{record[0]["Member first name"] + " " + record[0]["Member surname"]}</td>
       <td className="name">{record[0]["First party"]}</td>
       {
@@ -248,21 +323,20 @@ function ConstituencyDetail({ record, index }) {
       }
       {
         party_list.map((party, id) => (
-          <td key={id} className="number">{String(Math.round(record[1][0][party])) + "%"}</td>
+          <td key={id} className="number">{String(Math.round(record[1][party])) + "%"}</td>
         ))
       }
       {announce}
+      {prob}
     </tr>
   )
 }
-
 
 function party_forecast(party, item, national_forecast) {
   let pct = item[party + "_pct_scaled"] * country_weighting[party];
   if (pct <= 0) pct = 1.0;
   return pct * national_forecast[party];
 }
-
 
 function compute_constituency_forecast(item, national_forecast) {
 
@@ -285,12 +359,13 @@ function compute_constituency_forecast(item, national_forecast) {
   return [constituency_forecast, winner, predecessor];
 }
 
-function compute_forecast(national_forecast) {
+function compute_old_constituency_forecasts(national_forecast) {
 
   let ret = [];
 
   for (let item of last_election_data) {
-    ret.push([item, compute_constituency_forecast(item, national_forecast)]);
+    let forecast = compute_constituency_forecast(item, national_forecast)
+    ret.push([item, forecast[0], forecast[1], forecast[2]]);
   }
 
   return ret;
@@ -312,17 +387,150 @@ function compute_seats(constituency_forecasts) {
 
 
   for (let forecast of constituency_forecasts) {
-    total[forecast[0]["Country name"]][forecast[1][1]]++;
-    total["UK"][forecast[1][1]]++;
-    if (forecast[1] !== forecast[2]) {
-      change[forecast[0]["Country name"]][forecast[1][2]]--;
-      change[forecast[0]["Country name"]][forecast[1][1]]++;
-      change["UK"][forecast[1][2]]--;
-      change["UK"][forecast[1][1]]++;
+    total[forecast[0]["Country name"]][forecast[2]]++;
+    total["UK"][forecast[2]]++;
+    if (forecast[2] !== forecast[3]) {
+      change[forecast[0]["Country name"]][forecast[3]]--;
+      change[forecast[0]["Country name"]][forecast[2]]++;
+      change["UK"][forecast[3]]--;
+      change["UK"][forecast[2]]++;
     }
   }
   return [total, change];
 }
 
+function compute_new_constituency_forecasts(national_forecast, factors, stdDeviations) {
 
+  console.log("compute_new_constituency_forecasts");
+  // [[item, [{"party", %}, winner, pred]]]]
+  let old_constituency_forecasts = compute_old_constituency_forecasts(national_forecast);
+
+  let old_constituency_lookup = Object.fromEntries(old_constituency_forecasts.map((row)=>{return [row[0]["Constituency name"].toUpperCase(), row]}));
+
+  let ret = [];
+
+  for (let new_constituency of new_constituencies) {
+    let map = new_constituency_mapping[new_constituency];
+    let forecast = {
+      "Constituency name": new_constituency,
+    }
+
+    let [prev_constituency, weight] = find_max_prop(map);
+    if (!prev_constituency) {debugger}
+    let last_result = old_constituency_lookup[prev_constituency.toUpperCase()];
+    if (!last_result) {debugger;continue;}
+
+    const country = last_result[0]["Country name"];
+    const party_list = party_lists[country];
+
+    let new_constituency_forecast = {};
+    let new_constituency_total = 0.0;
+    party_list.forEach((party) => {new_constituency_forecast[party] = 0;});
+
+    let contributors = [];
+
+    let map_list = Object.entries(map);
+    map_list.sort((a,b) => {return b[1] - a[1];});
+    for (let map_entry of map_list) {
+      const old_constituency_name = map_entry[0];
+      const weight = map_entry[1];
+      party_list.forEach((party) => {
+        new_constituency_forecast[party] += weight * old_constituency_lookup[old_constituency_name.toUpperCase()][1][party];
+        new_constituency_total += weight * last_result[1][party]
+      });
+      contributors.push([weight,...old_constituency_lookup[old_constituency_name.toUpperCase()]]);
+    }
+    
+    party_list.forEach((party) => {
+      new_constituency_forecast[party] /= (new_constituency_total * 0.01);
+    });
+
+    let winner = find_max_prop(new_constituency_forecast);
+
+    let probability;
+    if (stdDeviations && country !== "Northern Ireland") {
+      let unsorted = Object.entries(new_constituency_forecast);
+      let sorted = unsorted.sort((p1,p2) => p2[1]-p1[1]);
+      let winner = sorted[0][0];
+      let second = sorted[1][0];
+      let margin = sorted[0][1] - sorted[1][1];
+      // console.log(pca);
+      let varb = ((pca[0][winner] - pca[0][second])*stdDeviations[0])**2
+      + ((pca[1][winner] - pca[1][second])*stdDeviations[1])**2
+      + ((pca[2][winner] - pca[2][second])*stdDeviations[2])**2;
+      let sd = Math.sqrt(varb);
+      probability = probability_fn(margin, sd);
+      // console.log(probability);
+    }
+    let prev_result = {
+      "weight": map_list[0][1],
+      "Constituency name": new_constituency,
+      "Previous name":  last_result[0]["Constituency name"],
+      "Country name": country,
+      "Member first name":  last_result[0]["Member first name"],
+      "Member surname":  last_result[0]["Member surname"],
+      "First party":  last_result[0]["First party"],
+    };
+    party_list.forEach((party) => {
+      prev_result[party] = last_result[0][party];
+    });
+
+
+    ret.push(
+      [
+        prev_result,
+        new_constituency_forecast,
+        winner[0],
+        last_result[0]["First party"],
+        contributors,
+        probability
+      ]
+    )
+
+  }
+
+  return ret;
+}
+
+function find_max_prop(l) {
+  let ind = "";
+  let max = -Infinity;
+
+  for (let i of Object.keys(l)) {
+    if (l[i] > max) {
+      ind = i;
+      max = l[i];
+    }
+  }
+
+  return [ind, max];
+}
+
+function normalcdf(X){   //HASTINGS.  MAX ERROR = .000001
+	var T=1/(1+.2316419*Math.abs(X));
+	var D=.3989423*Math.exp(-X*X/2);
+	var Prob=D*T*(.3193815+T*(-.3565638+T*(1.781478+T*(-1.821256+T*1.330274))));
+	if (X>0) {
+		Prob=1-Prob
+	}
+	return Prob
+}   
+
+function probability_fn(Z, SD) {
+    let M=0;
+    let Prob;
+		if (SD<0) {
+			alert("The standard deviation must be nonnegative.")
+		} else if (SD==0) {
+		    if (Z<M){
+		        Prob=0
+		    } else {
+			    Prob=1
+			}
+		} else {
+			Prob=normalcdf((Z-M)/SD);
+			Prob=Math.round(100000*Prob)/100000;
+		}
+    return Prob;
+}
 export default App;

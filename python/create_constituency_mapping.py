@@ -10,11 +10,8 @@ def csv_to_json(csvFilePath, jsonFilePath):
         for row in csvReader:
             key = row.pop('new')  # Extract the key (first column)
             if (key not in jsonObject):
-                jsonObject[key] = []
-            jsonObject[key].append ({
-                    "old": row.pop('old'),
-                    "weight": row.pop('weight')
-                })
+                jsonObject[key] = {}
+            jsonObject[key][row.pop('old')] = float(row.pop('weight'))
 
     # Write the dictionary to a JSON file
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
