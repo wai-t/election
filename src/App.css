@@ -39,14 +39,30 @@
 
 .number {
   text-align: right;
-  background-color: pink;
 }
 
-td, th {
-  border: 1px solid;
+.td, .th {
+  border: 1px solid black;
   padding: 2px;;
+  background: yellow;
+}
+.table {
+  border: 1px solid;
+  border-collapse: collapse;
+  background: yellow;  
 }
 
+.efcst {
+  background-color: powderblue;  
+}
+.etd, .eth {
+  border: 1px solid gray;
+  padding: 3px
+}
+.etable {
+  background-color: lightblue;
+  padding: 10px;
+}
 div {
   padding: 2px;
 }
@@ -57,9 +73,30 @@ div {
   width: 100px;
 }
 
+.panel {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+}
 .country_section {
   width:min-content;
-  background-color: grey;
+  background-color: greenyellow;
+  border: solid grey;
+}
+
+.constituency_section {
+  width:fit-content;
+  background-color: palegreen;
+  border: solid grey;
+}
+
+.country_label {
+  text-decoration: underline;
+}
+.control_panel {
+  width:min-content;
+  background-color: orange;
+  border: solid grey;
 }
 
 .name {
@@ -67,13 +104,50 @@ div {
   width: 100px;
 }
 
-table {
-  border: 1px solid;
-  border-collapse: collapse;
-  
+
+.popup {
+  background-color: chartreuse;
+  position: absolute;
+  padding: 20px;
+  border-radius: 20px;;
 }
 
-.hover {
-  background-color: gray;
-  position: absolute;
+.popup_table {
+  border: 1px solid gray;
+  padding: 3px
+}
+
+.div_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.LAB {
+  background-color: #E4003B;
+  color: yellow;
+}
+
+.CON {
+  background-color: #0087DC;
+}
+
+.LD {
+  background-color: 	#FAA61A;
+}
+
+.GRN {
+  background-color: #528D6B;
+}
+
+.REF {
+  background-color: 	#12B6CF;
+}
+
+.PC {
+  background-color: 	#005B54;
+  color: yellow;
+}
+
+.SNP {
+  background-color: 	#FDF38E;
 }

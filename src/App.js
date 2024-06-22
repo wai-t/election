@@ -1,7 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 import last_election_data from './scaled.json';
 import latest_forecast from "./latest.json";
@@ -19,6 +22,8 @@ const party_lists =
 const all_parties = ["CON", "LAB", "LD", "REF", "GRN", "SNP", "PC", "DUP", "SF", "SDLP", "UUP", "APNI"];
 
 const new_constituencies = Object.keys(new_constituency_mapping);
+
+const number_of_constituencies = new_constituencies.length;
 
 // https://www.electoralcalculus.co.uk/polls_ni.html
 const latest_forecast_plus_NI = {
@@ -86,47 +91,66 @@ function App() {
       </header>
 
       <NationalForecast national_forecast={national_forecast} seats={seats} />
-      <div className="control_panel">
-        <table>
-          <thead><tr><th>Principal Component</th>{
-            all_parties.map((party, id) => (
-              <th key={id}>{party}</th>
-            ))
+      <ControlPanel factors={factors} stdDeviations={stdDeviations} adjuster={adjuster} stdDevAdjuster={stdDevAdjuster}/>
 
-          }
-          <th colSpan="3">adjust factor</th>
-          <th colSpan="3">adjust deviation</th></tr></thead>
-          <tbody>
-            {
-              pca.map((vector, index) => {
-                return (
-                  <tr key={index}>
-                    <th>{index}</th>
-                    {all_parties.map((party, id) => (
-                      <td key={id}>{vector[party]}</td>
-                    ))}
-                    <td><button onClick={() => adjuster(index, 1)}>+</button></td>
-                    <td><button onClick={() => adjuster(index, -1)}>-</button></td>
-                    <td>{factors[index]}</td>
-                    <td><button onClick={() => stdDevAdjuster(index, 1)}>+</button></td>
-                    <td><button onClick={() => stdDevAdjuster(index, -1)}>-</button></td>
-                    <td>{stdDeviations[index]}</td>
-                  </tr>
-                )
-              })
-            }
-          </tbody>
-        </table>
-      </div>
-      <CountryDetail key="England" country="England" constituency_forecasts={constituency_forecasts} seats={seats} />
-      <CountryDetail key="Scotland" country="Scotland" constituency_forecasts={constituency_forecasts} seats={seats} />
-      <CountryDetail key="Wales" country="Wales" constituency_forecasts={constituency_forecasts} seats={seats} />
-      <CountryDetail key="Northern Ireland" country="Northern Ireland" constituency_forecasts={constituency_forecasts} seats={seats} />
+      <Tabs defaultActiveKey="England" className="mb-3">
+        {
+          Object.keys(party_lists).map((country) => (
+            <Tab eventKey={country} title = {country}>
+            <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
+            </Tab>
+          ))
+        }
+        {/* <Tab title = "Scotland"><CountryDetail key="Scotland" country="Scotland" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab>
+        <Tab title = "Wales"> <CountryDetail key="Wales" country="Wales" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab>
+        <Tab title = "Northern Ireland"><CountryDetail key="Northern Ireland" country="Northern Ireland" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab> */}
+      </Tabs>
+      
+
+      
 
     </div>
   );
 }
 
+function ControlPanel({factors, stdDeviations, adjuster, stdDevAdjuster}) {
+  return (
+    <div className="control_panel panel">
+    <h3>Statistical Analysis</h3>
+    <table className="etable">
+      <thead><tr><th className="eth">Principal Component</th>{
+        all_parties.map((party, id) => (
+          <th key={id} className="eth">{party}</th>
+        ))
+
+      }
+      <th colSpan="3" className="eth">adjust factor</th>
+      <th colSpan="3" className="eth">adjust deviation</th></tr></thead>
+      <tbody>
+        {
+          pca.map((vector, index) => {
+            return (
+              <tr key={index}>
+                <th className="eth">{index}</th>
+                {all_parties.map((party, id) => (
+                  <td key={id} className="etd">{vector[party] ? Math.round(vector[party]*100) : ""}</td>
+                ))}
+                <td><button onClick={() => adjuster(index, 1)}>+</button></td>
+                <td><button onClick={() => adjuster(index, -1)}>-</button></td>
+                <td className="etd">{factors[index]}</td>
+                <td><button onClick={() => stdDevAdjuster(index, 1)}>+</button></td>
+                <td><button onClick={() => stdDevAdjuster(index, -1)}>-</button></td>
+                <td className="etd">{stdDeviations[index]}</td>
+              </tr>
+            )
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+
+  )
+}
 function prefix_plus(num) {
   return (num > 0 ? "+" : "") + num;
 }
@@ -135,61 +159,69 @@ function NationalForecast({ seats, national_forecast }) {
 
   return (
     <div>
-      <div>
+      <div className="country_section panel">
         <h3>UK</h3>
-        <table>
+        <table className="etable">
           <thead>
-            <tr><th></th>{
+            <tr><th className="eth"></th>{
               all_parties.map((party, id) => (
-                <th key={id} className="party_name">{party}</th>
+                <th key={id} className="eth party_name">{party}</th>
               ))
             }
             </tr>
           </thead>
           <tbody>
-            <tr><th>Vote share</th>{
+            <tr><th className="eth">Vote share</th>{
               all_parties.map((party, id) => (
-                <td key={id} className="number">{Math.round(national_forecast[party])}</td>
+                <td key={id} className="etd number">{Math.round(national_forecast[party])}</td>
               ))
             }
             </tr>
-            <tr><th>predicted seats</th>{
+            <tr><th className="eth">predicted seats</th>{
               all_parties.map((party, id) => (
-                <td key={id} className="number">{seats[0]["UK"][party]}</td>
+                <td key={id} className="etd number">{seats[0]["UK"][party]}</td>
               ))
             }
             </tr>
-            <tr><th>change+/-</th>{
+            <tr><th className="eth">change+/-</th>{
               all_parties.map((party, id) => (
-                <td key={id} className="number">{prefix_plus(seats[1]["UK"][party])}</td>
+                <td key={id} className="etd number">{prefix_plus(seats[1]["UK"][party])}</td>
               ))
             }
             </tr>
+            <tr>
+                <th className='eth'>majority</th>{
+                all_parties.map((party, id) => (
+                  <td key={id} className="etd number">{(seats[0]["UK"][party]*2>number_of_constituencies) ? (seats[0]["UK"][party]*2 - number_of_constituencies): ""}</td>
+                ))
+                }
+              </tr>
           </tbody>
         </table>
       </div>
+      <div class="div_row">
       {Object.keys(party_lists).map((country, id) => (
-        <div key={id} className="country_section">
+        <div key={id} className="country_section panel">
           <h3>
             {country}
           </h3>
-          <table>
-            <thead><tr><th></th>{
+          <table className="etable">
+            <thead><tr><th className="eth"></th>{
               party_lists[country].map((party, id) => (
-                <th key={id}>{party}</th>
+                <th key={id} className="eth party_name">{party}</th>
               ))
             }
             </tr></thead>
             <tbody>
-              <tr><th>predicted seats</th>{
+              <tr><th className = "eth">predicted seats</th>{
                 party_lists[country].map((party, id) => (
-                  <td key={id} className="number">{seats[0][country][party]}</td>
+                  <td key={id} className="etd number">{seats[0][country][party]}</td>
                 ))
               }
               </tr>
-              <tr><th>change+/-</th>{
+              <tr><th className = "eth">change+/-</th>{
                 party_lists[country].map((party, id) => (
-                  <td key={id} className="number">{seats[1][country][party]}</td>
+                  <td key={id} className="etd number">{seats[1][country][party]}</td>
                 ))
               }
               </tr>
@@ -197,6 +229,7 @@ function NationalForecast({ seats, national_forecast }) {
           </table>
         </div>
       ))}
+        </div>
 
     </div>
   );
@@ -209,31 +242,32 @@ function CountryDetail({ country, constituency_forecasts, seats }) {
   let constituencies = constituency_forecasts.filter((record) => { return record[0]["Country name"] === country });
 
   return (
-    <div>
-      <table>
+    <div className="constituency_section panel">
+      <h3>Constituency Forecasts for {country}</h3>
+      <table className="etable">
         <thead><tr>
-          <th colSpan="3">{country}</th>
-          <th colSpan={party_list.length}>2019 votes</th>
-          <th colSpan={party_list.length + 1}>Forecast %</th>
+          <th colSpan="3" className="eth country_label">{country}</th>
+          <th colSpan={party_list.length + 2} className="eth">2019 votes</th>
+          <th colSpan={party_list.length + 2} className="efcst eth">Forecast %</th>
         </tr></thead>
         <thead><tr>
-          <th>Constituency</th>
-          <th>Previous name</th>
-          <th>Carried over</th>
-          <th>Member</th>
-          <th>Party</th>
+          <th className="eth">Constituency</th>
+          <th className="eth">Previous name</th>
+          <th className="eth">Carried over</th>
+          <th className="eth">Member</th>
+          <th className="eth">Party</th>
           {
             party_list.map((party, id) => (
-              <th key={id}>{party}</th>
+              <th key={id} className="eth">{party}</th>
             ))
           }
           {
             party_list.map((party, id) => (
-              <th key={id}>{party}</th>
+              <th key={id} className="efcst eth">{party}</th>
             ))
           }
-          <th>Winner</th>
-          <th>Probability</th>
+          <th className="efcst eth">Winner</th>
+          <th className="efcst eth">Probability</th>
         </tr></thead>
         <tbody>
           {
@@ -251,10 +285,10 @@ function ConstituencyDetail({ record, index }) {
   let party_list = party_lists[record[0]["Country name"]];
   let announce;
   if (record[2] === record[3]) {
-    announce = <td className="name">{record[2]} hold</td>;
+    announce = <td className={record[2] + " efcst name etd"}>{record[2]} hold</td>;
   }
   else {
-    announce = <td className="name">{record[2]} win from {record[3]}</td>;
+    announce = <td className={record[2] + " efcst name etd"}>{record[2]} <big>WIN</big> from {record[3]}</td>;
   }
 
   let constituency_name = record[0]["Constituency name"];
@@ -265,38 +299,38 @@ function ConstituencyDetail({ record, index }) {
 
   let prob;
   if (record[5]) {
-    prob = <td>{Math.round(record[5]*100)}%</td>;
+    prob = <td className="efcst etd">{Math.round(record[5]*100)}%</td>;
   }
   else {
-    prob = <td></td>;
+    prob = <td className="efcst etd"></td>;
   }
 
   return (
     <tr key={index}>
-      <td className="name">{record[0]["Constituency name"]}</td>
-      <td className="name">{name_changed ? record[0]["Previous name"] : ""}</td>
-      <td className="name">
+      <td className="name etd">{record[0]["Constituency name"]}</td>
+      <td className="name etd">{name_changed ? record[0]["Previous name"] : ""}</td>
+      <td className="name etd">
         <Popup trigger={<button>{record[0]["weight"]}%</button>}>
-        <div class="hover">
+        <div className="popup">
           <p>The Constituency of {record[0]["Constituency name"]} is formed from the following constituencies of the 2019 election</p>
-          <table>
+          <table className="popup_table">
             <thead><tr>
-              <th>Weight</th>
-              <th>Constituency</th>
-              <th>Member</th>
-              <th>Party</th>
-              {party_list.map((party, index)=>(<th key={index}>{party}</th>))}
+              <th className="popup_table">Weight</th>
+              <th className="popup_table">Constituency</th>
+              <th className="popup_table">Member</th>
+              <th className="popup_table">Party</th>
+              {party_list.map((party, index)=>(<th key={index} className="popup_table">{party}</th>))}
             </tr></thead>
             <tbody>
               {contributors.map((c,r) => (
                 <tr key={r}>
-                  <td>{c[0]}</td>
-                  <td>{c[1]["Constituency name"]}</td>
-                  <td>{c[1]["Member first name"]} {c[1]["Member surname"]}</td>
-                  <td>{c[1]["First party"]}</td>
+                  <td className="popup_table">{c[0]}</td>
+                  <td className="popup_table">{c[1]["Constituency name"]}</td>
+                  <td className="popup_table">{c[1]["Member first name"]} {c[1]["Member surname"]}</td>
+                  <td className="popup_table">{c[1]["First party"]}</td>
                   {
                     party_list.map((party, index) => (
-                      <td key={index}>{c[1][party]}</td>
+                      <td key={index} className="popup_table">{c[1][party]}</td>
                     ))
                   }
                 </tr>
@@ -306,16 +340,16 @@ function ConstituencyDetail({ record, index }) {
           </div>
         </Popup> 
       </td>
-      <td className="name">{record[0]["Member first name"] + " " + record[0]["Member surname"]}</td>
-      <td className="name">{record[0]["First party"]}</td>
+      <td className="name etd">{record[0]["Member first name"] + " " + record[0]["Member surname"]}</td>
+      <td className="name etd">{record[0]["First party"]}</td>
       {
         party_list.map((party, id) => (
-          <td key={id} className="number">{record[0][party]}</td>
+          <td key={id} className="etd number">{record[0][party]}</td>
         ))
       }
       {
         party_list.map((party, id) => (
-          <td key={id} className="number">{String(Math.round(record[1][party])) + "%"}</td>
+          <td key={id} className="efcst  number etd">{String(Math.round(record[1][party])) + "%"}</td>
         ))
       }
       {announce}
