@@ -89,7 +89,7 @@ function App() {
       <header className="App-header">
         Election Forecaster
       </header>
-
+      <div><a href="https://github.com/wai-t/election">github</a></div>
       <NationalForecast national_forecast={national_forecast} seats={seats} />
       <ControlPanel factors={factors} stdDeviations={stdDeviations} adjuster={adjuster} stdDevAdjuster={stdDevAdjuster}/>
 
