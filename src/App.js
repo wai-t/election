@@ -55,7 +55,14 @@ function App() {
   const [constituency_forecasts, setConstituencyForecasts] = useState(compute_new_constituency_forecasts(national_forecast, std_deviations));
   const [seats, setSeats] = useState(compute_seats(constituency_forecasts));
 
-
+  const [printing, setPrinting] = useState(false);
+  window.addEventListener("beforeprint", () => {
+    setPrinting(true);
+  });
+  window.addEventListener("afterprint", () => {
+    setPrinting(false);
+  })
+  
   let factorAdjuster = function (index, amount) {
     setFactors((factors) => { factors[index] += amount; return factors.map(i => i); })
     let new_forecast = {}
@@ -84,6 +91,26 @@ function App() {
     setSeats(compute_seats(new_constituency_forecasts));
   }
 
+  let country_detail_fragment;
+  if (!printing) {
+    country_detail_fragment = (      
+    <Tabs defaultActiveKey="England" className="mb-3">
+      {
+        Object.keys(party_lists).map((country) => (
+          <Tab eventKey={country} title = {country}>
+          <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
+          </Tab>
+        ))
+      }
+    </Tabs>
+    );
+  }
+  else {
+    country_detail_fragment = 
+        Object.keys(party_lists).map((country) => (
+          <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
+        ));
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -93,18 +120,9 @@ function App() {
       <NationalForecast national_forecast={national_forecast} seats={seats} />
       <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
 
-      <Tabs defaultActiveKey="England" className="mb-3">
         {
-          Object.keys(party_lists).map((country) => (
-            <Tab eventKey={country} title = {country}>
-            <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
-            </Tab>
-          ))
+          country_detail_fragment
         }
-        {/* <Tab title = "Scotland"><CountryDetail key="Scotland" country="Scotland" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab>
-        <Tab title = "Wales"> <CountryDetail key="Wales" country="Wales" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab>
-        <Tab title = "Northern Ireland"><CountryDetail key="Northern Ireland" country="Northern Ireland" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab> */}
-      </Tabs>
       
 
       

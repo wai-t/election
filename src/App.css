@@ -151,3 +151,43 @@ div {
 .SNP {
   background-color: 	#FDF38E;
 }
+
+@media print {
+  
+.LAB, .CON, .LD, .REF, .GRN, .REF, .PC, .SNP {
+  background-color: white;
+  color: black;
+}
+.efcst {
+  background-color: white;  
+}
+.etd, .eth {
+  border: solid black 0.2px;
+  padding: 1px;
+  font-size: x-small;
+}
+.etable {
+  border: solid black 0.2px;
+  padding: 1px;
+}
+.efcst {
+  background-color: powderblue;  
+}
+.panel {
+  border-radius: 0px;
+  margin: 1px;
+  padding: 5px;
+  font-size: small;
+}
+.country-section, .constituency-section, .control-panel {
+  width: fit-content;
+  background-color: white;
+  border: none;
+}
+.country-label {
+  text-decoration: underline;
+}
+h3 {
+  font-size: small;
+}
+}
