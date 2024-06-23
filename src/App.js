@@ -51,12 +51,12 @@ function App() {
 
   const [national_forecast, setNationalForecast] = useState(latest_forecast_plus_NI);
   const [factors, setFactors] = useState([0, 0, 0]);
-  const [stdDeviations, setStdDeviations] = useState([10, 1, 0.5]);
-  const [constituency_forecasts, setConstituencyForecasts] = useState(compute_new_constituency_forecasts(national_forecast, stdDeviations));
+  const [std_deviations, setStdDeviations] = useState([10, 1, 0.5]);
+  const [constituency_forecasts, setConstituencyForecasts] = useState(compute_new_constituency_forecasts(national_forecast, std_deviations));
   const [seats, setSeats] = useState(compute_seats(constituency_forecasts));
 
 
-  let adjuster = function (index, amount) {
+  let factorAdjuster = function (index, amount) {
     setFactors((factors) => { factors[index] += amount; return factors.map(i => i); })
     let new_forecast = {}
     all_parties.forEach((party) => {
@@ -68,18 +68,18 @@ function App() {
       }
     })
     setNationalForecast(forecast => new_forecast);
-    let new_constituency_forecasts = compute_new_constituency_forecasts(new_forecast, stdDeviations);
+    let new_constituency_forecasts = compute_new_constituency_forecasts(new_forecast, std_deviations);
     setConstituencyForecasts(new_constituency_forecasts);
     setSeats(compute_seats(new_constituency_forecasts));
   }
 
   let stdDevAdjuster = function (index, amount) {
 
-    stdDeviations[index] += amount;
-    if (stdDeviations[index]<0) {stdDeviations[index]=0};
+    std_deviations[index] += amount;
+    if (std_deviations[index]<0) {std_deviations[index]=0};
 
-    let new_constituency_forecasts = compute_new_constituency_forecasts(national_forecast, stdDeviations);
-    setStdDeviations(() => { return stdDeviations })
+    let new_constituency_forecasts = compute_new_constituency_forecasts(national_forecast, std_deviations);
+    setStdDeviations(() => { return std_deviations })
     setConstituencyForecasts(new_constituency_forecasts);
     setSeats(compute_seats(new_constituency_forecasts));
   }
@@ -91,7 +91,7 @@ function App() {
       </header>
       <div><a href="https://github.com/wai-t/election">github</a></div>
       <NationalForecast national_forecast={national_forecast} seats={seats} />
-      <ControlPanel factors={factors} stdDeviations={stdDeviations} adjuster={adjuster} stdDevAdjuster={stdDevAdjuster}/>
+      <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
 
       <Tabs defaultActiveKey="England" className="mb-3">
         {
@@ -113,9 +113,9 @@ function App() {
   );
 }
 
-function ControlPanel({factors, stdDeviations, adjuster, stdDevAdjuster}) {
+function ControlPanel({factors, stdDeviations, factorAdjuster, stdDevAdjuster}) {
   return (
-    <div className="control_panel panel">
+    <div className="control-panel panel">
     <h3>Statistical Analysis</h3>
     <table className="etable">
       <thead><tr><th className="eth">Principal Component</th>{
@@ -135,8 +135,8 @@ function ControlPanel({factors, stdDeviations, adjuster, stdDevAdjuster}) {
                 {all_parties.map((party, id) => (
                   <td key={id} className="etd">{vector[party] ? Math.round(vector[party]*100) : ""}</td>
                 ))}
-                <td><button onClick={() => adjuster(index, 1)}>+</button></td>
-                <td><button onClick={() => adjuster(index, -1)}>-</button></td>
+                <td><button onClick={() => factorAdjuster(index, 1)}>+</button></td>
+                <td><button onClick={() => factorAdjuster(index, -1)}>-</button></td>
                 <td className="etd">{factors[index]}</td>
                 <td><button onClick={() => stdDevAdjuster(index, 1)}>+</button></td>
                 <td><button onClick={() => stdDevAdjuster(index, -1)}>-</button></td>
@@ -159,13 +159,13 @@ function NationalForecast({ seats, national_forecast }) {
 
   return (
     <div>
-      <div className="country_section panel">
+      <div className="country-section panel">
         <h3>UK</h3>
         <table className="etable">
           <thead>
             <tr><th className="eth"></th>{
               all_parties.map((party, id) => (
-                <th key={id} className="eth party_name">{party}</th>
+                <th key={id} className="eth party-name">{party}</th>
               ))
             }
             </tr>
@@ -201,14 +201,14 @@ function NationalForecast({ seats, national_forecast }) {
       </div>
       <div class="div_row">
       {Object.keys(party_lists).map((country, id) => (
-        <div key={id} className="country_section panel">
+        <div key={id} className="country-section panel">
           <h3>
             {country}
           </h3>
           <table className="etable">
             <thead><tr><th className="eth"></th>{
               party_lists[country].map((party, id) => (
-                <th key={id} className="eth party_name">{party}</th>
+                <th key={id} className="eth party-name">{party}</th>
               ))
             }
             </tr></thead>
@@ -242,11 +242,11 @@ function CountryDetail({ country, constituency_forecasts, seats }) {
   let constituencies = constituency_forecasts.filter((record) => { return record[0]["Country name"] === country });
 
   return (
-    <div className="constituency_section panel">
+    <div className="constituency-section panel">
       <h3>Constituency Forecasts for {country}</h3>
       <table className="etable">
         <thead><tr>
-          <th colSpan="3" className="eth country_label">{country}</th>
+          <th colSpan="3" className="eth country-label">{country}</th>
           <th colSpan={party_list.length + 2} className="eth">2019 votes</th>
           <th colSpan={party_list.length + 2} className="efcst eth">Forecast %</th>
         </tr></thead>
@@ -313,24 +313,24 @@ function ConstituencyDetail({ record, index }) {
         <Popup trigger={<button>{record[0]["weight"]}%</button>}>
         <div className="popup">
           <p>The Constituency of {record[0]["Constituency name"]} is formed from the following constituencies of the 2019 election</p>
-          <table className="popup_table">
+          <table className="popup-table">
             <thead><tr>
-              <th className="popup_table">Weight</th>
-              <th className="popup_table">Constituency</th>
-              <th className="popup_table">Member</th>
-              <th className="popup_table">Party</th>
-              {party_list.map((party, index)=>(<th key={index} className="popup_table">{party}</th>))}
+              <th className="popup-table">Weight</th>
+              <th className="popup-table">Constituency</th>
+              <th className="popup-table">Member</th>
+              <th className="popup-table">Party</th>
+              {party_list.map((party, index)=>(<th key={index} className="popup-table">{party}</th>))}
             </tr></thead>
             <tbody>
               {contributors.map((c,r) => (
                 <tr key={r}>
-                  <td className="popup_table">{c[0]}</td>
-                  <td className="popup_table">{c[1]["Constituency name"]}</td>
-                  <td className="popup_table">{c[1]["Member first name"]} {c[1]["Member surname"]}</td>
-                  <td className="popup_table">{c[1]["First party"]}</td>
+                  <td className="popup-table">{c[0]}</td>
+                  <td className="popup-table">{c[1]["Constituency name"]}</td>
+                  <td className="popup-table">{c[1]["Member first name"]} {c[1]["Member surname"]}</td>
+                  <td className="popup-table">{c[1]["First party"]}</td>
                   {
                     party_list.map((party, index) => (
-                      <td key={index} className="popup_table">{c[1][party]}</td>
+                      <td key={index} className="popup-table">{c[1][party]}</td>
                     ))
                   }
                 </tr>

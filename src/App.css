@@ -69,7 +69,7 @@ div {
 
 
 
-.party_name {
+.party-name {
   width: 100px;
 }
 
@@ -78,22 +78,22 @@ div {
   margin: 10px;
   padding: 5px;
 }
-.country_section {
+.country-section {
   width:min-content;
   background-color: greenyellow;
   border: solid grey;
 }
 
-.constituency_section {
+.constituency-section {
   width:fit-content;
   background-color: palegreen;
   border: solid grey;
 }
 
-.country_label {
+.country-label {
   text-decoration: underline;
 }
-.control_panel {
+.control-panel {
   width:min-content;
   background-color: orange;
   border: solid grey;
@@ -112,7 +112,7 @@ div {
   border-radius: 20px;;
 }
 
-.popup_table {
+.popup-table {
   border: 1px solid gray;
   padding: 3px
 }
