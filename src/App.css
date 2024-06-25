@@ -122,6 +122,14 @@ div {
   flex-direction: row;
 }
 
+.hover_constituency {
+  display: block;
+  width:fit-content;
+  position: relative;
+  background-color: white;
+  z-index: 99;
+}
+
 .LAB {
   background-color: #E4003B;
   color: yellow;
@@ -150,6 +158,26 @@ div {
 
 .SNP {
   background-color: 	#FDF38E;
+}
+
+.DUP {
+  background-color: #D46A4C;
+}
+
+.SF {
+  background-color: #326760
+}
+
+.UUP {
+  background-color: #48A5EE
+}
+
+.SDLP {
+  background-color: #2AA82C
+}
+
+.APNI {
+  background-color: #F6CB2F
 }
 
 @media print {

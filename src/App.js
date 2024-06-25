@@ -10,6 +10,7 @@ import last_election_data from './scaled.json';
 import latest_forecast from "./latest.json";
 import pca from "./polls_pca.json";
 import new_constituency_mapping from "./new_constituency_mapping.json";
+import hexmap from "./map.json";
 
 const party_lists =
 {
@@ -47,6 +48,133 @@ for (let row of last_election_data) {
 Object.keys(country_weighting).forEach((party) => { country_weighting[party] = total / country_weighting[party] })
 
 
+let map_lookup = {};
+for (let cons of Object.values(hexmap["hexes"])) {
+  if (cons["n"]) {
+    map_lookup[cons["n"]] = [cons["r"], cons["q"]];
+  }
+}
+
+const root3 = Math.sqrt(3.0);
+
+const colours = {
+"LAB": "#E4003B",
+"CON": "#0087DC",
+"LD": "#FAA61A",
+"GRN": "#528D6B",
+"REF": "#12B6CF",
+"PC": "#005B54",
+"SNP": "#FDF38E",
+"DUP": "#D46A4C",
+"SF":   "#326760",
+"UUP": "#48A5EE",
+"SDLP": "#2AA82C",
+"APNI": "#F6CB2F"
+};
+
+function Hex({r, q, record, is_active, onMouseDown}) {
+  const scale = 10;
+  const x = (root3 * q + 0.75 * r) * scale - 390;
+  const y = - 1.5 * r * scale + 50;
+  const path = "" + x + " " + (y + scale) 
+            + " " + (x + root3/2 * scale) + " " + (y + 0.5 * scale) 
+            + " " + (x + root3/2 * scale) + " " + (y - 0.5 * scale) 
+            + " " + (x) + " " + (y-scale) 
+            + " " + (x - root3/2 * scale) + " " + (y - 0.5 * scale) 
+            + " " + (x - root3/2 * scale) + " " + (y + 0.5 * scale) ;
+  return (
+       <polygon points={path} 
+       stroke="black" strokeWidth={is_active?"5px":"1px"} fill={colours[record[2]]}
+        onMouseDown={onMouseDown}/> 
+
+  )
+}
+
+function HexMap({constituency_forecasts}) {
+
+  const [active_constituency, setActiveConstituency] = useState([]);
+
+  let active_constituency_panel;
+
+  if (active_constituency.length>0) {
+    let party_list = party_lists[active_constituency[0]["Country name"]];
+
+    active_constituency_panel =  (
+      <foreignObject z="1" x={2} y={20} width={350} height={250}>
+      <div className="hover_constituency">
+        {
+            <>
+            <h5>{active_constituency[0]["Constituency name"]}: {active_constituency["First party"]}</h5>
+            <p>{active_constituency[0]["Member first name"]} {active_constituency[0]["Member surname"]}</p>
+            <table className='etable'>
+              <thead><tr>
+              {
+                party_list.map((party, id) => (
+                  <th key={id} className="eth">{party}</th>
+                ))
+              }
+              </tr></thead>
+              <tbody><tr>
+              {
+                party_list.map((party, id) => (
+                  <td key={id} className="eth">{active_constituency[0][party]}</td>
+                ))
+              }
+                </tr>
+                <tr>
+              {
+                party_list.map((party, id) => (
+                  <td key={id} className="eth">{Math.round(active_constituency[1][party])}%</td>
+                ))
+              }
+                </tr>
+                <tr>
+                {
+                  (active_constituency[2]!==active_constituency[3]) ? (
+                    <td colSpan={party_list.length} className={active_constituency[2]}>{active_constituency[2]} win from {active_constituency[3]}</td>
+                  ) : (
+                    <td colSpan={party_list.length} className={active_constituency[2]}>{active_constituency[2]} hold</td>
+
+                  )
+                }
+                </tr>
+                </tbody>
+            </table>
+        </>
+        }
+      </div>
+      </foreignObject>
+    )
+  }
+  else {
+    active_constituency_panel =  (
+      <foreignObject z="1" x={2} y={20} width={350} height={200}>
+      <div className="hover_constituency"></div>
+      </foreignObject>
+    ) ;
+  }
+
+  return (
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="ionicon"
+      viewBox="0 0 1024 750"
+    >
+    {
+      constituency_forecasts.map(((rec) => {
+        let cons_name = rec[0]["Constituency name"];
+        let is_active = active_constituency.length>0 ? (cons_name === active_constituency[0]["Constituency name"]) : false;
+        let [r,q] = map_lookup[cons_name];
+        return <Hex r = {r} q = {q} record={rec} is_active={is_active} onMouseDown={()=>setActiveConstituency(rec)}/>
+      }))
+
+    }
+    {active_constituency_panel}
+  </svg>
+  )
+}
+
 function App() {
 
   const [national_forecast, setNationalForecast] = useState(latest_forecast_plus_NI);
@@ -54,6 +182,7 @@ function App() {
   const [std_deviations, setStdDeviations] = useState([10, 1, 0.5]);
   const [constituency_forecasts, setConstituencyForecasts] = useState(compute_new_constituency_forecasts(national_forecast, std_deviations));
   const [seats, setSeats] = useState(compute_seats(constituency_forecasts));
+  const [show_map, setShowMap] = useState(false);
 
   const [printing, setPrinting] = useState(false);
   window.addEventListener("beforeprint", () => {
@@ -111,21 +240,37 @@ function App() {
           <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
         ));
   }
+  // Object.entries(map["hexes"]).map((k,v)=>{console.log(k[1]["n"]);});
+
+  // console.log(map_lookup)
   return (
     <div className="App">
       <header className="App-header">
         Election Forecaster
       </header>
       <div><a href="https://github.com/wai-t/election">github</a></div>
-      <NationalForecast national_forecast={national_forecast} seats={seats} />
-      <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
+      {
+        show_map ? (
+          <>
+            <button onClick={()=>setShowMap(false)}>Show table</button>
+            <NationalForecast national_forecast={national_forecast} seats={seats} />
+            <HexMap constituency_forecasts={constituency_forecasts}/>   
+            <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
+          </>
+          
+    
+        ):(
+          <>
+            <button onClick={()=>setShowMap(true)}>Show map</button>
+            <NationalForecast national_forecast={national_forecast} seats={seats} />
+            <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
+            {
+              country_detail_fragment
+            }
+          </>
+        )
+      }
 
-        {
-          country_detail_fragment
-        }
-      
-
-      
 
     </div>
   );
