@@ -83,10 +83,12 @@ function Hex({r, q, record, is_active, onMouseDown}) {
             + " " + (x - root3/2 * scale) + " " + (y - 0.5 * scale) 
             + " " + (x - root3/2 * scale) + " " + (y + 0.5 * scale) ;
   return (
+    <g onMouseDown={onMouseDown}>
        <polygon points={path} 
        stroke="black" strokeWidth={is_active?"5px":"1px"} fill={colours[record[2]]}
-        onMouseDown={onMouseDown}/> 
-
+        /> 
+       <text x={x-4} y={y+3} font-size="8px">{record[0]["Constituency name"].slice(0,2)}</text>
+    </g>
   )
 }
 
