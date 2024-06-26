@@ -81,7 +81,7 @@ const colours = {
 "APNI": "#F6CB2F"
 };
 
-function Hex({r, q, record, is_active, onMouseDown}) {
+function Hex({r, q, record, is_active, show_last_election, onMouseDown}) {
   const x = rq_to_x(r,q) ;
   const y = rq_to_y(r,q) ;
   const pad = 0.7;
@@ -92,10 +92,12 @@ function Hex({r, q, record, is_active, onMouseDown}) {
             + " " + (x - root3/2 * scale + pad) + " " + (y - 0.5 * scale) 
             + " " + (x - root3/2 * scale + pad ) + " " + (y + 0.5 * scale) ;
 
+  let fill = show_last_election ? colours[record[0]["First party"]] : colours[record[2]];
+
   return (
     <g onMouseDown={onMouseDown}>
        <polygon points={path} 
-       stroke={is_active?"black":"none"} strokeWidth={is_active?"3px":"0px"} fill={colours[record[2]]} opacity={record[2] != record[3] ? 1.0 : 1.0}
+       stroke={is_active?"black":"none"} strokeWidth={is_active?"3px":"0px"} fill={fill} 
         /> 
        <text x={x-4} y={y+3} font-size="8px" fill={record[2] != record[3] ? "yellow" : "black"}>{record[0]["Constituency name"].slice(0,2)}</text>
     </g>
@@ -171,7 +173,7 @@ function SelectedConstituencyPopup({active_constituency, setActiveConstituency})
 function HexMap({constituency_forecasts}) {
 
   const [active_constituency, setActiveConstituency] = useState([]);
-  const [[r,q], setRq] = useState([0,0]);
+  const [show_last_election, setlastElection] = useState(false);
 
   return (
 <>
@@ -185,10 +187,15 @@ function HexMap({constituency_forecasts}) {
         let cons_name = rec[0]["Constituency name"];
         let is_active = active_constituency.length>0 ? (cons_name === active_constituency[0]["Constituency name"]) : false;
         let [r,q] = map_lookup[cons_name];
-        return <Hex r = {r} q = {q} record={rec} is_active={is_active} onMouseDown={()=>{setActiveConstituency(rec); setRq([r+15,q-15])}}/>
+        return <Hex r = {r} q = {q} record={rec} is_active={is_active} show_last_election={show_last_election} onMouseDown={()=>{setActiveConstituency(rec)}}/>
       }))
 
     }
+    <foreignObject x="100" y="100" width="100" height="100">
+      <div>
+     <button onClick={()=>setlastElection(!show_last_election)}>{show_last_election?"2019 results":"forecast"}</button>
+    </div>
+    </foreignObject>
   </svg>
   <SelectedConstituencyPopup active_constituency={active_constituency} setActiveConstituency={setActiveConstituency}/>
   </>
