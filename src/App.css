@@ -122,6 +122,31 @@ div {
   flex-direction: row;
 }
 
+.hover_constituency {
+  display: flexbox;
+  width:auto;
+  height: auto;
+  align-content: center;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  padding: 20px;
+  border: gray solid;
+  border-radius: 20px;
+  background-color: lightyellow;
+  z-index: 99;
+  
+}
+
+.hover_th, .hover_td {
+  border: 1px solid gray;
+  padding: 3px
+}
+
+.hover_table {
+  background-color: lightblue;
+  padding: 10px;
+}
 .LAB {
   background-color: #E4003B;
   color: yellow;
@@ -150,4 +175,74 @@ div {
 
 .SNP {
   background-color: 	#FDF38E;
+}
+
+.DUP {
+  background-color: #D46A4C;
+}
+
+.SF {
+  background-color: #326760
+}
+
+.UUP {
+  background-color: #48A5EE
+}
+
+.SDLP {
+  background-color: #2AA82C
+}
+
+.APNI {
+  background-color: #F6CB2F
+}
+
+svg text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+svg text::selection {
+  background: none;
+}
+
+@media print {
+  
+.LAB, .CON, .LD, .REF, .GRN, .REF, .PC, .SNP {
+  background-color: white;
+  color: black;
+}
+.efcst {
+  background-color: white;  
+}
+.etd, .eth {
+  border: solid black 0.2px;
+  padding: 1px;
+  font-size: x-small;
+}
+.etable {
+  border: solid black 0.2px;
+  padding: 1px;
+}
+.efcst {
+  background-color: powderblue;  
+}
+.panel {
+  border-radius: 0px;
+  margin: 1px;
+  padding: 5px;
+  font-size: small;
+}
+.country-section, .constituency-section, .control-panel {
+  width: fit-content;
+  background-color: white;
+  border: none;
+}
+.country-label {
+  text-decoration: underline;
+}
+h3 {
+  font-size: small;
+}
 }

@@ -5,11 +5,13 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Draggable from 'react-draggable';
 
 import last_election_data from './scaled.json';
 import latest_forecast from "./latest.json";
 import pca from "./polls_pca.json";
 import new_constituency_mapping from "./new_constituency_mapping.json";
+import hexmap from "./map.json";
 
 const party_lists =
 {
@@ -47,6 +49,159 @@ for (let row of last_election_data) {
 Object.keys(country_weighting).forEach((party) => { country_weighting[party] = total / country_weighting[party] })
 
 
+let map_lookup = {};
+for (let cons of Object.values(hexmap["hexes"])) {
+  if (cons["n"]) {
+    map_lookup[cons["n"]] = [cons["r"], cons["q"]];
+  }
+}
+
+const root3 = Math.sqrt(3.0);
+const scale = 10;
+
+function rq_to_x(r,q) {
+  return (root3 * q + 0.75 * r) * scale - 390;
+}
+function rq_to_y(r,_) {
+  return - 1.5 * r * scale + 50;
+}
+
+const colours = {
+"LAB": "#E4003B",
+"CON": "#0087DC",
+"LD": "#FAA61A",
+"GRN": "#528D6B",
+"REF": "#12B6CF",
+"PC": "#005B54",
+"SNP": "#FDF38E",
+"DUP": "#D46A4C",
+"SF":   "#326760",
+"UUP": "#48A5EE",
+"SDLP": "#2AA82C",
+"APNI": "#F6CB2F"
+};
+
+function Hex({r, q, record, is_active, show_last_election, onMouseDown}) {
+  const x = rq_to_x(r,q) ;
+  const y = rq_to_y(r,q) ;
+  const pad = 0.7;
+  const path = "" + x + " " + (y + scale - pad) 
+            + " " + (x + root3/2 * scale - pad) + " " + (y + 0.5 * scale) 
+            + " " + (x + root3/2 * scale - pad) + " " + (y - 0.5 * scale) 
+            + " " + (x) + " " + (y - scale + pad) 
+            + " " + (x - root3/2 * scale + pad) + " " + (y - 0.5 * scale) 
+            + " " + (x - root3/2 * scale + pad ) + " " + (y + 0.5 * scale) ;
+
+  let fill = show_last_election ? colours[record[0]["First party"]] : colours[record[2]];
+
+  return (
+    <g onMouseDown={onMouseDown}>
+       <polygon points={path} 
+       stroke={is_active?"black":"none"} strokeWidth={is_active?"3px":"0px"} fill={fill} 
+        /> 
+       <text x={x-4} y={y+3} font-size="8px" fill={record[2] !== record[3] ? "yellow" : "black"}>{record[0]["Constituency name"].slice(0,2)}</text>
+    </g>
+  )
+}
+
+function SelectedConstituencyPopup({active_constituency, setActiveConstituency}) {
+
+  if (active_constituency.length>0) {
+    let party_list = party_lists[active_constituency[0]["Country name"]];
+
+    return (
+      // <foreignObject z="1" x={rq_to_x(r,q)} y={rq_to_y(r,q)} width={250} height={170}>
+      <Draggable>
+      <div className="hover_constituency">
+        {
+            <>
+            <table>
+              <thead>
+                <tr><td colSpan={party_list.length}>{active_constituency[0]["Constituency name"]}</td></tr>
+                <tr>
+                {
+                  (active_constituency[2]!==active_constituency[3]) ? (
+                    <td colSpan={party_list.length-1} className={active_constituency[2]}>{active_constituency[2]} win from {active_constituency[3]}</td>
+                  ) : (
+                    <td colSpan={party_list.length-1} className={active_constituency[2]}>{active_constituency[2]} hold</td>
+
+                  )
+                }
+                <td className={active_constituency[2]}><button  className={active_constituency[2]} style={{"border-radius" : "5px"}} onClick={()=>setActiveConstituency([])}>x</button></td>
+                </tr>
+                <tr>
+              {
+                party_list.map((party, id) => (
+                  <th className = "hover_td" key={id}>{party}</th>
+                ))
+              }
+              </tr></thead>
+              <tbody><tr>
+              {
+                party_list.map((party, id) => (
+                  <td className = "hover_td" key={id} >{Math.round(active_constituency[1][party])}%</td>
+                ))
+              }
+                </tr>
+                <hr/>
+                <tr style={{"background-color": "lightyellow"}}>
+                  <td>2019</td>
+                  <td>{active_constituency[0]["First party"]}</td>
+                  <td colSpan={party_list.length-2}>{active_constituency[0]["Member first name"]} {active_constituency[0]["Member surname"]}</td>
+                </tr>
+                <tr>
+              {
+                party_list.map((party, id) => (
+                  <td className = "hover_td" key={id}>{active_constituency[0][party]}</td>
+                ))
+              }
+                </tr>
+                </tbody>
+            </table>
+        </>
+        }
+      </div>
+      </Draggable>
+      // </foreignObject>
+    )
+  }
+  else {
+    return (<></>);
+  }
+
+}
+function HexMap({constituency_forecasts}) {
+
+  const [active_constituency, setActiveConstituency] = useState([]);
+  const [show_last_election, setlastElection] = useState(false);
+
+  return (
+<>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="ionicon"
+      viewBox="0 0 1024 750"
+    >
+    {
+      constituency_forecasts.map(((rec) => {
+        let cons_name = rec[0]["Constituency name"];
+        let is_active = active_constituency.length>0 ? (cons_name === active_constituency[0]["Constituency name"]) : false;
+        let [r,q] = map_lookup[cons_name];
+        return <Hex r = {r} q = {q} record={rec} is_active={is_active} show_last_election={show_last_election} onMouseDown={()=>{setActiveConstituency(rec)}}/>
+      }))
+
+    }
+    <foreignObject x="100" y="100" width="100" height="100">
+      <div>
+     <button onClick={()=>setlastElection(!show_last_election)}>{show_last_election?"2019 results":"forecast"}</button>
+    </div>
+    </foreignObject>
+  </svg>
+  <SelectedConstituencyPopup active_constituency={active_constituency} setActiveConstituency={setActiveConstituency}/>
+  </>
+  )
+}
+
 function App() {
 
   const [national_forecast, setNationalForecast] = useState(latest_forecast_plus_NI);
@@ -54,8 +209,16 @@ function App() {
   const [std_deviations, setStdDeviations] = useState([10, 1, 0.5]);
   const [constituency_forecasts, setConstituencyForecasts] = useState(compute_new_constituency_forecasts(national_forecast, std_deviations));
   const [seats, setSeats] = useState(compute_seats(constituency_forecasts));
+  const [show_map, setShowMap] = useState(false);
 
-
+  const [printing, setPrinting] = useState(false);
+  window.addEventListener("beforeprint", () => {
+    setPrinting(true);
+  });
+  window.addEventListener("afterprint", () => {
+    setPrinting(false);
+  })
+  
   let factorAdjuster = function (index, amount) {
     setFactors((factors) => { factors[index] += amount; return factors.map(i => i); })
     let new_forecast = {}
@@ -84,30 +247,57 @@ function App() {
     setSeats(compute_seats(new_constituency_forecasts));
   }
 
+  let country_detail_fragment;
+  if (!printing) {
+    country_detail_fragment = (      
+    <Tabs defaultActiveKey="England" className="mb-3">
+      {
+        Object.keys(party_lists).map((country) => (
+          <Tab eventKey={country} title = {country}>
+          <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
+          </Tab>
+        ))
+      }
+    </Tabs>
+    );
+  }
+  else {
+    country_detail_fragment = 
+        Object.keys(party_lists).map((country) => (
+          <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
+        ));
+  }
+  // Object.entries(map["hexes"]).map((k,v)=>{console.log(k[1]["n"]);});
+
+  // console.log(map_lookup)
   return (
     <div className="App">
       <header className="App-header">
         Election Forecaster
       </header>
       <div><a href="https://github.com/wai-t/election">github</a></div>
-      <NationalForecast national_forecast={national_forecast} seats={seats} />
-      <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
+      {
+        show_map ? (
+          <>
+            <button onClick={()=>setShowMap(false)}>Show table</button>
+            <NationalForecast national_forecast={national_forecast} seats={seats} />
+            <HexMap constituency_forecasts={constituency_forecasts}/>   
+            <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
+          </>
+          
+    
+        ):(
+          <>
+            <button onClick={()=>setShowMap(true)}>Show map</button>
+            <NationalForecast national_forecast={national_forecast} seats={seats} />
+            <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
+            {
+              country_detail_fragment
+            }
+          </>
+        )
+      }
 
-      <Tabs defaultActiveKey="England" className="mb-3">
-        {
-          Object.keys(party_lists).map((country) => (
-            <Tab eventKey={country} title = {country}>
-            <CountryDetail key={country} country={country} constituency_forecasts={constituency_forecasts} seats={seats} />
-            </Tab>
-          ))
-        }
-        {/* <Tab title = "Scotland"><CountryDetail key="Scotland" country="Scotland" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab>
-        <Tab title = "Wales"> <CountryDetail key="Wales" country="Wales" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab>
-        <Tab title = "Northern Ireland"><CountryDetail key="Northern Ireland" country="Northern Ireland" constituency_forecasts={constituency_forecasts} seats={seats} /></Tab> */}
-      </Tabs>
-      
-
-      
 
     </div>
   );
