@@ -99,7 +99,7 @@ function Hex({r, q, record, is_active, show_last_election, onMouseDown}) {
        <polygon points={path} 
        stroke={is_active?"black":"none"} strokeWidth={is_active?"3px":"0px"} fill={fill} 
         /> 
-       <text x={x-4} y={y+3} font-size="8px" fill={record[2] != record[3] ? "yellow" : "black"}>{record[0]["Constituency name"].slice(0,2)}</text>
+       <text x={x-4} y={y+3} font-size="8px" fill={record[2] !== record[3] ? "yellow" : "black"}>{record[0]["Constituency name"].slice(0,2)}</text>
     </g>
   )
 }
