@@ -5,6 +5,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Draggable from 'react-draggable';
 
 import last_election_data from './scaled.json';
 import latest_forecast from "./latest.json";
@@ -56,6 +57,14 @@ for (let cons of Object.values(hexmap["hexes"])) {
 }
 
 const root3 = Math.sqrt(3.0);
+const scale = 10;
+
+function rq_to_x(r,q) {
+  return (root3 * q + 0.75 * r) * scale - 390;
+}
+function rq_to_y(r,_) {
+  return - 1.5 * r * scale + 50;
+}
 
 const colours = {
 "LAB": "#E4003B",
@@ -73,91 +82,99 @@ const colours = {
 };
 
 function Hex({r, q, record, is_active, onMouseDown}) {
-  const scale = 10;
-  const x = (root3 * q + 0.75 * r) * scale - 390;
-  const y = - 1.5 * r * scale + 50;
-  const path = "" + x + " " + (y + scale) 
-            + " " + (x + root3/2 * scale) + " " + (y + 0.5 * scale) 
-            + " " + (x + root3/2 * scale) + " " + (y - 0.5 * scale) 
-            + " " + (x) + " " + (y-scale) 
-            + " " + (x - root3/2 * scale) + " " + (y - 0.5 * scale) 
-            + " " + (x - root3/2 * scale) + " " + (y + 0.5 * scale) ;
+  const x = rq_to_x(r,q) ;
+  const y = rq_to_y(r,q) ;
+  const pad = 0.7;
+  const path = "" + x + " " + (y + scale - pad) 
+            + " " + (x + root3/2 * scale - pad) + " " + (y + 0.5 * scale) 
+            + " " + (x + root3/2 * scale - pad) + " " + (y - 0.5 * scale) 
+            + " " + (x) + " " + (y - scale + pad) 
+            + " " + (x - root3/2 * scale + pad) + " " + (y - 0.5 * scale) 
+            + " " + (x - root3/2 * scale + pad ) + " " + (y + 0.5 * scale) ;
+
   return (
     <g onMouseDown={onMouseDown}>
        <polygon points={path} 
-       stroke="black" strokeWidth={is_active?"5px":"1px"} fill={colours[record[2]]}
+       stroke={is_active?"black":"none"} strokeWidth={is_active?"3px":"0px"} fill={colours[record[2]]} opacity={record[2] != record[3] ? 1.0 : 1.0}
         /> 
-       <text x={x-4} y={y+3} font-size="8px">{record[0]["Constituency name"].slice(0,2)}</text>
+       <text x={x-4} y={y+3} font-size="8px" fill={record[2] != record[3] ? "yellow" : "black"}>{record[0]["Constituency name"].slice(0,2)}</text>
     </g>
   )
 }
 
-function HexMap({constituency_forecasts}) {
-
-  const [active_constituency, setActiveConstituency] = useState([]);
-
-  let active_constituency_panel;
+function SelectedConstituencyPopup({active_constituency, setActiveConstituency}) {
 
   if (active_constituency.length>0) {
     let party_list = party_lists[active_constituency[0]["Country name"]];
 
-    active_constituency_panel =  (
-      <foreignObject z="1" x={2} y={20} width={350} height={250}>
+    return (
+      // <foreignObject z="1" x={rq_to_x(r,q)} y={rq_to_y(r,q)} width={250} height={170}>
+      <Draggable>
       <div className="hover_constituency">
         {
             <>
-            <h5>{active_constituency[0]["Constituency name"]}: {active_constituency["First party"]}</h5>
-            <p>{active_constituency[0]["Member first name"]} {active_constituency[0]["Member surname"]}</p>
-            <table className='etable'>
-              <thead><tr>
+            <table>
+              <thead>
+                <tr><td colSpan={party_list.length}>{active_constituency[0]["Constituency name"]}</td></tr>
+                <tr>
+                {
+                  (active_constituency[2]!==active_constituency[3]) ? (
+                    <td colSpan={party_list.length-1} className={active_constituency[2]}>{active_constituency[2]} win from {active_constituency[3]}</td>
+                  ) : (
+                    <td colSpan={party_list.length-1} className={active_constituency[2]}>{active_constituency[2]} hold</td>
+
+                  )
+                }
+                <td className={active_constituency[2]}><button  className={active_constituency[2]} style={{"border-radius" : "5px"}} onClick={()=>setActiveConstituency([])}>x</button></td>
+                </tr>
+                <tr>
               {
                 party_list.map((party, id) => (
-                  <th key={id} className="eth">{party}</th>
+                  <th className = "hover_td" key={id}>{party}</th>
                 ))
               }
               </tr></thead>
               <tbody><tr>
               {
                 party_list.map((party, id) => (
-                  <td key={id} className="eth">{active_constituency[0][party]}</td>
+                  <td className = "hover_td" key={id} >{Math.round(active_constituency[1][party])}%</td>
                 ))
               }
+                </tr>
+                <hr/>
+                <tr style={{"background-color": "lightyellow"}}>
+                  <td>2019</td>
+                  <td>{active_constituency[0]["First party"]}</td>
+                  <td colSpan={party_list.length-2}>{active_constituency[0]["Member first name"]} {active_constituency[0]["Member surname"]}</td>
                 </tr>
                 <tr>
               {
                 party_list.map((party, id) => (
-                  <td key={id} className="eth">{Math.round(active_constituency[1][party])}%</td>
+                  <td className = "hover_td" key={id}>{active_constituency[0][party]}</td>
                 ))
               }
-                </tr>
-                <tr>
-                {
-                  (active_constituency[2]!==active_constituency[3]) ? (
-                    <td colSpan={party_list.length} className={active_constituency[2]}>{active_constituency[2]} win from {active_constituency[3]}</td>
-                  ) : (
-                    <td colSpan={party_list.length} className={active_constituency[2]}>{active_constituency[2]} hold</td>
-
-                  )
-                }
                 </tr>
                 </tbody>
             </table>
         </>
         }
       </div>
-      </foreignObject>
+      </Draggable>
+      // </foreignObject>
     )
   }
   else {
-    active_constituency_panel =  (
-      <foreignObject z="1" x={2} y={20} width={350} height={200}>
-      <div className="hover_constituency"></div>
-      </foreignObject>
-    ) ;
+    return (<></>);
   }
 
-  return (
+}
+function HexMap({constituency_forecasts}) {
 
+  const [active_constituency, setActiveConstituency] = useState([]);
+  const [[r,q], setRq] = useState([0,0]);
+
+  return (
+<>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="ionicon"
@@ -168,12 +185,13 @@ function HexMap({constituency_forecasts}) {
         let cons_name = rec[0]["Constituency name"];
         let is_active = active_constituency.length>0 ? (cons_name === active_constituency[0]["Constituency name"]) : false;
         let [r,q] = map_lookup[cons_name];
-        return <Hex r = {r} q = {q} record={rec} is_active={is_active} onMouseDown={()=>setActiveConstituency(rec)}/>
+        return <Hex r = {r} q = {q} record={rec} is_active={is_active} onMouseDown={()=>{setActiveConstituency(rec); setRq([r+15,q-15])}}/>
       }))
 
     }
-    {active_constituency_panel}
   </svg>
+  <SelectedConstituencyPopup active_constituency={active_constituency} setActiveConstituency={setActiveConstituency}/>
+  </>
   )
 }
 
