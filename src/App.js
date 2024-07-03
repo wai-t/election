@@ -27,7 +27,7 @@ const new_constituencies = Object.keys(new_constituency_mapping);
 
 const number_of_constituencies = new_constituencies.length;
 
-// https://www.electoralcalculus.co.uk/polls_ni.html
+// https://www.lucidtalk.co.uk/single-post/lucidtalk-ni-tracker-poll-spring-2024
 const latest_forecast_plus_NI = {
   ...latest_forecast,
   "SF": 26,
@@ -35,6 +35,21 @@ const latest_forecast_plus_NI = {
   "APNI": 15,
   "UUP": 13,
   "SDLP": 10,
+}
+
+const exit_polls = {
+    "CON": 44,
+    "LAB": 33,
+    "LD": 11,
+    "REF": 2,
+    "GRN": 3,
+    "SNP": 3.9,
+    "PC": 0.4,
+    "DUP": 0.8,
+    "SF": 0.5,
+    "SDLP": 0.4,
+    "UUP": 0.2,
+    "APNI": 0.4,
 }
 
 let country_weighting = {};
@@ -210,6 +225,7 @@ function App() {
   const [constituency_forecasts, setConstituencyForecasts] = useState(compute_new_constituency_forecasts(national_forecast, std_deviations));
   const [seats, setSeats] = useState(compute_seats(constituency_forecasts));
   const [show_map, setShowMap] = useState(false);
+  const [use_exit_polls, setUseExitPolls] = useState(false);
 
   const [printing, setPrinting] = useState(false);
   window.addEventListener("beforeprint", () => {
@@ -219,6 +235,13 @@ function App() {
     setPrinting(false);
   })
   
+  function use_forecast(new_forecast) {
+    setNationalForecast(forecast => new_forecast);
+    let new_constituency_forecasts = compute_new_constituency_forecasts(new_forecast, std_deviations);
+    setConstituencyForecasts(new_constituency_forecasts);
+    setSeats(compute_seats(new_constituency_forecasts));
+  }
+
   let factorAdjuster = function (index, amount) {
     setFactors((factors) => { factors[index] += amount; return factors.map(i => i); })
     let new_forecast = {}
@@ -230,10 +253,7 @@ function App() {
         new_forecast[party] = national_forecast[party]
       }
     })
-    setNationalForecast(forecast => new_forecast);
-    let new_constituency_forecasts = compute_new_constituency_forecasts(new_forecast, std_deviations);
-    setConstituencyForecasts(new_constituency_forecasts);
-    setSeats(compute_seats(new_constituency_forecasts));
+    use_forecast(new_forecast);
   }
 
   let stdDevAdjuster = function (index, amount) {
@@ -241,10 +261,8 @@ function App() {
     std_deviations[index] += amount;
     if (std_deviations[index]<0) {std_deviations[index]=0};
 
-    let new_constituency_forecasts = compute_new_constituency_forecasts(national_forecast, std_deviations);
     setStdDeviations(() => { return std_deviations })
-    setConstituencyForecasts(new_constituency_forecasts);
-    setSeats(compute_seats(new_constituency_forecasts));
+    use_forecast(national_forecast);
   }
 
   let country_detail_fragment;
@@ -289,7 +307,8 @@ function App() {
         ):(
           <>
             <button onClick={()=>setShowMap(true)}>Show map</button>
-            <NationalForecast national_forecast={national_forecast} seats={seats} />
+            <NationalForecast national_forecast={national_forecast} seats={seats} use_exit_polls={use_exit_polls}
+             setUseExitPolls={setUseExitPolls} use_forecast={use_forecast}/>
             <ControlPanel factors={factors} stdDeviations={std_deviations} factorAdjuster={factorAdjuster} stdDevAdjuster={stdDevAdjuster}/>
             {
               country_detail_fragment
@@ -345,12 +364,17 @@ function prefix_plus(num) {
   return (num > 0 ? "+" : "") + num;
 }
 
-function NationalForecast({ seats, national_forecast }) {
+
+function NationalForecast({ seats, national_forecast, use_exit_polls, setUseExitPolls, use_forecast }) {
 
   return (
     <div>
       <div className="country-section panel">
-        <h3>UK</h3>
+        <h3>UK</h3><button onClick = {()=>{
+            const use_exit = !use_exit_polls;
+            setUseExitPolls(use_exit); 
+            use_forecast(use_exit?exit_polls:latest_forecast_plus_NI);}}>
+          {use_exit_polls ? "Using Exit Polls":"Using Last Forecast"}</button>
         <table className="etable">
           <thead>
             <tr><th className="eth"></th>{
