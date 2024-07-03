@@ -30,11 +30,11 @@ const number_of_constituencies = new_constituencies.length;
 // https://www.electoralcalculus.co.uk/polls_ni.html
 const latest_forecast_plus_NI = {
   ...latest_forecast,
-  "SF": 24.7,
-  "DUP": 21.8,
-  "APNI": 16.1,
-  "UUP": 12.4,
-  "SDLP": 16.1,
+  "SF": 26,
+  "DUP": 20,
+  "APNI": 15,
+  "UUP": 13,
+  "SDLP": 10,
 }
 
 let country_weighting = {};

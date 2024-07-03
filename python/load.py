@@ -3,7 +3,7 @@ import pandas
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import normalize
 
-with open("L:\\OneDrive\\Library\\election\\polls.txt") as file:
+with open("./polls.html") as file:
     poll = file.read()
 
 parties = ["CON", "LAB", "LD", "SNP", "REF", "PC", "GRN"]
